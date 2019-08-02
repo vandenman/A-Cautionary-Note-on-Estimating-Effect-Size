@@ -1,0 +1,77 @@
+\documentclass[a4paper,doc,natbib]{apa6}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage[colorinlistoftodos,prependcaption]{todonotes}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{framed}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{epigraph}
+\usepackage{soul}
+
+\newcommand{\EJ}[1]{\todo[inline, color=green]{  #1 }}
+\newcommand{\Q}[1]{\todo[inline, color=yellow]{  #1 }}
+\newcommand{\jv}[2]{{\color{red}\st{#1}}{\color{blue}\bf{#2}}}
+
+\title{A Cautionary Note on Estimating Effect Sizes with Classical Confidence Intervals}
+\shorttitle{Estimating Effect Size} 
+\author{Eric-Jan Wagenmakers$^1$, Don van den Bergh$^1$, Alexander Ly$^1$, Julia M. Haaf$^1$, \& Jeffrey N. Rouder$^2$}
+\affiliation{$1$ University of Amsterdam\\ $2$ University of California at Irvine\\
+~\\Correspondence concerning this manuscript should be addressed to:
+  ~\\E.-J. Wagenmakers ~\\University of Amsterdam, Department of Psychology
+  ~\\Nieuwe Achtergracht 129B ~\\1018VZ Amsterdam, The Netherlands ~\\E--mail may be sent to EJ.Wagenmakers@gmail.com.}
+
+\abstract{\EJ{I don't care about authorship order, but I do care about keeping this very short, and sending it off very quickly. Corresponding author needs to be affiliated with a Dutch university for ``free'' open access.}
+Popular point-estimates and confidence intervals overestimate the size of experimental effects. This occurs even in the absence of publication bias and questionable research practices. \EJ{This can do to AMPPS or PBR I guess.}}
+
+\begin{document}
+\maketitle
+
+Your colleague has just conducted an experiment (mention it is a Registered Report, so we immediately make it clear that QRPs are not relevant). With $p<.05$ she feels that the null hypothesis can be rejected. In line with recommendations both old (e.g., \citealp{Grant1962,Loftus1996}) and new (e.g., 
+\citealp{Cumming2014}, NEJM editorial!) you convince her that it is better to replace the $p$-value with an estimate of effect size and a 95\% confidence interval (but see \citealp{MoreyEtAl2016CI}). You also convince her that it is a good idea to plot the data. Instead of simply reporting $p<.05$, the report is now more informative. The result is shown in Figure 1. In the text of the paper, the result is summarized as Cohen's $d = 0.5$, CI $= [a,b]$. 
+
+Figure HERE (from JASP, some descriptive plot but also a plot just showing the CI and point estimate for effect size)
+
+Given the results shown in Figure 1, what is the best point estimate of effect size? Well, it appears to us that many people would say ``0.5'', a tendency that is exacerbated by the idea of a confidence interval (maybe do an informal assessment by asking some colleagues). (Also: if this is not the case, then why stress the importance of reporting these quantities?)
+
+Then reveal the nature of the experiment: plans grow faster when you talk to them. Suddenly, the value ``0'' seems a very attractive option.\footnote{Unless you pray out loud, with consumption, and the plant is near.} If people feel this is a silly example, remind them that several large-scale replication results have shown that an estimate of zero is not silly; maybe cite some specific examples presented in \citet{KleinEtAlinpressML2} or \citet{CamererEtAl2018} or \citet{NosekLakens2014}.
+
+\section{Why Classical Methods Overestimate Effect Size}
+Of course, with limited N the point-estimate and CI lead to an overestimate, for at least two reasons. To demonstrate, let's reanalyse the data from Figure 1.
+
+Show prior-posterior plot from JASP:
+With sparse data, the prior distribution on effect size will shrink the estimate towards 0. Happens with the default settings, but even more when the width is smaller.
+
+Also, show spike at zero (maybe we need better JASP plot, will ask Don to create it):
+
+The impact of H0 will shrink the estimate toward 0. This is most clear when H0 is a priori very likely (''plants do not grow faster when
+you pray for them'') or when the sample effect is very close to zero, so that it becomes clear that H0 might provide a more reasonable
+explanation.
+
+Mention earlier literature:
+Model averaging effect size:
+\citet[pp. 640-641]{ZellnerVandaele1975}, as described in \citet[p. 600-601]{ZellnerSiow1980}; also \citet[p. 57]{Haldane1932}, \citet{IversonEtAl2010}
+
+Early ideas that are conceptually similar can be found in \citet[p. 387]{WrinchJeffreys1921} (show BMA between $\mathcal{H}_1$ and $\mathcal{H}_0$ -- but for prediction, not estimating effect size!; see also \citet{Jevons18741913}).
+
+See also \citet{RouderEtAl2018PBR}:
+
+Key is Figure 5. The spike-and-slab model shows shrinkage towards zero for small observed effect sizes because the spike has increased influence.
+
+``There are alternative interpretations that we find somewhat cumbersome. One is that the spike-and-slab can be viewed not as a model but as a model-averaging device. Here, the goal is not so much to define categories of effect and no-effect, but to average across both of them, and this averaging results in regularization. If one uses this interpretation, the prior odds settings are important as they influence the posterior weight given to each model component in the averaging. Another alternative interpretation comes from Kruschke and Liddell (Kruschke, 2011; Kruschke \& Liddell, 2017; this issue). Here, the spike and slab are seen as separate components in a hierarchical model. Accordingly, a focus on Bayes factors denotes a focus on the choice between components; a focus on posterior estimation entails parameter estimation after choosing the slab. We find this view difficult inasmuch as there is no a priori reason to choose the slab to focus on estimation. If one admits the possibility of the spike, then assuredly it should affect posterior estimation as well.''
+
+\newpage
+\clearpage
+\bibliography{referenties}
+\clearpage
+
+%\appendix
+%\section{Bla}
+
+\end{document}

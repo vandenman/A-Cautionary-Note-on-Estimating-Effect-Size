@@ -76,3 +76,4 @@ graph2 <- ggplot() +
 		legend.background = element_rect(fill = "transparent", color = "transparent")
 	)
 graph2
+saveFigure(graph2, filename = "spikeAndSlabPosteriorRightAxis.pdf", width = 10, height = 7)

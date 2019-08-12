@@ -1,5 +1,6 @@
 %\documentclass[a4paper,doc]{apa6}
 \documentclass[a4paper]{article}
+% \graphicspath{{/figures/}{./../figures/}}
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -105,7 +106,7 @@ With sparse data, the prior distribution shrink the estimate towards its mean, i
 \end{figure}
 
 \begin{figure}[!ht]
-	\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta.pdf}
+	%\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta.pdf}
 	\caption{Posterior mean for effect size (y-axis) as a function of the observed effect size (x-axis). The left panel shows inference conditional on the alternative model (i.e., the slab). The right panel shows the model averaged posterior mean, which shrinks towards 0 as the sample effect size approaches 0 and the null model becomes more plausible. The colors and line types represent different variances of the prior distribution.}
 	\label{fig:posteriorMeanVsSampleDelta}
 \end{figure}
@@ -138,7 +139,7 @@ Bayesian estimators more likely to underestimate the effect size, as prior mean 
 \newpage
 \clearpage
 \bibliographystyle{apacite}
-\bibliography{referenties}
+\bibliography{referenties.bib}
 %\clearpage
 
 %\appendix

@@ -6,6 +6,8 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{apacite}
 \usepackage{authblk}  % for authors
+\usepackage{xcolor}
+\definecolor{mypink}{RGB}{255, 230, 255}
 
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -15,6 +17,7 @@
 \newcommand{\Q}[1]{\todo[inline, color=yellow]{  #1 }}
 \newcommand{\jv}[2]{{\color{red}\st{#1}}{\color{blue}\bf{#2}}}
 \newcommand{\DON}[1]{\todo[inline, color=orange]{#1}}
+\newcommand{\J}[1]{\todo[inline, color=mypink]{#1}}
 
 \graphicspath{{../figures/}}
 \newcommand{\hypo}{\mathcal{H}}
@@ -92,11 +95,15 @@ If people feel this is a silly example, remind them that several large-scale rep
 
 \section*{Why Classical Methods Overestimate Effect Size}
 
+\J{Not only classical though, right?}
+
 Given a limited sample size, a point estimate of effect-size and a confidence interval tend to overestimate the true effect size for at least three reasons.\DON{This needs to be put very carefully because the standard estimate of effect size is unbiased.} To illustrate, we reanalyse the data from Figure~\ref{fig:descriptivesPlot}.
 
 
 With sparse data, the prior distribution shrink the estimate towards its mean, in this case 0.\DON{I know the prior shrinks estimates towards 0, but this has little to do with the true effect size. Rather, it's a reason why Bayesian estimators (of effect size) are be biased and tend to underestimate the true value.}
  In addition, since the null hypothesis is considered a-priori plausible, its predictions should be considered also. It has been shown repeatedly that model averaging provides the best predictive performance (\citeNP[pp. 640-641]{ZellnerVandaele1975}, as described in \citeNP[p. 600-601]{ZellnerSiow1980}; \citeNP[p. 57]{Haldane1932}, \citeNP{IversonEtAl2010}, \citeNP{RouderEtAl2018PBR}), and conceptually similar ideas date back much further (\citeNP[p. 387]{WrinchJeffreys1921}, \citeNP{Jevons18741913}). Thus, to obtain the best predictions one should model average over the null and alternative hypothesis. The impact of the null will shrink the estimate of effect size towards 0.
+ 
+ \J{We should probably first introduce the two relevant models here, and the idea that an unconstrained model is used for estimation. Maybe even say something like noone would use the null model to generate effect size estimates, why would we use the unconstrained?}
 
 
 \begin{figure}[!ht]
@@ -106,7 +113,7 @@ With sparse data, the prior distribution shrink the estimate towards its mean, i
 \end{figure}
 
 \begin{figure}[!ht]
-	%\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta.pdf}
+	\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta.pdf}
 	\caption{Posterior mean for effect size (y-axis) as a function of the observed effect size (x-axis). The left panel shows inference conditional on the alternative model (i.e., the slab). The right panel shows the model averaged posterior mean, which shrinks towards 0 as the sample effect size approaches 0 and the null model becomes more plausible. The colors and line types represent different variances of the prior distribution.}
 	\label{fig:posteriorMeanVsSampleDelta}
 \end{figure}
@@ -131,6 +138,7 @@ Key is Figure 5. The spike-and-slab model shows shrinkage towards zero for small
 
 ``There are alternative interpretations that we find somewhat cumbersome. One is that the spike-and-slab can be viewed not as a model but as a model-averaging device. Here, the goal is not so much to define categories of effect and no-effect, but to average across both of them, and this averaging results in regularization. If one uses this interpretation, the prior odds settings are important as they influence the posterior weight given to each model component in the averaging. Another alternative interpretation comes from Kruschke and Liddell (Kruschke, 2011; Kruschke \& Liddell, 2017; this issue). Here, the spike and slab are seen as separate components in a hierarchical model. Accordingly, a focus on Bayes factors denotes a focus on the choice between components; a focus on posterior estimation entails parameter estimation after choosing the slab. We find this view difficult inasmuch as there is no a priori reason to choose the slab to focus on estimation. If one admits the possibility of the spike, then assuredly it should affect posterior estimation as well.''
 
+\J{Which models to average? When to average? Also consider alternatively one model that has all relevant components for estimation instead of separate models.}
 
 \section*{Discussion}
 

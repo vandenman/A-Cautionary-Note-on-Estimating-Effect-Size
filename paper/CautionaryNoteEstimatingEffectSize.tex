@@ -42,11 +42,35 @@
 %\threeaffiliations{University of Amsterdam}{Centrum Wiskunde \& Informatica}{University of California Irvine}
 %\authornote{Correspondence concerning this article should be addressed to: Don van den Bergh, University of Amsterdam, Department of Psychological Methods, Nieuwe Achtergracht 129B, 1018VZ Amsterdam, The Netherlands. E-Mail should be sent to: donvdbergh@hotmail.com.}
 
+
 %TODO:
 %
 % - Idee Jeff: Figure 95% posterior predictive for a single point model averaged?
+% - data from https://osf.io/pfdyw/  ?
 
 \begin{document}
+\section*{Outline}
+
+\paragraph{Introduction}
+\begin{itemize}
+	\item Introduce an example about reporting effect size + confidence interval (with data, preferably a t-test). 
+	\item Reference some editorials + papers on the topic.
+	\item Pop the question: Given the data, what is the best estimate of effect size?
+\end{itemize}
+\paragraph{Ignoring Model Uncertainty Leads to Overestimating Effect Size}
+\begin{itemize}
+	\item There are many reasons why effect size is overestimated. Mention some reasons that will not be discussed (e.g., publication bias) and some that will be discussed (ignoring model uncertainty).
+	\item Make the argument that since model uncertainty is considered initially, this uncertainty should propagate to parameter estimates.
+	\item Relate this argument to model averaging and its successes.
+	\item Reanalyze the data example from the introduction but model average over H0 and H1.
+\end{itemize}
+\paragraph{Discussion}
+\begin{itemize}
+	\item ???
+	\item Profit
+\end{itemize}
+
+\newpage
 \maketitle
 
 \begin{abstract}
@@ -75,7 +99,7 @@ With sparse data, the prior distribution shrink the estimate towards its mean, i
 
 
 \begin{figure}[!ht]
-	\includegraphics[width=\textwidth]{spikeAndSlabPosteriorRightAxis.pdf}
+	\includegraphics[width=\textwidth]{spikeAndSlabPosteriorRescaledPosteriorMode.pdf}
 	\caption{A visualization of model averaging. The black line represents the posterior of the effect size given the alternative model (i.e., the slab). This posterior distribution integrates to the posterior probability of the model given uniform prior model probabilties. The grey line represent the posterior probability of the null model (i.e., the spike). The yellow error bar shows a 95\% central credible interval if inference is only based on the posterior under the slab. The purple error bar shows a 95\% central credible interval if inference is based on the model averaged posterior distribution. Although there is substantial uncertainty about the models ($p(\model_0\mid X) = p(\model_1\mid X) = 0.5$), an estimate based on only the posterior distribution of the alternative model may be overconfident and positively biased.}
 	\label{fig:modelAveragedPosterior}
 \end{figure}

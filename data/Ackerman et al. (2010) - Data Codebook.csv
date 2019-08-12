@@ -1,0 +1,26 @@
+Name,Variable full label,Variable description,Valid range,Scoring,Value indicating missing data,Value indicating inapplicable data,Experiment file used
+ID,Participant study ID,Participant's anonymous study number/identifier,A1 - A641,n/a,0,n/a,n/a
+Date,Date of participant's participation,Date experiment was administered ,00/00/0000,n/a,0,n/a,n/a
+Condition,Condition assigned,Participant's assigned study condition (block design),H/L,H = Heavy condition clipboard used during session; L = Light condition clipboard used during session,0,n/a,n/a
+Collector,Data collector,Initials of researcher and/or research assistants who collected corresponding data,AA-ZZ,n/a,0,n/a,n/a
+Location,Location of data collected,Indicated location in Charlottesville in which corresponding data was collected,n/a,n/a,0,n/a,n/a
+DS,Double score,Confirmation of data scored twice,0-1,1 = Double scoring completed; 0 = Double scoring incomplete,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+IC,Informed consent,Informed consent administered for session,0-2,0 = No consent was received; 1 = written consent was received; 2 = verbal consent was received,0,n/a,"""Ackerman et al. (2010) - Informed consent (payment).pdf"""
+Comp.,Compensation,Compensation (one $5 gift card) awarded for participation,0-1,1 = Gift card compensation was awarded for participation; 0 = gift card was not awarded for participation,0,n/a,n/a
+Age,Participant's reported age,Participant's reported age on Candidate Evaluation form,00 (Min: 18),n/a,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+Gender,Participant's reported gender,Participant's reported gender on Candidate Evaluation form,M/F,M = Male; F = Female,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+Student,Participant's reported student status,Participant's reported student status on Candidate Evaluation,Y/N,Y = Yes (Student); N = No (Not a student),0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+Mjr./Occ.,Participant's reported major or occupation,Participant's reported major or occupation,n/a,Full occupation and/or major title recorded,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.1,Evaluation 1 score Q1,Recorded response to question 1 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.2,Evaluation 1 score Q2,Recorded response to question 2 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.3,Evaluation 1 score Q3,Recorded response to question 3 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.4,Evaluation 1 score Q4,Recorded response to question 4 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.5,Evaluation 1 score Q5,Recorded response to question 5 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.6,Evaluation 1 score Q6,Recorded response to question 6 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.7,Evaluation 1 score Q7,Recorded response to question 7 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+ES1.8,Evaluation 1 score Q8,Recorded response to question 8 on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+IS.1,Importance score #1,Recorded response to self-evaluated importance question on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+Eff.1,Effort score #1,Recorded response to self-evaluated effort question on Candidate Evaluation form,1-7,1 = Not at all; 7 = Very strong,0,n/a,"""Ackerman et al. (2010) - Candidate evaluation.pdf"""
+Exc.,Exclusions,Exclusion of data following pre-specified exclusion rules,0-1,0 = No exclusion applied to data; 1 = exclusion applied to data,n/a,n/a,n/a
+Comments,Experiment and/or Participant comments,Comment range to indicate reasoning for exclusions and/or record of comments written by participant on Candidate Evaluation form,n/a,n/a,0,n/a,n/a
+Collection,Collection round,Round of SSRP collection (1st round (90% confidence to predict 75% of the original effect size) or 2nd (90% confidence to predict 50% of the original effect size)),1-2,1 = 1st round of data collection; 2 = 2nd round of data collection,0,n/a,n/a

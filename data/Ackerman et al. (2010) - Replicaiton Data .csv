@@ -1,0 +1,642 @@
+ID,Date,Condition,Collector,Location,DS,IC,Comp,Age,Gender,Student,Mjr.Occ,ES1,ES2,ES3,ES4,ES5,ES6,ES7,ES8,Imp.1,Eff.1,Exc,Comments,Collection,DV,filter_$
+A1,2/20/17,H,TT,UVA Campus,1,1,1,18,F,Y,Undecided,6,5,5,6,4,5,7,6,7,6,0,NA,1,5.5,1
+A2,2/20/17,H,TT,UVA Campus,1,1,1,21,F,Y,Biology,5,5,5,6,5,5,5,5,5,4,0,NA,1,5,1
+A3,2/20/17,H,TT,UVA Campus,1,1,1,19,F,Y,Environmental Science,5,6,5,7,6,6,7,6,6,6,0,NA,1,6,1
+A4,2/20/17,H,TT,UVA Campus,1,1,1,18,F,Y,Undeclared,7,7,7,7,6,6,7,6,6,6,0,NA,1,6.5,1
+A5,2/20/17,H,TT,UVA Campus,1,1,1,19,F,Y,Biology,6,6,6,7,6,6,7,6,5,5,0,NA,1,6.166666667,1
+A6,2/20/17,H,TT,UVA Campus,1,1,1,21,F,Y,Human Biology,7,7,6,6,6,6,7,6,5,5,0,NA,1,6.5,1
+A7,2/20/17,H,DF,UVA Campus,1,1,1,22,F,Y,Biology,6,7,6,7,7,7,7,6,7,6,0,NA,1,6.666666667,1
+A8,2/20/17,H,DF,UVA Campus,1,1,1,19,F,Y,Nursing,7,6,6,7,7,7,7,7,6,6,0,NA,1,6.833333333,1
+A9,2/20/17,H,DF,UVA Campus,1,1,1,22,F,Y,Biology,5,7,7,7,6,6,7,5,5,5,0,NA,1,6,1
+A10,2/20/17,H,DF,UVA Campus,1,1,1,19,M,Y,Public policy or government,7,7,6,5,7,7,7,6,6,5,0,NA,1,6.833333333,1
+A11,2/21/17,L,SC,UVA Campus,1,1,1,19,F,Y,"Government, economics",7,4,4,7,7,7,7,6,5,6,0,NA,1,6.333333333,1
+A12,2/21/17,L,SC,UVA Campus,1,1,1,27,M,Y,Physics (Ph.D candidate),7,6,7,7,6,6,6,6,6,6,0,NA,1,6.166666667,1
+A13,2/21/17,L,SC,UVA Campus,1,1,1,23,F,Y,"Chemistry, psychology",6,6,6,6,7,6,5,4,7,5,0,NA,1,5.666666667,1
+A14,2/23/17,L,SC,UVA Campus,1,1,1,20,F,Y,Biochemistry,7,6,6,6,7,7,7,6,6,5,0,NA,1,6.666666667,1
+A15,2/23/17,L,SC,UVA Campus,1,1,1,20,F,Y,Economics,6,6,6,6,7,6,6,6,5,5,0,NA,1,6.166666667,1
+A16,2/23/17,L,SC,UVA Campus,1,1,1,20,M,Y,"Economics, statistics",6,5,7,6,5,6,7,6,6,5,0,NA,1,5.833333333,1
+A17,2/23/17,L,SC,UVA Campus,1,1,1,22,M,Y,Psychology,7, ,6,6,6,6,7,6,6,6,0,NA,1,6.4,1
+A18,2/23/17,L,SC,UVA Campus,1,1,1,20,F,Y,Biology,7,6,6,6,7,7,7,6,6,6,0,NA,1,6.666666667,1
+A19,2/23/17,L,SC,UVA Campus,1,1,1,20,F,Y,Public policy,7,7,4,5,6,6,7,6,5,5,0,NA,1,6.5,1
+A20,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,Psychology,7,7,6,5,7,7,7,7,2,4,0,NA,1,7,1
+A21,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,0,5,5,4,5,4,4,5,5,5,5,0,NA,1,4.666666667,1
+A22,2/20/17,L,NK,UVA Campus,1,1,1,21,M,Y,CogSci / Pre-Med,7,6,5,7,7,6,7,6,6,4,0,NA,1,6.5,1
+A23,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,Chemistry,3,3,5,6,4,3,2,2,6,6,0,NA,1,2.833333333,1
+A24,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,Chemistry,6,6,5,5,5,7,7,6,5,4,0,NA,1,6.166666667,1
+A25,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,Public Health,6,7,6,7,7,7,7,7,6,5,0,NA,1,6.833333333,1
+A26,2/20/17,L,NK,UVA Campus,1,1,1,22,F,Y,Public Policy & Leadership,6,6,4,6,7,5,7,6,5,5,0,NA,1,6.166666667,1
+A27,2/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,Statistics,6,6,6,7,7,5,7,6,4,3,0,NA,1,6.166666667,1
+A28,2/20/17,L,NK,UVA Campus,1,1,1,21,F,Y,"Anthropology / Women, Gender, & Sexualities",6,6,6,7,7,6,7,5,7,5,0,NA,1,6.166666667,1
+A29,2/20/17,L,NK,UVA Campus,1,1,1,22,M,Y,Aerospace Engineering,6,6,5,7,7,7,7,7,7,6,0,NA,1,6.666666667,1
+A30,2/20/17,L,NK,UVA Campus,1,1,1,21,M,Y,Civil Engineering,5,6,4,7,6,6,7,5,5,5,0,NA,1,5.833333333,1
+A31,2/24/17,H,NK,UVA Campus,1,1,1,24,M,Y,Chemical engineering,6,6,5,7,7,6,7,6,7,6,0,NA,1,6.333333333,1
+A32,2/24/17,H,NK,UVA Campus,1,1,1,18,F,Y,"Computer science, cognitive science",6,6,6,7,6,6,6,5,5,5,0,NA,1,5.833333333,1
+A33,2/24/17,H,NK,UVA Campus,1,1,1,22,F,Y,"English, government",7,6,5,5,7,7,7,6,6,6,0,NA,1,6.666666667,1
+A34,2/24/17,H,NK,UVA Campus,1,1,1,21,F,Y,"Biology, spanish",6,6,7,7,7,7,7,6,5,6,0,NA,1,6.5,1
+A35,2/24/17,H,NK,UVA Campus,1,1,1,19,F,Y,Environmental Science,7,7,7,6,7,7,7,7,6,6,0,NA,1,7,1
+A36,2/24/17,H,NK,UVA Campus,1,1,1,19,M,Y,Biomedical engineering,6,5,7,5,7,6,7,5,7,5,0,NA,1,6,1
+A37,2/24/17,H,DF,UVA Campus,1,1,1,19,M,Y,"Foreign affairs, Econ",7,6,6,7,7,7,6,6,5,4,0,NA,1,6.5,1
+A38,2/24/17,H,DF,UVA Campus,1,1,1,18,F,Y,"Undeclared, CS",5,6,6,5,7,7,6,5,3,3,0,NA,1,6,1
+A39,2/24/17,H,DF,UVA Campus,1,1,1,18,F,Y,"Biology, english",7,6,7,7,7,7,6,6,4,4,0,NA,1,6.5,1
+A40,2/24/17,H,DF,UVA Campus,1,1,1,18,M,Y,0,6,7,5,3,5,6,6,4,6,6,0,NA,1,5.666666667,1
+A41,2/24/17,H,DF,UVA Campus,1,1,1,18,F,Y,Biology (tbd),6,5,7,7,7,6,7,6,7,5,0,NA,1,6.166666667,1
+A42,2/24/17,H,DF,UVA Campus,1,1,1,19,F,Y,"Economics, global public health (undeclared)",6,7,5,7,6,6,7,5,7,6,0,NA,1,6.166666667,1
+A43,2/24/17,H,DF,UVA Campus,1,1,1,20,F,Y,Global studies,6,6,7,7,6,6,7,6,6,6,0,NA,1,6.166666667,1
+A44,2/24/17,H,DF,UVA Campus,1,1,1,20,F,Y,Kinesiology,7,7,6,7,7,7,7,7,6,6,0,NA,1,7,1
+A45,2/24/17,H,DF,UVA Campus,1,1,1,18,F,Y,Global studies,5,2,4,5,6,5,6,5,5,4,0,NA,1,4.833333333,1
+A46,2/24/17,H,DF,UVA Campus,1,1,1,19,M,Y,Biomedical engineering,6,7,5,7,7,5,7,5,6,7,0,NA,1,6.166666667,1
+A47,2/24/17,H,DF,UVA Campus,1,1,1,18,F,Y,Foreign affairs,6,7,6,6,6,6,7,6,6,6,0,NA,1,6.333333333,1
+A48,2/24/17,H,DF,UVA Campus,1,1,1,18,M,Y,"Communications, Economics (undecided)",6,5,6,5,6,6,6,5,5,5,0,NA,1,5.666666667,1
+A49,2/24/17,H,DF,UVA Campus,1,1,1,19,F,Y,"Biology, italian",6,5,6,7,6,6,7,6,5,5,0,NA,1,6,1
+A50,2/27/17,H,DF,UVA Campus,1,1,1,18,F,Y,Biology,5,5,6,6,5,5,6,6,6,5,0,NA,1,5.333333333,1
+A51,2/27/17,L,DF,UVA Campus,1,1,1,19,M,Y,Pre-commerce (undecided),4,3,5,7,5,3,6,5,5,5,0,NA,1,4.333333333,1
+A52,2/27/17,L,DF,UVA Campus,1,1,1,19,M,Y,Medieval studies,6,7,5,6,6,6,6,6,5,5,0,NA,1,6.166666667,1
+A53,2/27/17,L,DF,UVA Campus,1,1,1,19,F,Y,History,6,6,5,5,6,6,6,5,5,5,0,NA,1,5.833333333,1
+A54,2/27/17,L,DF,UVA Campus,1,1,1,18,M,Y,Environmental chemistry,7,7,7,7,6,6,7,4,4,5,0,NA,1,6.166666667,1
+A55,2/27/17,L,DF,UVA Campus,1,1,1,19,F,Y,Pre-med,5,6,5,6,6,6,7,5,5,5,0,NA,1,5.833333333,1
+A56,2/27/17,L,DF,UVA Campus,1,1,1,18,M,Y,"Biochemistry, computer science",6,7,5,6,6,6,6,5,5,6,0,NA,1,6,1
+A57,2/27/17,L,DF,UVA Campus,1,1,1,18,M,Y,Economics,4,2,6,6,5,5,6,4,7,7,0,NA,1,4.333333333,1
+A58,2/27/17,L,DF,UVA Campus,1,1,1,22,M,Y,Computer science,6,6,3,5,7,6,7,5,5,5,0,NA,1,6.166666667,1
+A59,2/27/17,L,DF,UVA Campus,1,1,1,19,M,Y,Computer science,7,7,7,7,6,6,7,6,5,4,0,NA,1,6.5,1
+A60,2/27/17,L,DF,UVA Campus,1,1,1,20,F,Y,"English, biology",6,6,6,6,6,5,5,5,2,3,0,NA,1,5.5,1
+A61,2/28/17,H,SC,UVA Campus,1,1,1,19,F,Y,Undecided,5,6,3,3,6,6,6,6,3,5,0,NA,1,5.833333333,1
+A62,2/28/17,H,SC,UVA Campus,1,1,1,18,F,Y,Undecided,7,6,5,7,7,5,7,5,6,6,0,NA,1,6.166666667,1
+A63,2/28/17,H,SC,UVA Campus,1,1,1,20,M,Y,Chemical engineering,5,6,4,5,3,4,4,4,6,6,0,NA,1,4.333333333,1
+A64,2/28/17,H,SC,UVA Campus,1,1,1,21,F,Y,Chemical engineering,6,6,7,6,6,6,7,7,4,3,0,NA,1,6.333333333,1
+A65,3/1/17,H,NK,UVA Campus,1,1,1,20,F,Y,Chemistry,5,5,6,5,7,6,7,5,5,6,0,NA,1,5.833333333,1
+A66,3/1/17,H,NK,UVA Campus,1,1,1,19,F,Y,Human biology,6,5,6,7,6,6,6,6,5,5,0,NA,1,5.833333333,1
+A67,3/1/17,H,NK,UVA Campus,1,1,1,19,F,Y,"Biology, spanish",6,6,5, ,7,6,6,6,6,6,0,NA,1,6.166666667,1
+A68,3/1/17,H,NK,UVA Campus,1,1,1,20,F,Y,Foreign affairs,6,5,6,7,7,6,7,6,7,6,0,NA,1,6.166666667,1
+A69,3/1/17,H,NK,UVA Campus,1,1,1,48,0,N,Data scientist,6,6, , ,6,6,6, ,6,4,0,NA,1,6,1
+A70,3/3/17,H,TT,UVA Campus,1,1,1,21,M,Y,Spanish,7,6, ,4,7,6,7,6,4,6,0,NA,1,6.5,1
+A71,3/1/17,L,TT,UVA Campus,1,1,1,22,F,Y,"Foreign affairs, economics",6,5,5,5,6,6,6,6,5,4,0,NA,1,5.833333333,1
+A72,3/1/17,L,TT,UVA Campus,1,1,1,21,F,Y,Accounting,5,5,5,4,6,5,7,5,5,4,0,NA,1,5.5,1
+A73,3/1/17,L,TT,UVA Campus,1,1,1,21,F,Y,Foreign affairs,6,7,7,7,7,7,7,7,5,5,0,NA,1,6.833333333,1
+A74,3/1/17,L,TT,UVA Campus,1,1,1,19,M,Y,Biology,7,7,7,7,7,7,7,7,1,5,0,NA,1,7,1
+A75,3/1/17,L,TT,UVA Campus,1,1,1,21,F,Y,Biology,5,4,4,6,7,5,7,5,5,5,0,NA,1,5.5,1
+A76,3/1/17,L,TT,UVA Campus,1,1,1,18,F,Y,Nursing,6,4,6,5,6,6,7,5,5,5,0,NA,1,5.666666667,1
+A77,3/1/17,L,TT,UVA Campus,1,1,1,20,M,Y,Cognitive science,6,5,5,6,7,6,6,5,7,6,0,NA,1,5.833333333,1
+A78,3/2/17,L,SC,UVA Campus,1,1,1,18,F,Y,SEAS-BME,7,6,7,7,7,7,7,6,7,7,0,NA,1,6.666666667,1
+A79,3/2/17,L,SC,UVA Campus,1,1,1,19,M,Y,Sociology,6,5,5,5,4,6,6,6,6,6,0,NA,1,5.5,1
+A80,3/2/17,L,SC,UVA Campus,1,1,1,20,F,Y,"Nursing, psychology",7,6,6,7,6,6,7,7,6,6,0,NA,1,6.5,1
+A81,3/3/17,H,TT,UVA Campus,1,1,1,21,F,Y,Biology,4,5,5,6,5,5,6,4,7,7,0,NA,1,4.833333333,1
+A82,3/3/17,H,TT,UVA Campus,1,1,1,20,F,Y,Biostatistics,7,4,5,5,7,7,7,5,6,6,0,NA,1,6.166666667,1
+A83,3/3/17,H,TT,UVA Campus,1,1,1,20,F,Y,Chemistry,5,5,5,5,5,5,4,5,6,6,0,NA,1,4.833333333,1
+A84,3/13/17,H,TT,UVA Campus,1,1,1,20,F,Y,Cognitive science,7,6,5,7,6,7,7,6,4,5,0,NA,1,6.5,1
+A85,3/13/17,H,TT,UVA Campus,1,1,1,22,F,Y,Political science,7,6,6,7,7,7,7,7,6,6,0,NA,1,6.833333333,1
+A86,3/15/17,H,NK,UVA Campus,1,1,1,21,F,Y,Biology,6,6,6,7,5,6,7,6,6,5,0,NA,1,6,1
+A87,3/15/17,H,NK,UVA Campus,1,1,1,19,F,Y,Kinesiology,6,7,6,6,7,7,7,6,5,5,0,NA,1,6.666666667,1
+A88,3/15/17,H,NK,UVA Campus,1,1,1,21,F,Y,Psychology,7,7,7,4,7,7,7,6,7,3,0,NA,1,6.833333333,1
+A89,3/15/17,H,NK,UVA Campus,1,1,1,19,F,Y,Anthropology,7,6,6,7,7,7,7,7,7,5,0,NA,1,6.833333333,1
+A90,3/15/17,H,NK,UVA Campus,1,1,1,18,F,Y,Chemical engineering,7,7,7,7,7,7,7,6,7,7,0,NA,1,6.833333333,1
+A91,3/2/17,L,SC,UVA Campus,1,1,1,20,F,Y,"Foreign affairs, media studies",6,6,7,7,6,6,7,7,5,5,0,NA,1,6.333333333,1
+A92,3/2/17,L,SC,UVA Campus,1,1,1,21,F,Y,Economics,5,6,5,6,6,6,5,5,5,5,0,NA,1,5.5,1
+A93,3/2/17,L,SC,UVA Campus,1,1,1,21,M,Y,Architecture,6,6,5,4,4,4,5,5,5,3,0,NA,1,5,1
+A94,3/3/17,L,NK,UVA Campus,1,1,1,20,F,Y,Computer Science,5,5,4,6,6,5,6,5,6,5,0,NA,1,5.333333333,1
+A95,3/3/17,L,NK,UVA Campus,1,1,1,19,F,Y,Biochemistry,6,5,5,7,6,6,7,4,7,6,0,NA,1,5.666666667,1
+A96,3/3/17,L,NK,UVA Campus,1,1,1,20,M,Y,0,6,6,5,5,7,6,7,6,6,6,0,NA,1,6.333333333,1
+A97,3/3/17,L,NK,UVA Campus,1,1,1,21,F,Y,Psychology/Elementary Education,7,7,6,7,7,7,7,6,6,5,0,NA,1,6.833333333,1
+A98,3/3/17,L,NK,UVA Campus,1,1,1,19,M,Y,Computer Science,6,6,6,7,6,6,5,5,6,5,0,NA,1,5.666666667,1
+A99,3/3/17,L,NK,UVA Campus,1,1,1,21,F,Y,Chemistry,6,5,6,7,5,6,7,6,6,6,0,NA,1,5.833333333,1
+A100,3/3/17,L,NK,UVA Campus,1,1,1,19,F,Y,Political Science,7,6,5,7,7,6,6,6,7,6,0,NA,1,6.333333333,1
+A101,3/16/17,H,SC,UVA Campus,1,1,1,21,M,Y,"English, media studies",6,6,6,7,5,4,7,6,3,3,0,NA,1,5.666666667,1
+A102,3/16/17,H,SC,UVA Campus,1,1,1,21,M,Y,"Poetry writing, studio art",6,5,4,5,6,6,6,6,5,7,0,NA,1,5.833333333,1
+A103,3/16/17,H,SC,UVA Campus,1,1,1,18,F,Y,Psychology,6,6,5,6,6,6,6,5,5,5,0,NA,1,5.833333333,1
+A104,3/16/17,H,SC,UVA Campus,1,1,1,18,F,Y,"Political philosophy, policy, & law",6,5,5,7,6,6,6,6,6,5,0,NA,1,5.833333333,1
+A105,3/16/17,H,SC,UVA Campus,1,1,1,22,M,Y,Economics,6,6,5,7,5,6,7,6,7,6,0,NA,1,6,1
+A106,3/16/17,H,SC,UVA Campus,1,1,1,20,F,Y,"Public policy, economics",6,6,6,6,5,6,7,6,4,3,0,NA,1,6,1
+A107,3/17/17,H,NK,UVA Campus,1,1,1,21,M,Y,Biology,6,5,5,6,6,6,7,6,6,4,0,NA,1,6,1
+A108,3/17/17,H,NK,UVA Campus,1,1,1,20,M,Y,"Biology, psychology",7,6,6,7,6,4,7,5,7,5,0,NA,1,5.833333333,1
+A109,3/17/17,H,NK,UVA Campus,1,1,1,19,F,Y,Global public health (pre-medical),5,5,6,4,4,5,5,4,6,5,0,NA,1,4.666666667,1
+A110,3/21/17,H,NK,UVA Campus,1,1,1,21,M,Y,Computer engineering,6,4,5,5,6,6,6,5,5,4,0,NA,1,5.5,1
+A111,3/20/17,L,NK,UVA Campus,1,1,1,20,M,Y,Biology,6,6,6,6,5,6,6,6,6,7,0,NA,1,5.833333333,1
+A112,3/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,"Biology, Global public health",6,5,6,6,5,6,6,5,4,5,0,NA,1,5.5,1
+A113,3/20/17,L,NK,UVA Campus,1,1,1,22,F,N,International campus ministry,6,6,6,6,5,6,7,6,5,5,0,NA,1,6,1
+A114,3/20/17,L,NK,UVA Campus,1,1,1,21,F,Y,Russian language & literature,6,6,6,5,4,5,6,5,6,6,0,NA,1,5.333333333,1
+A115,3/20/17,L,NK,UVA Campus,1,1,1,21,F,Y,American studies & history,6,5,5,7,7,7,7,6,6,5,0,NA,1,6.333333333,1
+A116,3/20/17,L,NK,UVA Campus,1,1,1,19,F,Y,"Environmental science, studio art",6,6,6,5,7,6,7,6,6,4,0,NA,1,6.333333333,1
+A117,3/20/17,L,NK,UVA Campus,1,1,1,21,F,Y,Psychology,6,6,6,7,6,6,7,5,6,6,0,NA,1,6,1
+A118,3/20/17,L,DF,UVA Campus,1,1,1,18,F,Y,Mechanical engineering,7,6,5,5,7,7,7,5,5,5,0,NA,1,6.5,1
+A119,3/20/17,L,DF,UVA Campus,1,1,1,22,M,Y,Biology,6,5,5,6,6,6,7,6,4,5,0,NA,1,6,1
+A120,3/20/17,L,DF,UVA Campus,1,1,1,22,M,Y,Youth and Social Innovation,6,5,6,7,5,7,7,5,6,6,0,NA,1,5.833333333,1
+A121,3/21/17,H,NK,UVA Campus,1,1,1,21,F,Y,"Communication disorders, psychology",5,6,6,5,6,6,6,6,5,5,0,NA,1,5.833333333,1
+A122,3/21/17,H,NK,UVA Campus,1,1,1,18,F,Y,Economics,6,6,4,7,7,6,7,4,1,4,0,NA,1,6,1
+A123,3/21/17,H,NK,UVA Campus,1,1,1,21,F,Y,Biology,6,7,6,4,6,6,6,6,5,6,0,NA,1,6.166666667,1
+A124,3/21/17,H,NK,UVA Campus,1,1,1,22,F,Y,Biomedical engineering,7,7,7,4,7,6,7,7,5,4,0,NA,1,6.833333333,1
+A125,3/21/17,H,NK,UVA Campus,1,1,1,21,F,Y,Computer science,5,6,6,7,6,6,6,5,7,6,0,NA,1,5.666666667,1
+A126,3/21/17,H,NK,UVA Campus,1,1,1,25,M,Y,Biology,7,6,6,5,5,6,6,6,7,7,0,NA,1,6,1
+A127,3/21/17,H,SC,UVA Campus,1,2,1,21,F,Y,Sociology,6,5,6,7,5,5,6,5,6,5,0,NA,1,5.333333333,1
+A128,3/22/17,H,TT,UVA Campus,1,1,1,21,F,Y,"Biology, music",6,6,6,7,7,6,6,6,5,5,0,NA,1,6.166666667,1
+A129,3/22/17,H,TT,UVA Campus,1,1,1,24,F,Y,Biology,6,6,6,7,6,6,6,6,5,4,0,NA,1,6,1
+A130,3/22/17,H,DF,UVA Campus,1,1,1,21,M,Y,Economics,6,6,5,7,6,6,7,6,5,6,0,NA,1,6.166666667,1
+A131,3/21/17,L,SC,UVA Campus,1,1,1,40,F,N,Cook,5,6,6,7,5,6,5,5,4,3,0,NA,1,5.333333333,1
+A132,3/21/17,L,SC,UVA Campus,1,1,1,20,M,Y,Computer Science,4,3,5,4,3,3,2,1,4,5,0,NA,1,2.666666667,1
+A133,3/21/17,L,SC,UVA Campus,1,1,1,20,M,Y,Computer Science,3,4,4,4,4,4,4,4,7,3,0,NA,1,3.833333333,1
+A134,3/21/17,L,SC,UVA Campus,1,1,1,22,F,N,UVA Dining aramark,4,5,5,6,7,6,7,7,6,6,0,NA,1,6,1
+A135,3/21/17,L,SC,UVA Campus,1,1,1,22,M,Y,Biochemistry,6,5,4,5,6,6,6,4,5,5,0,NA,1,5.5,1
+A136,3/21/17,L,SC,UVA Campus,1,1,1,20,F,Y,"English, elementary education",5,5,6,6,5,6,7,5,6,7,0,NA,1,5.5,1
+A137,3/21/17,L,SC,UVA Campus,1,1,1,21,M,Y,"Linguistics, computer science",5,4,5,7,4,5,6,5,5,6,0,NA,1,4.833333333,1
+A138,3/21/17,L,SC,UVA Campus,1,1,1,20,F,Y,Politics,5,7,6,5,6,5,6,5,5,7,0,NA,1,5.666666667,1
+A139,3/21/17,L,SC,UVA Campus,1,2,1,19,M,Y,"Commerce, statistics",5,3,5,5,5,5,4,4,5,5,0,NA,1,4.333333333,1
+A140,3/21/17,L,SC,UVA Campus,1,1,1,22,M,Y,Commerce,6,6,6,5,6,6,6,5,6,5,0,NA,1,5.833333333,1
+A141,3/22/17,H,DF,UVA Campus,1,1,1,20,M,Y,Economics,6,6,6,7,6,6,6,6,5,4,0,NA,1,6,1
+A142,3/22/17,H,DF,UVA Campus,1,1,1,21,F,Y,Biomedical engineering,6,5,7,6,7,6,7,6,5,4,0,NA,1,6.166666667,1
+A143,3/22/17,H,DF,UVA Campus,1,1,1,22,M,Y,"Computer science, History",6,4,7,5,6,6,7,5,6,7,0,NA,1,5.666666667,1
+A144,3/22/17,H,DF,UVA Campus,1,1,1,20,F,Y,Statistics,6,6,6,7,7,6,7,6,4,4,0,NA,1,6.333333333,1
+A145,3/22/17,H,DF,UVA Campus,1,1,1,20,F,Y,English,7,7,6,7,6,6,7,6,6,5,0,NA,1,6.5,1
+A146,3/23/17,H,SC,UVA Campus,1,1,1,20,F,Y,Psychology,5,5,6,4,6,5,5,6,6,4,0,NA,1,5.333333333,1
+A147,3/23/17,H,SC,UVA Campus,1,1,1,20,M,Y,Politics,4,4,4,4,5,7,7,4,7,6,0,NA,1,5.166666667,1
+A148,3/23/17,H,SC,UVA Campus,1,1,1,19,M,Y,"Computer science, Economics",7,6,7,7,7,7,7,7,7,6,0,NA,1,6.833333333,1
+A149,3/27/17,H,TT,UVA Campus,1,1,1,19,F,Y,Biology,5,5,5,6,6,5,6,5,5,6,0,NA,1,5.333333333,1
+A150,3/27/17,H,TT,UVA Campus,1,1,1,20,F,Y,Biology,7,7,5,7,7,7,7,7,7,7,0,NA,1,7,1
+A151,3/27/17,L,DF,UVA Campus,1,1,1,19,M,Y,Educational psychology,6,6,6,7,7,6,7,7,6,5,0,NA,1,6.5,1
+A152,3/27/17,L,DF,UVA Campus,1,1,1,19,F,Y,"GDS, French / Office administrative assistant",7,7,5,7,7,7,7,7,6,6,0,NA,1,7,1
+A153,3/27/17,L,DF,UVA Campus,1,1,1,20,F,Y,Economics,7,6,6,6,7,7,7,7,6,5,0,NA,1,6.833333333,1
+A154,3/27/17,L,DF,UVA Campus,1,1,1,22,F,Y,Leadership and public policy,5,5,6,5,6,6,6,6,5,5,0,NA,1,5.666666667,1
+A155,3/27/17,L,DF,UVA Campus,1,1,1,20,F,Y,Undeclared,7,7,7,5,6,5,7,6,5,5,0,NA,1,6.333333333,1
+A156,3/27/17,L,DF,UVA Campus,1,1,1,20,F,Y,"Government, English",6,7,4,4,7,5,5,4,3,7,0,NA,1,5.666666667,1
+A157,3/28/17,L,SC,UVA Campus,1,1,1,22,F,Y,English,5,3,6,3,3,4,6,4,5,3,0,NA,1,4.166666667,1
+A158,3/28/17,L,SC,UVA Campus,1,1,1,22,M,Y,"Economics, Foreign affairs",5,5,4,3,4,5,4,3,5,6,0,NA,1,4.333333333,1
+A159,3/28/17,L,SC,UVA Campus,1,1,1,24,F,Y,English,5,6,5,6,5,5,5,6,6,5,0,NA,1,5.333333333,1
+A160,3/28/17,L,SC,UVA Campus,1,1,1,19,F,Y,History,6,6,6,5,7,6,6,5,5,5,0,NA,1,6,1
+A161,3/29/17,H,NK,UVA Campus,1,1,1,20,F,Y,Cognitive science,6,6,7,7,6,7,7,6,6,6,0,NA,1,6.333333333,1
+A162,3/29/17,H,NK,UVA Campus,1,1,1,19,F,Y,Biology,6,6,6,7,5,6,7,6,6,6,0,NA,1,6,1
+A163,3/29/17,H,NK,UVA Campus,1,1,1,21,F,Y,Civil engineering,6, ,6,7,7,7,7,6,0,0,0,NA,1,6.6,1
+A164,3/29/17,H,NK,UVA Campus,1,1,1,21,F,Y,Psychology,7,7,6,7,7,7,7,7,7,7,0,NA,1,7,1
+A165,3/29/17,H,NK,UVA Campus,1,1,1,19,F,Y,Environmental science,7,6,7,7,7,6,7,7,6,6,0,NA,1,6.666666667,1
+A166,4/3/17,H,NK,UVA Campus,1,1,1,19,F,Y,Biomedical engineer,6,6,5,7,6,6,7,6,6,5,0,NA,1,6.166666667,1
+A167,4/3/17,H,NK,UVA Campus,1,1,1,18,F,Y,Systems engineering,5,5,4,6,5,5,6,5,6,5,0,NA,1,5.166666667,1
+A168,4/3/17,H,NK,UVA Campus,1,1,1,21,F,Y,Youth and social innovation,6,7,6,6,7,6,7,5,6,6,0,NA,1,6.333333333,1
+A169,4/3/17,H,NK,UVA Campus,1,1,1,21,F,Y,"Cognitive science, teaching assistant",4,5,6,4,3,4,6,4,4,5,0,NA,1,4.333333333,1
+A170,4/3/17,H,NK,UVA Campus,1,1,1,20,F,Y,"Foreign affairs, Spanish",7,7,7,6,7,7,7,7,6,6,0,NA,1,7,1
+A171,3/28/17,L,SC,UVA Campus,1,1,1,21,F,Y,Architecture,6,5,5,6,6,5,6,5,6,6,0,NA,1,5.5,1
+A172,3/28/17,L,SC,UVA Campus,1,1,1,21,F,Y,Psychology,6,5,6,6,5,6,5,6,5,6,0,NA,1,5.5,1
+A173,3/28/17,L,SC,UVA Campus,1,1,1,20,M,Y,"Eschool, Computer science",6,6,5,6,6,5,6,5,6,6,0,NA,1,5.666666667,1
+A174,3/28/17,L,SC,UVA Campus,1,1,1,21,F,Y,Media studies,6,5,5,6,6,6,6,5,6,6,0,NA,1,5.666666667,1
+A175,3/29/17,L,SC,UVA Campus,1,1,1,19,M,Y,Chemistry,6,6,5,5,6,5,5,5,5,6,0,NA,1,5.5,1
+A176,3/29/17,L,SC,UVA Campus,1,1,1,21,F,Y,Engineering science,5,5,5,7,5,5,6,6,5,6,0,NA,1,5.333333333,1
+A177,4/5/17,L,SC,UVA Campus,1,1,1,22,F,Y,Psychology,6,6,4,5,6,6,6,6,5,4,0,NA,1,6,1
+A178,4/5/17,L,SC,UVA Campus,1,1,1,22,F,Y,Computer science,4,4,6,7,6,5,5,4,3,4,0,NA,1,4.666666667,1
+A179,4/5/17,L,SC,UVA Campus,1,1,1,21,F,Y,"Computer science, Cognitive science",7,7,6,5,7,6,6,6,7,4,0,NA,1,6.5,1
+A180,4/5/17,L,SC,UVA Campus,1,1,1,22,F,Y,Computer science,5,7,5,6,7,6,7,5,6,3,0,NA,1,6.166666667,1
+A181,4/3/17,H,DF,UVA Campus,1,1,1,21,F,Y,Environmental science,6,5,4,5,3,5,7,5,6,6,0,NA,1,5.166666667,1
+A182,4/3/17,H,DF,UVA Campus,1,1,1,20,F,Y,Kinesiology,6,6,6,7,5,6,7,6,5,5,0,NA,1,6,1
+A183,4/3/17,H,DF,UVA Campus,1,1,1,21,F,Y,Electrical engineering,5,6,6,7,6,6,5,5,6,5,0,NA,1,5.5,1
+A184,4/3/17,H,DF,UVA Campus,1,1,1,19,M,Y,Chemistry,6,7,6,7,6,6,7,6,5,6,0,NA,1,6.333333333,1
+A185,4/3/17,H,DF,UVA Campus,1,1,1,19,M,Y,Economics,6,6,7,6,7,6,7,6,6,5,0,NA,1,6.333333333,1
+A186,4/7/17,H,NK,UVA Campus,1,1,1,20,F,Y,Chemical engineering,5,5,6,6,6,6,7,6,5,6,0,NA,1,5.833333333,1
+A187,4/7/17,H,NK,UVA Campus,1,1,1,20,F,Y,Psychology,6,5,7,7,7,6,7,5,5,5,0,NA,1,6,1
+A188,4/7/17,H,NK,UVA Campus,1,1,1,20,F,Y,Biology,6,5,6,7,6,6,7,6,6,5,0,NA,1,6,1
+A189,4/7/17,H,NK,UVA Campus,1,1,1,20,F,Y,Biology,7,6,7,7,7,7,7,6,6,6,0,NA,1,6.666666667,1
+A190,4/7/17,H,NK,UVA Campus,1,1,1,21,F,Y,Biochemistry,7,6,6,7,7,6,7,7,5,5,0,NA,1,6.666666667,1
+A191,4/5/17,L,SC,UVA Campus,1,1,1,19,F,Y,Cognitive science,5,4,6,4,5,5,4,6,6,5,0,NA,1,4.833333333,1
+A192,4/7/17,L,DF,UVA Campus,1,1,1,18,M,Y,Commerce (prospective),7,6,6,6,6,6,5,5,5,3,0,NA,1,5.833333333,1
+A193,4/7/17,L,DF,UVA Campus,1,1,1,20,M,Y,Biochemistry,7,6,6,7,7,7,7,7,6,6,0,NA,1,6.833333333,1
+A194,4/7/17,L,DF,UVA Campus,1,1,1,20,F,Y,English,5,5,6,7,6,6,7,6,5,4,0,NA,1,5.833333333,1
+A195,4/7/17,L,DF,UVA Campus,1,1,1,21,F,Y,Chemistry,5,4,6,6,5,5,7,5,6,6,0,NA,1,5.166666667,1
+A196,4/10/17,L,DF,UVA Campus,1,1,1,18,M,Y,Pre-commerce,6,5,5,4,7,7,6,6,5,4,0,NA,1,6.166666667,1
+A197,4/10/17,L,DF,UVA Campus,1,1,1,20,F,Y,Biology/WGS,7,6,4,6,7,7,7,6,5,4,0,NA,1,6.666666667,1
+A198,4/10/17,L,DF,UVA Campus,1,1,1,21,F,Y,"Sociology, Pre-med",6,6,4,4,6,6,6,5,5,4,0,NA,1,5.833333333,1
+A199,4/10/17,L,DF,UVA Campus,1,1,1,22,F,Y,"Biomedical engineering, Biology",6,6,6,2,5,5,6,5,1,3,0,NA,1,5.5,1
+A200,4/10/17,L,DF,UVA Campus,1,1,1,20,M,Y,Computer science,6,6,5,4,6,5,6,5,6,6,0,NA,1,5.666666667,1
+A201,4/7/17,H,NK,UVA Campus,1,1,1,21,F,Y,Chemistry,6,5,5,6,7,6,6,6,5,5,0,NA,1,6,1
+A202,4/7/17,H,NK,UVA Campus,1,1,1,19,M,Y,Chemical engineering,7,4, , ,7, ,7,7,7,7,0,NA,1,6.4,1
+A203,4/7/17,H,NK,UVA Campus,1,1,1,23,F,Y,Cognitive science,6,4,5,5,6,6,6,5,4,4,0,NA,1,5.5,1
+A204,4/11/17,H,SC,UVA Campus,1,1,1,21,M,Y,MT Sec. Ed-Math,6,6,6,5,7,6,6,6,6,5,0,NA,1,6.166666667,1
+A205,4/11/17,H,SC,UVA Campus,1,1,1,21,F,Y,"Neurology, Psychology",6,6,6,6,6,6,6,6,5,5,0,NA,1,6,1
+A206,4/11/17,H,SC,UVA Campus,1,1,1,20,F,Y,History,5,5,4,3,5,4,5,5,6,5,0,NA,1,4.833333333,1
+A207,4/11/17,H,SC,UVA Campus,1,1,1,21,F,Y,"Spanish, Media studies",6,5,6,7,6,6,7,5,0,4,0,NA,1,5.833333333,1
+A208,4/11/17,H,NK,UVA Campus,1,1,1,21,F,Y,Psychology,6,5,6,6,5,6,6,6,6,5,0,NA,1,5.666666667,1
+A209,4/11/17,H,NK,UVA Campus,1,1,1,22,F,Y,Systems engineering,6,6,7,4,7,7,7,7,5,6,0,NA,1,6.666666667,1
+A210,4/11/17,H,NK,UVA Campus,1,1,1,20,F,Y,Biology,7,6,7,7,7,7,7,7,7,6,0,NA,1,6.833333333,1
+A211,4/10/17,L,DF,UVA Campus,1,1,1,19,F,Y,"Pre-med, Biology",6,5,5,7,6,5,7,6,6,5,0,NA,1,5.833333333,1
+A212,4/12/17,L,DF,UVA Campus,1,1,1,22,F,Y,Kinesiology,6,6,6,7,6,6,6,7,5,6,0,NA,1,6.166666667,1
+A213,4/12/17,L,DF,UVA Campus,1,1,1,19,F,Y,Sociology,6,6,5,6,7,7,7,6,6,5,0,NA,1,6.5,1
+A214,4/12/17,L,DF,UVA Campus,1,1,1,20,F,Y,Sociology,6,5,5,7,6,5,6,6,5,5,0,NA,1,5.666666667,1
+A215,4/12/17,L,DF,UVA Campus,1,1,1,22,M,Y,History,6,7,6,7,7,6,7,6,4,5,0,NA,1,6.5,1
+A216,4/12/17,L,DF,UVA Campus,1,1,1,21,F,Y,Batten school,6,5,2,7,5,4,6,5,3,3,0,NA,1,5.166666667,1
+A217,4/12/17,L,DF,UVA Campus,1,1,1,21,F,Y,Biology,6,7,4,6,7,4,7,7,4,4,0,NA,1,6.333333333,1
+A218,4/12/17,L,DF,UVA Campus,1,1,1,20,F,Y,Biology,6,5,5,5,5,5,6,5,4,5,0,NA,1,5.333333333,1
+A219,4/12/17,L,DF,UVA Campus,1,1,1,20,M,Y,"Foreign affairs, History",7,7,4,6,7,6,7,6,6,6,0,NA,1,6.666666667,1
+A220,4/12/17,L,DF,UVA Campus,1,1,1,21,F,Y,"Art history, Spanish",6,6,6,7,7,7,7,5,6,7,0,NA,1,6.333333333,1
+A221,4/13/17,H,SC,UVA Campus,1,1,1,20,F,Y,Cognitive science: linguistics,5,6,6,7,6,6, ,6,2,6,0,NA,1,5.8,1
+A222,4/13/17,H,SC,UVA Campus,1,1,1,18,F,Y,Psychology,7,5,6,7,7,5,6,6,4,5,0,NA,1,6,1
+A223,4/13/17,H,SC,UVA Campus,1,1,1,18,F,Y,Undecided (global studies and latin american,6,7,6,6,7,6,6,7,6,6,0,NA,1,6.5,1
+A224,4/13/17,H,SC,UVA Campus,1,1,1,22,M,Y,Foreign affairs,5,4,4,5,6,5,7,5,4,4,0,NA,1,5.333333333,1
+A225,4/13/17,H,SC,UVA Campus,1,1,1,21,F,Y,Public policy,6,5,3,7,7,7,7,7,4,4,0,NA,1,6.5,1
+A226,4/14/17,H,NK,UVA Campus,1,1,1,21,F,Y,"Psychology, Cognitive science",6,5,6,6,6,6,6,6,5,6,0,NA,1,5.833333333,1
+A227,4/14/17,H,NK,UVA Campus,1,1,1,18,F,Y,Computer science,6,6, ,7,7,7,7,6,6,6,0,NA,1,6.5,1
+A228,4/14/17,H,NK,UVA Campus,1,1,1,22,F,Y,Psychology,7,7,6,7,7,7,7,6,7,5,0,NA,1,6.833333333,1
+A229,4/14/17,H,NK,UVA Campus,1,1,1,20,F,Y,Biomedical engineering,7,6,6,7,7,7,7,7,4,5,0,NA,1,6.833333333,1
+A230,4/14/17,H,NK,UVA Campus,1,1,1,21,F,Y,Chemical engineering,6,6,6,5,5,5,6,6,5,5,0,NA,1,5.666666667,1
+A231,4/14/17,L,DF,UVA Campus,1,1,1,18,F,Y,Undeclared,7,6,6,6,7,7,7,6,4,4,0,NA,1,6.666666667,1
+A232,4/14/17,L,DF,UVA Campus,1,1,1,20,M,Y,"Chemistry, History",6,7,6,7,7,7,7,6,6,6,0,NA,1,6.666666667,1
+A233,4/14/17,L,DF,UVA Campus,1,1,1,21,F,Y,History and PPL,5,6,5,7,5,5,7,5,6,6,0,NA,1,5.5,1
+A234,4/14/17,L,DF,UVA Campus,1,1,1,20,F,Y,Anthropology,7,5,5,7,7,6,7,7,5,6,0,NA,1,6.5,1
+A235,4/14/17,L,DF,UVA Campus,1,1,1,19,M,Y,Mechanical engineering,7,6,6,7,7,7,7,6,5,5,0,NA,1,6.666666667,1
+A236,4/18/17,L,SC,UVA Campus,1,1,1,22,F,Y,Psychology,7,6,5,6,6,5,6,6,4,4,0,NA,1,6,1
+A237,4/18/17,L,SC,UVA Campus,1,1,1,19,M,Y,American studies,7,7,7,6,7,7,7,7,7,4,0,NA,1,7,1
+A238,4/18/17,L,SC,UVA Campus,1,2,1,21,M,Y,0,7,6,6,7,7,6,7,6,6,5,0,NA,1,6.5,1
+A239,4/18/17,L,SC,UVA Campus,1,1,1,19,F,Y,Chemistry,6,6,6,7,7,7,7,6,5,4,0,NA,1,6.5,1
+A240,4/18/17,L,SC,UVA Campus,1,1,1,21,M,Y,Computer science,6,5,6,5,5,5,6,5,7,6,0,NA,1,5.333333333,1
+A241,4/14/17,H,NK,UVA Campus,1,1,1,21,M,Y,Economics,6,6,6,6,6,6,6,5,6,5,0,NA,1,5.833333333,1
+A242,4/26/17,H,NK,UVA Campus,1,1,1,19,F,Y,Global public health (pre-medical),5,5,5,6,5,5,6,5,5,6,0,NA,1,5.166666667,1
+A243,4/26/17,H,NK,UVA Campus,1,1,1,20,F,Y,Biology,7,7,7,7,7,7,7,7,6,4,0,NA,1,7,1
+A244,4/26/17,H,NK,UVA Campus,1,1,1,21,F,Y,Biology & spanish,7,6,7,7,7,7,7, ,5,4,0,NA,1,6.8,1
+A245,4/26/17,H,NK,UVA Campus,1,1,1,18,F,Y,Computer science,5,5,6,7,5,5,7,5,4,5,0,NA,1,5.333333333,1
+A246,4/26/17,H,NK,UVA Campus,1,1,1,22,F,Y,Biology/WGS,7,6,5,7,7,7,7,6,7,7,0,NA,1,6.666666667,1
+A247,4/26/17,H,DF,UVA Campus,1,1,1,18,F,Y,Computer engineering,5,4,3,3,6,5,7,5,3,5,0,NA,1,5.333333333,1
+A248,4/26/17,H,DF,UVA Campus,1,1,1,19,M,Y,Commerce,7,5,5,7,6,6,7,6,2,3,0,NA,1,6.166666667,1
+A249,4/26/17,H,DF,UVA Campus,1,1,1,21,M,Y,English,4,3,4,5,3,3,4,4,5,4,0,NA,1,3.5,1
+A250,4/26/17,H,DF,UVA Campus,1,1,1,19,F,Y,Commerce,7,5,4,7,7,7,7,7,6,6,0,NA,1,6.666666667,1
+A251,4/27/17,L,SC,UVA Campus,1,1,1,22,F,Y,"CS, Public health",5,4, ,5,4,4,4,3,3,4,0,NA,1,4,1
+A252,4/27/17,L,SC,UVA Campus,1,1,1,21,F,Y,"Foreign affairs, History",5,4,4,4,5,5,6,5,3,2,0,NA,1,5,1
+A253,4/27/17,L,SC,UVA Campus,1,1,1,19,F,Y,Biology,7,6,6,7,7,7,7,6,6,6,0,NA,1,6.666666667,1
+A254,4/27/17,L,SC,UVA Campus,1,1,1,19,F,Y,Environmental science,6,6,5,7,7,7,7,6,7,7,0,NA,1,6.5,1
+A255,4/27/17,L,SC,UVA Campus,1,1,1,18,F,Y,Biology,7,7,7,7,6,6,7,7,6,5,0,NA,1,6.666666667,1
+A256,4/28/17,L,TT,UVA Campus,1,1,1,19,F,Y,Undecided,4,5,5,6,6,5,5,5,4,5,0,NA,1,5,1
+A257,4/28/17,L,TT,UVA Campus,1,1,1,26,F,Y,PhD in Educational Psychology,7,7,7,7,7,7,7,7,5,5,0,NA,1,7,1
+A258,4/28/17,L,TT,UVA Campus,1,1,1,21,F,Y,Biology,5,4,4,5,4,4,5,4,6,4,0,NA,1,4.333333333,1
+A259,4/28/17,L,TT,UVA Campus,1,1,1,19,F,Y,Biology/Psychology,5,4,6,6,6,6,6,5,5,6,0,NA,1,5.333333333,1
+A260,4/28/17,L,DF,UVA Campus,0,1,1,18,F,Y,Environmental science,6,6,6,6,6,7,7,7,5,5,0,NA,2,6.5,1
+A261,4/26/17,H,DF,UVA Campus,1,1,1,19,M,Y,Economics/Business,5,4,5,6,5,5,5,5,4,4,0,NA,2,4.833333333,1
+A262,4/26/17,H,DF,UVA Campus,1,1,1,20,F,Y,Anthropology,7,7,5,6,7,7,7,7,5,5,0,NA,2,7,1
+A263,4/26/17,H,DF,UVA Campus,1,1,1,20,F,Y,Cognitive Science,7,6,6,7,7,7,7,6,7,5,0,NA,2,6.666666667,1
+A264,4/26/17,H,DF,UVA Campus,1,1,1,21,F,Y,Creative writing/media studies,6,6,5,6,6,6,7,7,7,6,0,NA,2,6.333333333,1
+A265,4/26/17,H,DF,UVA Campus,1,1,1,22,F,Y,Biology/Psychology,4,6,2,4,3,4,5,4,4,5,0,NA,2,4.333333333,1
+A266,4/26/17,H,DF,UVA Campus,1,1,1,20,F,Y,Kinesiology/Psychology,7,5,6,7,7,7,7,6,6,6,0,NA,2,6.5,1
+A267,5/2/17,H,SC,UVA Campus,0,1,1,20,M,Y,"Economics, Italian",6,6,7,7,7,7,7,5,5,5,0,NA,2,6.333333333,1
+A268,6/3/17,H,LH,UVA Campus,1,1,1,54,F,N,0,6,5,5,5,6,5,7,5,6,7,1,NA,2,5.666666667,0
+A269,5/20/17,H,AG,UVA Campus,1,2,1,27,F,Y,Visual arts,5,6,5,7,6,6,6,5,7,6,1,Pa,2,5.666666667,0
+A270,5/20/17,H,AG,UVA Campus,1,1,1,53,F,N,Director of community service,6,5,5,6,6,6,7,5,7,7,0,NA,2,5.833333333,1
+A271,4/28/17,L,DF,UVA Campus,0,1,1,22,F,Y,English,6,6,5,6,6,6,7,6,4,5,0,NA,2,6.166666667,1
+A272,4/28/17,L,DF,UVA Campus,0,1,1,22,F,Y,Psychology,6,6,7,6,6,7,7,7,7,6,0,NA,2,6.5,1
+A273,4/28/17,L,DF,UVA Campus,0,1,1,20,F,Y,"History, Education",6,5,6,6,7,6,6,6,6,5,0,NA,2,6,1
+A274,4/28/17,L,DF,UVA Campus,0,1,1,18,F,Y,Pre-commerce,6,6,6,7,6,6,6,6,7,6,0,NA,2,6,1
+A275,4/28/17,L,DF,UVA Campus,0,1,1,20,M,Y,Biology,7,5,7,7,7,7,7,7,7,6,0,NA,2,6.666666667,1
+A276,4/28/17,L,DF,UVA Campus,0,1,1,19,M,Y,Statistics,5,5,5,6,6,6,7,5,6,5,0,NA,2,5.666666667,1
+A277,4/28/17,L,DF,UVA Campus,0,1,1,20,F,Y,"Philosophy, Government",6,6,6,6,6,6,6,5,5,5,0,NA,2,5.833333333,1
+A278,4/28/17,L,DF,UVA Campus,0,1,1,21,M,Y,History,6,6,5,7,7,6,7,6,7,7,0,NA,2,6.333333333,1
+A279,4/28/17,L,DF,UVA Campus,0,1,1,21,M,Y,Spanish,7,6,5,5,7,6,7,6,6,6,0,NA,2,6.5,1
+A280,6/3/17,L,LH,City Marke,1,1,1,51,F,N,Food services,6,5,6,7,7,7,6,7,5,6,0,NA,2,6.333333333,1
+A281,5/20/17,H,AG,City Marke,1,1,1,26,F,Y,Developmental psychology,5,5,5,6,4,5,6,5,5,6,0,NA,2,5,1
+A282,5/20/17,H,AG,City Marke,1,1,1,55,F,N,Teacher,7,4,4,7,7,7,7,6,7,6,0,NA,2,6.333333333,1
+A283,5/20/17,H,AG,City Marke,1,1,1,32,F,N,"Physics, Military",6,5,6,7,6,6,7,6,3,4,0,NA,2,6,1
+A284,5/20/17,H,AG,City Marke,1,1,1,31,M,N,Math research,6,6,4,4,5,6,6,4,6,5,1,NA,2,5.5,0
+A285,5/20/17,H,AG,City Marke,1,1,1,55,F,N,0,5,6,6,6,5,6,6,5,4,4,0,NA,2,5.5,1
+A286,5/20/17,H,AG,City Marke,1,1,0,0,0,0,0, , , , , , , , ,0,0,1,Pa,2, ,0
+A287,5/20/17,H,AG,City Marke,1,2,1,24,F,Y,Medical school,6,6,6,6,6,6,7,6,5,6,0,NA,2,6.166666667,1
+A288,5/20/17,H,AG,City Marke,1,1,1,31,M,N,UVA,6,5,5,5,6,5,7,6,4,4,0,NA,2,5.833333333,1
+A289,5/20/17,H,AG,City Marke,1,1,1,19,F,Y,Surgical technology,7,7,5,7,7,6,7,6,5,6,1,Pa,2,6.666666667,0
+A290,6/3/17,H,LH,City Marke,1,1,1,52,M,N,Homebuilding,5,6,6,7,5,4,6,5,4,5,0,NA,2,5.166666667,1
+A291,5/20/17,L,AG,City Marke,1,1,1,26,M,N,Resident physician,6,7,7,7,7,7,7,6,7,7,0,NA,2,6.666666667,1
+A292,5/20/17,L,AG,City Marke,1,2,1,65,M,N,Physician,6,6,5,4,6,6,6,6,7,6,1,NA,2,6,0
+A293,5/20/20,L,AG,City Marke,1,1,1,27,F,Y,M.D.,6,4,6,4,5,5,6,5,6,4,0,NA,2,5.166666667,1
+A294,5/20/17,L,AG,City Marke,1,1,1,61,F,N,"Retired, telecommunications",5,5,6,7,5,5,4,5,6,6,0,NA,2,4.833333333,1
+A295,5/20/17,L,AG,City Marke,1,1,1,46,F,N,Family physician,5,6,6,7,7,6,6,5,6,5,0,NA,2,5.833333333,1
+A296,5/20/17,L,AG,City Marke,1,1,1,52,F,N,Massage therapist,4,5,6,7,4,5,5,5,5,6,0,NA,2,4.666666667,1
+A297,5/20/17,L,AG,City Marke,1,1,1,32,F,N,Research associate,6,6,5,6,5,5,6,5,7,7,0,NA,2,5.5,1
+A298,5/20/17,L,AG,City Marke,1,1,1,65,M,N,"Data scientist, ""recovering academic""",6,6,7, ,7,7,7, ,1,6,0,Pa,2,6.6,1
+A299,5/20/17,L,AG,City Marke,1,1,1,28,M,N,Server,7,6,6,3,4,6,7,6,7,7,0,NA,2,6,1
+A300,5/20/17,L,AG,City Marke,1,1,1,73,M,N,M.D.,7,6,7,7,7,7,7,7,5,6,0,NA,2,6.833333333,1
+A301,5/20/17,H,AG,City Marke,1,1,1,65,F,N,"Professor, Integrated science", , , , , , , , ,5,3,1,Pa,2, ,0
+A302,5/20/17,H,AG,City Marke,1,2,1,19,M,Y,Mathematics,7,5,3,5,7,7,7,6,7,7,0,NA,2,6.5,1
+A303,5/20/17,H,AG,City Marke,1,1,1,31,F,N,Research statistician,6,5, ,5,7,5,6, ,7,7,0,Pa,2,5.8,1
+A304,5/20/17,H,AG,City Marke,1,1,1,29,M,N,"Tutor, musician",6,5,6,7,5,5,7,5,7,4,1,Pa,2,5.5,0
+A305,5/20/17,H,AG,City Marke,1,1,1,41,M,N,Technology support,6,6,7,6,6,6,6,6,5,6,0,NA,2,6,1
+A306,5/20/17,H,AG,City Marke,1,1,1,44,F,N,Occupational therapist,6,6,6,6,6,6,7,6,5,5,0,NA,2,6.166666667,1
+A307,5/20/17,H,AG,City Marke,1,1,1,29,M,N,Electrician,6,6,6,4,5,7,7,6,4,5,0,NA,2,6.166666667,1
+A308,6/3/17,H,LH,City Marke,1,1,1,23,F,Y,"Student, Radiology Technician",5,5,7,7,7,5,7,5,6,6,0,NA,2,5.666666667,1
+A309,6/3/17,H,LH,City Marke,1,1,1,29,F,N,"Lead laboratory technologist, Blood Bank",6,5,6,6,6,5,6,6,5,6,0,NA,2,5.666666667,1
+A310,6/3/17,H,LH,City Marke,1,1,1,26,M,N,Clinical lab scientist,6,5,5,6,6,6,7,6,7,6,0,NA,2,6,1
+A311,5/20/17,L,AG,City Marke,1,1,1,21,M,Y,Nuclear engineering,6,4,6,7,5,5,7,5,4,6,0,NA,2,5.333333333,1
+A312,5/20/17,L,AG,City Marke,1,1,1,25,M,Y,Medical school,6,6,6,7,6,6,7,6,5,4,0,NA,2,6.166666667,1
+A313,5/20/17,L,AG,City Marke,1,1,1,29,F,N,Dog trainer,7,5,6,7,7,7,7,5,7,5,1,Pa,2,6.333333333,0
+A314,5/20/17,L,AG,City Marke,1,1,1,50,F,N,Mathematics,5,6,6,5,5,5,5,5,5,4,0,NA,2,5.166666667,1
+A315,5/20/17,L,AG,City Marke,1,1,1,27,F,Y,Child psychology Ph.D.,6,5,6,6,6,6,5,5,5,5,0,NA,2,5.5,1
+A316,5/20/17,L,AG,City Marke,1,1,1,29,F,N,Analytical consultant,5,5,4,3,2,4,2,4,4,4,0,NA,2,3.666666667,1
+A317,5/20/17,L,AG,City Marke,1,1,1,24,M,Y,Biomedical engineering,6,5,6,6,7,5,6,5,5,6,0,NA,2,5.666666667,1
+A318,5/20/17,L,AG,City Marke,1,1,1,47,F,N,Professor of education,7,7,4,4,7,7,7,5,4,5,0,NA,2,6.666666667,1
+A319,6/9/17,L,LH,Charlottes,1,1,1,25,F,N,Model,6,6,4,7,7,7,6,6,2,3,0,NA,2,6.333333333,1
+A320,6/9/17,L,LH,Charlottes,1,1,1,25,F,N,HR Recruitment (UVA),3,4,4,5,2,3,2,2,6,6,0,NA,2,2.666666667,1
+A321,6/3/17,H,LH,City Marke,1,1,1,70,M,N,Engineering,5,4,4,5,5,5,6,5,4,4,1,NA,2,5,0
+A322,6/3/17,H,LH,City Marke,1,1,1,47,M,N,"""Professional""",6, ,5,6,6,5,6,5,6,5,0,NA,2,5.6,1
+A323,6/3/17,H,LH,City Marke,1,1,1,22,F,Y,Medical student,6,6,6,7,7,6,7,6,5,5,0,NA,2,6.333333333,1
+A324,6/3/17,H,LH,City Marke,1,1,1,22,F,N,Computer science,6,7,5,7,7,7,7,6,7,7,0,NA,2,6.666666667,1
+A325,6/3/17,H,LH,City Marke,1,1,1,24,F,N,Barista,6,6,6,7,7,6,7,6,6,5,0,NA,2,6.333333333,1
+A326,6/3/17,H,LH,City Marke,1,1,1,60,F,N,0,6,4,6,6,6,5,5,5,5,4,0,NA,2,5.166666667,1
+A327,6/3/17,H,LH,City Marke,1,1,1,61,M,N,0,6,5,6,6,7,7,7,5,7,6,0,NA,2,6.166666667,1
+A328,6/3/17,H,LH,City Marke,1,1,1,65,M,N,Construction manager,7,6,6,6,7,6,7,6,6,5,1,NA,2,6.5,0
+A329,6/3/17,H,LH,City Marke,1,1,1,68,F,N,"Artist (""Was psych and art major"")",2,2,2,2,4,2,4,2,0,5,0,Pa,2,2.666666667,1
+A330,6/3/17,H,LH,City Marke,1,1,1,26,F,Y,Ph.D. in English,5,2,5,2,3,4,2,2,6,4,0,NA,2,3,1
+A331,6/3/17,L,LH,City Marke,1,1,1,20,M,Y,Student, ,6,5,6,6,6,7,4,7,6,0,NA,2,5.8,1
+A332,6/3/17,L,LH,City Marke,1,1,1,0,0,0,0,4,6,4,4,4,5,7,4,0,0,0,Pa,2,5,1
+A333,6/3/17,L,LH,City Marke,1,1,1,33,F,N,Physician,7,6,6,6,7, ,7,6,5,4,0,NA,2,6.6,1
+A334,6/3/17,L,LH,City Marke,1,1,1,37,0,N,Assistant professor,4,5, ,4,4,5,5,4,7,7,0,Pa,2,4.5,1
+A335,6/3/17,L,LH,City Marke,1,1,1,36,F,N,0,6,5,5,6,7,5,5,5,7,7,0,NA,2,5.5,1
+A336,6/3/17,L,LH,City Marke,1,1,1,18,F,Y,UVA Student,5,5,4,6,6,6,6,6,5,3,0,NA,2,5.666666667,1
+A337,6/3/17,L,LH,City Marke,1,1,1,31,F,N,Athletic trainer,5,5,6,4,5,5,5,4,7,7,0,NA,2,4.833333333,1
+A338,6/3/17,L,LH,City Marke,1,1,1,56,M,N,Software,4,4,4,5,5,4,5,4,1,5,0,Pa,2,4.333333333,1
+A339,6/3/17,L,LH,City Marke,1,1,1,62,F,N,0,6,5,6,6,6,6,6,5,6,2,0,NA,2,5.666666667,1
+A340,6/3/17,L,LH,City Marke,1,1,1,19,M,Y,AFE and ME,4,3,6,6,2,3,3,3,7,7,0,Pa,2,3,1
+A341,6/3/17,H,LH,City Marke,1,1,1,42,F,N,"Music industry, former academic",7,5,5,7,7,7,7,5,6,4,0,Pa,2,6.333333333,1
+A342,6/3/17,H,LH,City Marke,1,1,1,24,F,Y,Student,6,6,4,6,6,6,6,4,6,5,1,NA,2,5.666666667,0
+A343,6/3/17,H,LH,City Marke,1,1,1,27,F,Y,School of medicine,7,5,7,7,7,7,7,6,6,6,1,NA,2,6.5,0
+A344,6/3/17,H,LH,City Marke,1,1,1,30,F,N,Project manager (IT),5,6,5,6,5,6,7,5,7,5,0,NA,2,5.666666667,1
+A345,6/3/17,H,LH,City Marke,1,1,1,33,M,N,Software engineer,5,6,7,6,6,6,7,6,5,5,0,NA,2,6,1
+A346,6/3/17,H,LH,City Marke,1,1,1,27,M,N,Music therapist,6,6,5,7,5,6,6,6,6,6,0,NA,2,5.833333333,1
+A347,6/3/17,H,LH,City Marke,1,1,1,27,F,N,School counselor,5,5,6,6,6,5,6,5,7,6,0,NA,2,5.333333333,1
+A348,6/3/17,H,LH,City Marke,1,1,1,23,F,Y,Public health,6,6,4,6,7,6,6,7,6,6,0,NA,2,6.333333333,1
+A349,6/3/17,H,LH,City Marke,1,1,1,27,M,N,Computer science,5,5,6,4,5,5,5,4,6,5,1,NA,2,4.833333333,0
+A350,6/3/17,H,LH,City Marke,1,1,1,28,F,N,Teacher,6,6,5,6,6,6,7,6,6,5,0,NA,2,6.166666667,1
+A351,6/3/17,L,LH,City Marke,1,1,1,42,F,Y,Registered Nurse,7,5, ,4,4,5,7, ,7,4,0,Pa,2,5.6,1
+A352,6/3/17,L,LH,City Marke,1,1,1,35,F,N,Social services,6,6,6,7,6,6,6,6,5,5,0,NA,2,6,1
+A353,6/3/17,L,LH,City Marke,1,1,1,34,F,N,"""Just graduated""",6,4,4,7,5,6,5,5,7,6,0,NA,2,5.166666667,1
+A354,6/3/17,L,LH,City Marke,1,1,1,57,F,N,0,7,6,6,7,6,6,7,6,7,7,0,NA,2,6.333333333,1
+A355,6/3/17,L,LH,City Marke,1,1,1,20,F,Y,Undecided,5,6,6,5,5,5,6,5,5,5,0,NA,2,5.333333333,1
+A356,6/3/17,L,LH,City Marke,1,1,1,19,F,Y,"Political philosophy, policy & law",6,6,6,6,7,7,7,6,6,6,0,NA,2,6.5,1
+A357,6/3/17,L,LH,City Marke,1,1,1,25,F,N,Teacher,5,4,4,3,3,5,4,4,6,5,0,NA,2,4.166666667,1
+A358,6/13/17,L,LH,City Marke,1,1,1,41,F,N,0,5,6,5,6,5,5,5,5,7,7,0,NA,2,5.166666667,1
+A359,6/3/17,L,LH,City Marke,1,1,1,51,F,N,Higher education administrator,6,4,4,5,3,4,6,4,6,3,0,NA,2,4.5,1
+A360,6/3/17,L,LH,City Marke,1,1,1,29,F,N,Mental health policy researcher,7,7,6,7,7,7,7,6,7,7,0,NA,2,6.833333333,1
+A361,6/3/17,H,LH,City Marke,1,2,1,24,M,N,Server,6,6,7,7,7,7,5,6,5,6,1,NA,2,6.166666667,0
+A362,6/3/17,H,LH,City Marke,1,1,1,23,F,N,Cook,6,5,6,5,6,6,5,6,6,3,0,NA,2,5.666666667,1
+A363,6/8/17,H,LH,Stonefield,1,1,1,64,F,N,Retired horticulturist,4,3,3,6,2,4,2,2,4,4,0,NA,2,2.833333333,1
+A364,6/8/17,H,LH,Stonefield,1,1,1,51,M,N,0,6,6,7,6,6,6,7,6,7,6,0,NA,2,6.166666667,1
+A365,6/8/17,H,LH,Stonefield,1,1,1,35,F,N,Personal trainer,6,6,4,6,6,6,7,6,5,5,0,NA,2,6.166666667,1
+A366,6/8/17,H,LH,Stonefield,1,1,1,28,F,N,0,7,5,4, ,7,6,7,6,7,7,0,NA,2,6.333333333,1
+A367,6/8/17,H,LH,Stonefield,1,1,1,44,F,N,Lawyer,6,5,6,6,6,6,7,4,4,6,0,NA,2,5.666666667,1
+A368,6/8/17,H,LH,Stonefield,1,1,1,21,F,Y,Bioengineering,7,6,7,7,7,6,7,6,7,5,0,NA,2,6.5,1
+A369,6/8/17,H,LH,Stonefield,2,2,1,39,F,N,Business owner/designer,7,7,7,7,7,7,7,7,7,6,0,NA,2,7,1
+A370,6/8/17,H,LH,Stonefield,1,1,1,55,F,N,Business owner,4,4,7,7,2,4,5,4,7,5,0,NA,2,3.833333333,1
+A371,6/3/17,L,LH,City Marke,1,1,1,29,M,N,Post-Doc,6,6,6,7,6,7,6,5,3,4,0,NA,2,6,1
+A372,6/3/17,L,LH,City Marke,1,1,1,33,M,Y,Medicine,7,6,6,7,7,7,7,5,6,7,0,NA,2,6.5,1
+A373,6/3/17,L,LH,City Marke,1,2,1,18,M,Y,Engineering,7,7,5,6,6,7,7,6,6,6,0,NA,2,6.666666667,1
+A374,6/3/17,L,LH,City Marke,1,1,1,19,F,Y,"Geography, urban planning",7,5,6,7,7,6,7,4,6,6,0,NA,2,6,1
+A375,6/3/17,L,LH,City Marke,1,1,1,20,M,Y,Biomedical engineering,6,6,7,7,6,6,7,6,5,6,0,NA,2,6.166666667,1
+A376,6/3/17,L,LH,City Marke,1,1,1,27,M,N,Chemical engineer,6,7,6,5,5,6,6,6,4,4,0,NA,2,6,1
+A377,6/3/17,L,LH,City Marke,1,1,1,23,F,Y,Medical student,6,5,5,5,5,5,7,5,6,5,0,NA,2,5.5,1
+A378,6/3/17,L,LH,City Marke,1,1,1,23,M,Y,Mechanical engineering,6,7,5,5,7,7,7,5,7,3,0,NA,2,6.5,1
+A379,6/3/17,L,LH,City Marke,1,2,1,29,M,N,Business,7,7,7,5,7,6,7,6,7,5,0,NA,2,6.666666667,1
+A380,6/3/17,L,LH,City Marke,1,1,1,54,F,N,Customer care representative,7,7,5,6,7,6,6,6,6,6,0,NA,2,6.5,1
+A381,6/8/17,H,LH,Stonefield,1,1,1,24,F,Y,French doctoral student,4,6,4,4,3,3,4,4,6,5,0,NA,2,4,1
+A382,6/8/17,H,LH,Stonefield,1,1,1,28,F,N,Communications director,5,6,6,4,4,4,6,5,4,3,0,NA,2,5,1
+A383,6/8/17,H,LH,Stonefield,0,2,1,32,F,N,0,7,6,7,7,6,7,7,6,7,6,1,NA,2,6.5,0
+A384,6/8/17,H,LH,Stonefield,1,1,1,52,F,N,Counselor,6,6,4,6,5,6,6,5,5,4,0,NA,2,5.666666667,1
+A385,6/8/17,H,LH,Stonefield,1,1,1,29,F,N,Physician,6,6,5,5,7,6,6,6,6,6,0,NA,2,6.166666667,1
+A386,6/8/17,H,LH,Stonefield,1,1,1,23,F,N,Teacher,6,6,6,7,7,7,6,7,7,7,0,NA,2,6.5,1
+A387,6/8/17,H,LH,Stonefield,1,1,1,26,F,N,Athletic trainer,6,6,5,6,7,7,7,6,7,6,0,NA,2,6.5,1
+A388,6/8/17,H,LH,Stonefield,1,1,1,23,F,N,RN,6,6,6,7,3,5,6,6,5,5,0,NA,2,5.333333333,1
+A389,6/8/17,H,LH,Stonefield,1,1,1,28,F,N,Team lead at wegmans,6,6,6,5,7,7,7,7,6,5,0,NA,2,6.666666667,1
+A390,6/8/17,H,LH,Stonefield,1,1,1,27,M,N,Luthier,6,6,7,5,5,5,6,4,7,7,0,NA,2,5.333333333,1
+A391,6/8/17,L,LH,Stonefield,1,1,1,40,F,N,Archaeologist,5,6,6,6,6,6,6,6,7,6,0,NA,2,5.833333333,1
+A392,6/8/17,L,LH,Stonefield,1,1,1,65,F,N,Retired,7,5,6,6,7,6,7,6,7,7,0,NA,2,6.333333333,1
+A393,6/8/17,L,LH,Stonefield,1,1,1,19,M,Y,Biology; maybe psychology,6,6,6,4,6,5,6,4,7,5,0,NA,2,5.5,1
+A394,6/8/17,L,LH,Stonefield,1,1,1,17,F,Y,Human science (starting fall of 2017),6,7,6,4,6,6,7,6,7,6,1,Ex,2,6.333333333,0
+A395,6/8/17,L,LH,Stonefield,1,1,1,41,M,N,Lawyer (+ part-time instructor),4,4,6,6,4,3,4,3,6,6,0,NA,2,3.666666667,1
+A396,6/8/17,L,LH,Stonefield,1,1,1,24,F,N,Marketing director,6,5,5,7,6,5,7,5,6,5,0,NA,2,5.666666667,1
+A397,6/8/17,L,LH,Stonefield,1,2,1,45,F,N,Teacher,6,6,5,7,6,6,6,5,7,7,1,Ex,2,5.833333333,0
+A398,6/8/17,L,LH,Stonefield,1,1,1,26,M,Y,"Graduate student, aerospace",7,7,6,7,5,6,7,6,6,6,0,NA,2,6.333333333,1
+A399,6/8/17,L,LH,Stonefield,1,1,1,67,M,N,Dentist,7,7, ,6,7,7,7, ,1,4,0,Pa,2,7,1
+A400,6/8/17,L,LH,Stonefield,1,1,1,55,M,N,Remodeling construction,6,5,6,6,7,6,6,5,6,6,0,NA,2,5.833333333,1
+A401,6/9/17,H,LH,Charlottes,1,1,1,23,F,N,Environmental non-profit,6,6,5,7,5,5,6,6,4,6,0,NA,2,5.666666667,1
+A402,6/9/17,H,LH,Charlottes,1,1,1,24,M,N,Linguist,6,5,3,4,5,5,6,5,4,3,0,NA,2,5.333333333,1
+A403,6/9/17,H,LH,Charlottes,1,1,1,28,F,N,Artist,6,6,6,7,7,6,7,6,6,6,0,NA,2,6.333333333,1
+A404,6/9/17,H,LH,Charlottes,1,1,1,23,F,Y,"Biology major, psychology minor",7,6,6,7,7,7,7,7,7,7,0,NA,2,6.833333333,1
+A405,6/9/17,H,LH,Charlottes,1,1,1,63,F,N,Professor,6,6,6,6,7,6,7,6,7,3,0,NA,2,6.333333333,1
+A406,6/9/17,H,LH,Charlottes,1,1,1,18,F,Y,Makeup artist,5,6,6,6,7,6,7,6,5,5,0,NA,2,6.166666667,1
+A407,6/9/17,H,LH,Charlottes,1,1,1,33,F,N,0,5,5,5,5,5,5,5,5,5,5,0,NA,2,5,1
+A408,6/9/17,H,LH,Charlottes,1,1,1,26,F,Y,Environmental health,6,5,6,6,7,6,7,5,6,5,0,NA,2,6,1
+A409,6/9/17,H,LH,Charlottes,1,2,1,33,M,N,Sales,5,5,5,4,5,5,5,5,6,5,0,NA,2,5,1
+A410,6/9/17,H,LH,Charlottes,1,1,1,41,F,N,Archivist/librarian,6,7,5,7,6,6,7,5,6,6,0,NA,2,6.166666667,1
+A411,6/8/17,L,LH,Stonefield,1,1,1,34,F,N,Physician,7,7,7,7,7,7,7,7,6,6,0,NA,2,7,1
+A412,6/8/17,L,LH,Stonefield,1,1,1,40,F,Y,Special education/teacher,6,5,5,5,6,5,5,5,6,6,1,Ex,2,5.333333333,0
+A413,6/8/17,L,LH,Stonefield,1,1,1,63,F,N,Retail Sales,5,5,5,5,6,5,5,4,7,5,0,NA,2,5,1
+A414,6/8/17,L,LH,Stonefield,1,1,1,65,M,N,Business owner,6,6,6,7,7,7,7,6,7,7,0,NA,2,6.5,1
+A415,6/8/17,L,LH,Stonefield,1,1,1,32,M,N,Accountant,7,6,5,7,7,7,7,6,4,5,0,NA,2,6.666666667,1
+A416,6/9/17,L,LH,Charlottes,1,1,1,21,F,Y,Cognitive science,5,7,3,4,7,5,7,5,1,3,0,NA,2,6,1
+A417,6/9/17,L,LH,Charlottes,1,1,1,21,F,N,"Asian studies, BA",7,5,5,7,7,6,5,7,5,4,0,NA,2,6.166666667,1
+A418,6/9/17,L,LH,Charlottes,1,1,1,30,M,Y,"History, political science, science/legal",7,4,7,7,5,6,7,5,7,6,0,NA,2,5.666666667,1
+A419,6/9/17,L,LH,Charlottes,1,1,1,32,F,N,0,6,6,5,5,6,5,5,5,7,6,0,NA,2,5.5,1
+A420,6/9/17,L,LH,Charlottes,1,1,1,51,F,Y,Teacher,5,5,6,5,7,5,5,5,7,2,0,NA,2,5.333333333,1
+A421,6/9/17,H,LH,Charlottes,1,1,1,43,M,N,0,5,3,1,6,5,4,5,5,6,6,0,NA,2,4.5,1
+A422,6/9/17,H,LH,Charlottes,1,1,1,22,F,N,Journalism,6,5,6,6,7,7,7,4,2,3,0,NA,2,6,1
+A423,6/9/17,H,LH,Charlottes,1,2,1,41,F,N,Physical therapist,5,5,7,5,7,6,6,5,6,6,0,Pa,2,5.666666667,1
+A424,6/9/17,H,LH,Charlottes,1,2,1,23,F,N,Operations manager charlottesville opera,4,3,3,4,5,5,5,4,6,5,0,NA,2,4.333333333,1
+A425,6/9/17,H,LH,Charlottes,1,1,1,25,F,Y,Higher education,5,6,6,6,3,5,5,4,6,6,1,Ex,2,4.666666667,0
+A426,6/9/17,H,LH,Charlottes,1,1,1,27,M,N,"Associate account manager, search engine opti",5,5,6,6,4,5,6,5,5,5,0,NA,2,5,1
+A427,6/9/17,H,LH,Charlottes,1,1,1,24,F,N,Police department,5,6,6,6,5,6,5,5,7,7,0,NA,2,5.333333333,1
+A428,6/9/17,H,LH,Charlottes,1,1,1,23,M,N,Naval officer,5,5,5,6,7,5,6,5,4,5,0,NA,2,5.5,1
+A429,6/9/17,H,LH,Charlottes,1,1,1,52,F,N,Education,5, , ,5,5,5,6,5,6,5,0,Po,2,5.2,1
+A430,6/10/17,H,LH,Charlottes,1,2,1,26,M,N,Designer,7,5,6,6,7,7,7,5,5,5,1,Ex,2,6.333333333,0
+A431,6/10/17,L,LH,Charlottes,1,1,1,22,F,Y,Human biology,6,6,5,6,7,6,6,5,5,4,0,NA,2,6,1
+A432,6/10/17,L,LH,Charlottes,1,1,1,23,F,N,Neurophysiologist,6,6,5,7,7,7,7,6,6,5,0,NA,2,6.5,1
+A433,6/10/17,L,LH,Charlottes,1,1,1,27,0,N,Graphic designer,5,6,5,5,4,4,5,4,5,5,0,NA,2,4.666666667,1
+A434,6/10/17,L,LH,Charlottes,1,1,1,43,F,N,Nurse practitioner,6,6,6,5,7,7,7,6,7,5,0,NA,2,6.5,1
+A435,6/10/17,L,LH,Charlottes,1,1,1,24,F,Y,Graduate student,3,4,4,3,3,4,5,3,5,5,0,Pa,2,3.666666667,1
+A436,6/10/17,L,LH,Charlottes,1,1,1,27,M,N,Marketing analyst,6,5,4,4,6,5,6,5,5,7,0,NA,2,5.5,1
+A437,6/10/17,L,LH,Charlottes,1,1,1,26,F,N,0,7,5,6,5,7,6,6,5,7,4,0,Pa,2,6,1
+A438,6/10/17,L,LH,Charlottes,1,1,1,22,F,Y,Nursing,6,6,5,7,7,6,6,7,7,5,0,NA,2,6.333333333,1
+A439,6/15/17,L,LH,Stonefield,1,1,1,29,M,Y,Agriculture/Geography,6,5,7,7,5,6,7,6,7,6,0,NA,2,5.833333333,1
+A440,6/10/17,L,LH,Charlottes,1,2,1,32,M,N,Consultant,5,3,6,2,4,4,4,3,6,6,0,NA,2,3.833333333,1
+A441,6/10/17,H,LH,Charlottes,1,1,1,45,M,N,"MBA/MS/OTRK; Occupational therapist, therapy",5,2,6,4,3,3,3,2,7,7,0,Pa,2,3,1
+A442,6/10/17,H,LH,Charlottes,1,2,1,45,M,N,Consultant,4,5,3,2,4,3,4,4,6,5,0,NA,2,4,1
+A443,6/10/17,H,LH,Charlottes,1,1,1,30,M,N,Astrophysics,5,4,6,5,6,6,7,5,7,5,0,NA,2,5.5,1
+A444,6/10/17,H,LH,Charlottes,1,1,1,41,F,N,0,5,6,6,6,6,6,7,6,5,4,0,NA,2,6,1
+A445,6/10/17,H,LH,Charlottes,1,1,1,51,F,N,Teacher,5,3,5,3,4,4,5,4,6,5,0,NA,2,4.166666667,1
+A446,6/10/17,H,LH,Charlottes,1,1,1,26,F,N,Pre-school teacher,6,5,5,7,6,7,7,6,7,6,0,NA,2,6.166666667,1
+A447,6/10/17,H,LH,Charlottes,1,2,1,32,M,N,Security consultant,5,4,6,6,6,5,6,4,1,5,0,NA,2,5,1
+A448,6/10/17,H,LH,Charlottes,1,1,1,20,M,Y,Archeology & environmental sciences,5,6,4,6,3,5,5,5,6,6,0,NA,2,4.833333333,1
+A449,6/10/17,H,LH,Charlottes,1,1,1,28,F,Y,Ph.D. Student Engineering,5,4,5,7,6,4,5,5,7,4,0,Pa,2,4.833333333,1
+A450,6/11/17,H,LH,Charlottes,1,1,1,27,F,N,Registered nurse,6,6,6,7,6,6,7,6,7,7,0,NA,2,6.166666667,1
+A451,6/10/17,L,LH,Charlottes,1,1,1,32,M,N,Engineer,7,6,5,5,6,6,7,6,6,6,0,NA,2,6.333333333,1
+A452,6/10/17,L,LH,Charlottes,1,1,1,52,M,N,Teacher,4, , , ,5,4,4, ,7,1,0,Pa,2,4.25,1
+A453,6/10/17,L,LH,Charlottes,1,1,1,19,F,Y,Biology,4,4,5,4,4,4,4,4,7,5,0,NA,2,4,1
+A454,6/10/17,L,LH,Charlottes,1,1,1,21,F,N,US Navy,6,6,5,6,6,6,7,6,7,5,0,NA,2,6.166666667,1
+A455,6/10/17,L,LH,Charlottes,1,1,1,22,F,N,Nursing,6,6,6,7,6,6,7,6,6,6,0,NA,2,6.166666667,1
+A456,6/10/17,L,LH,Charlottes,1,1,1,47,M,N,Fire marshal,4,5,5,4,3,4,4,4,6,5,0,NA,2,4,1
+A457,6/10/17,L,LH,Charlottes,1,1,1,27,F,Y,Psychiatric nurse practitioner,7,6,5,6,7,7,7,6,7,5,0,NA,2,6.666666667,1
+A458,6/10/17,L,LH,Charlottes,1,2,1,57,F,N,Education,5,5,5,5,6,5,6,4,5,4,0,Pa,2,5.166666667,1
+A459,6/10/17,L,LH,Charlottes,1,1,1,56,F,Y,Executive director of non-profit,5,6,5,7,7,7,7,6,7,0,0,NA,2,6.333333333,1
+A460,6/10/17,L,LH,Charlottes,1,2,1,51,F,N,RN,4,4,4,4,4,4,4,4,7,1,0,Pa,2,4,1
+A461,6/10/17,H,LH,Charlottes,1,2,1,39,M,N,Softward developer,4,3,6,5,6,5,4,4,3,5,0,NA,2,4.333333333,1
+A462,6/10/17,H,LH,Charlottes,1,1,1,19,M,Y,Physics,7,6,6,7,7,6,7,5,4,6,0,NA,2,6.333333333,1
+A463,6/10/17,H,LH,Charlottes,1,1,1,33,F,N,Behavior analyst,7,6,7,7,7,7,7,6,7,4,0,Pa,2,6.666666667,1
+A464,6/10/17,H,LH,Charlottes,1,1,1,54,F,N,Educational consultant,6, , , ,6,6,6, ,0,7,0,Pa,2,6,1
+A465,6/10/17,H,LH,Charlottes,1,1,1,28,M,Y,Ph.D. student,4,4,4,4,7,6,4,4,7,7,0,NA,2,4.833333333,1
+A466,6/10/17,H,LH,Charlottes,1,1,1,32,F,N,Lab technician (research),6,5,4,4,4,7,7,6,6,5,0,Pa,2,5.833333333,1
+A467,6/10/17,H,LH,Charlottes,1,1,1,37,M,N,Research bioinformaticist,6,6,4,4,6,6,7,5,7,7,1,Ex,2,6,0
+A468,6/10/17,H,LH,Charlottes,1,1,1,34,M,N,Software engineer,7,7,7,7,7,7,7,5,5,5,0,NA,2,6.666666667,1
+A469,6/10/17,H,LH,Charlottes,1,1,1,21,M,Y,History,7,6,6,7,7,6,6,6,4,4,0,NA,2,6.333333333,1
+A470,6/10/17,H,LH,Charlottes,1,1,1,23,F,Y,Medical student,7,6,5,7,7,7,7,7,7,5,0,NA,2,6.833333333,1
+A471,6/10/17,L,LH,Charlottes,1,1,1,45,M,N,0,6,5,5,5,6,6,7,5,4,4,0,NA,2,5.833333333,1
+A472,6/10/17,L,LH,Charlottes,1,1,1,62,F,N,0,6,7,7,7,6,6,7,6,6,6,0,NA,2,6.333333333,1
+A473,6/10/17,L,LH,Charlottes,1,1,1,31,F,Y,Graduate student,6,4,6,6,6,6,6,6,4,4,0,NA,2,5.666666667,1
+A474,6/10/17,L,LH,Charlottes,1,1,1,31,M,N,Mechanical engineering, ,6,4,3,5,5,4,4,6,6,0,NA,2,4.8,1
+A475,6/10/17,L,LH,Charlottes,1,1,1,36,M,N,0,7,5,6,6,7,6,7,6,6,6,0,NA,2,6.333333333,1
+A476,6/10/17,L,LH,Charlottes,1,1,1,34,F,N,0,5,5,6,4,4,5,7,5,6,5,0,NA,2,5.166666667,1
+A477,6/10/17,L,LH,Charlottes,1,1,1,28,F,N,0,5,4,4,5,4,6,7,6,5,5,0,NA,2,5.333333333,1
+A478,6/10/17,L,LH,Charlottes,1,1,1,26,F,Y,Statistics (graduate school),4,3,4,4,5,5,6,5,7,5,0,NA,2,4.666666667,1
+A479,6/10/17,L,LH,Charlottes,1,2,1,65,F,N,0,7,6,6,6,7,6,7,6,7,4,0,NA,2,6.5,1
+A480,6/10/17,L,LH,Charlottes,1,1,1,23,F,Y,Developmental biology,6,7,4,5,7,7,7,5,6,6,0,Pa,2,6.5,1
+A481,6/10/17,H,LH,Charlottes,1,1,1,25,F,N,Social worker,5,7,5,6,6,6,7,6,6,5,0,NA,2,6.166666667,1
+A482,6/10/17,H,LH,Charlottes,1,1,1,19,F,Y,Psychology,6,6,7,7,7,7,7,6,4,5,0,NA,2,6.5,1
+A483,6/10/17,H,LH,Charlottes,1,1,1,50,F,N,Teacher,6,6,6,6,6,6,6,5,6,5,0,NA,2,5.833333333,1
+A484,6/10/17,H,LH,Charlottes,1,1,1,74,F,N,IT,7,4,6,6,6,6,7,5,6,6,1,Ex,2,5.833333333,0
+A485,6/10/17,H,LH,Charlottes,1,1,1,21,F,Y,Biochemistry,7,7,5,7,7,7,7,7,6,6,0,NA,2,7,1
+A486,6/10/17,H,LH,Charlottes,1,1,1,20,F,Y,0,6,7,6,7,7,6,7,7,7,6,0,NA,2,6.666666667,1
+A487,6/10/17,H,LH,Charlottes,1,2,1,47,F,N,CRC,5,5,6,6,5,6,6,5,7,6,0,NA,2,5.333333333,1
+A488,6/10/17,H,LH,Charlottes,1,2,1,30,M,N,0,5,5,5,6,6,6,6,5,5,4,0,NA,2,5.5,1
+A489,6/10/17,H,LH,Charlottes,1,1,1,21,F,Y,Global development,6,6,6,7,6,6,7,6,7,6,0,NA,2,6.166666667,1
+A490,6/10/17,H,LH,Charlottes,1,1,1,20,F,Y,Kinesiology,3,4,4,4,3,4,4,3,6,6,0,NA,2,3.5,1
+A491,6/10/17,L,LH,Charlottes,1,1,1,66,F,N,Higher educational administration,4,5,6,7,5,6,6,4,5,5,0,Pa,2,5,1
+A492,6/10/17,L,LH,Charlottes,1,1,1,20,M,Y,History,6,6,5,7,6,6,7,7,5,6,0,NA,2,6.333333333,1
+A493,6/10/17,L,LH,Charlottes,1,1,1,24,F,N,Pre-school teacher,7,7,5,7,7,7,7,7,4,4,0,NA,2,7,1
+A494,6/10/17,L,LH,Charlottes,1,1,1,21,F,Y,Archeology/classics (latin),6,6,6,6,6,6,6,6,6,5,0,NA,2,6,1
+A495,6/10/17,L,LH,Charlottes,1,1,1,33,M,N,Real estate,6,6,5,6,6,6,6,5,3,2,0,NA,2,5.833333333,1
+A496,6/10/17,L,LH,Charlottes,1,1,1,28,F,Y,Nursing,6,6,6,6,6,6,6,6,5,3,0,NA,2,6,1
+A497,6/10/17,L,LH,Charlottes,1,1,1,16,F,Y,0,7,6,4,7,7,6,7,6,5,5,1,Ex,2,6.5,0
+A498,6/10/17,L,LH,Charlottes,1,1,1,46,F,Y,Nursing student,6,6,4,4,5,5,4,5,4,5,0,NA,2,5.166666667,1
+A499,6/10/17,L,LH,Charlottes,1,1,1,23,F,N,Teacher,5,5,5,4,5,4,5,4,5,4,0,NA,2,4.666666667,1
+A500,6/10/17,L,LH,Charlottes,1,1,1,24,F,N,0,6,5, ,6,5,5,5,4,5,4,0,NA,2,5,1
+A501,6/15/17,H,LH,Stonefield,1,1,1,56,F,N,0, , ,5,4,4,7,4,4,7,4,0,Pa,2,4.75,1
+A502,6/15/17,H,LH,Stonefield,1,1,1,60,F,N,0,2,2, ,7,2,1,1,1,7,7,0,NA,2,1.5,1
+A503,6/15/17,H,LH,Stonefield,1,1,1,24,M,Y,Lawyer,6,6,3,7,6,6,7,6,4,6,0,NA,2,6.166666667,1
+A504,6/15/17,H,LH,Stonefield,1,1,1,28,M,N,0,5,5,3,4,7,6,5,5,7,7,0,NA,2,5.5,1
+A505,6/15/17,H,LH,Stonefield,1,1,1,19,F,N,0,6,6,5,7,7,6,7,6,4,5,0,NA,2,6.333333333,1
+A506,6/15/17,H,LH,Stonefield,1,1,1,0,F,N,Education,5,3,3,3,4,4,5,4,5,6,1,Ex,2,4.166666667,0
+A507,6/15/17,H,LH,Stonefield,1,1,1,26,F,N,Librarian/artist,5,3,5,4,5,5,6,3,5,7,0,NA,2,4.5,1
+A508,6/22/17,H,LH,Stonefield,1,1,1,31,F,N,Scientist,5,6,5, , ,5,7,5,5,5,0,NA,2,5.6,1
+A509,6/22/17,H,LH,Stonefield,1,1,1,24,F,Y,Ph.D. English,6,5,5,5,7,6,5,4,6,5,0,NA,2,5.5,1
+A510,6/22/17,H,LH,Stonefield,1,1,1,25,M,N,Retail,6,5,6,6,7,6,5,5,6,5,0,NA,2,5.666666667,1
+A511,6/15/17,L,LH,Stonefield,1,1,1,30,F,N,Neuroscientist turned at home mom,5,5,4,7,2,4,4,3,6,4,0,NA,2,3.833333333,1
+A512,6/15/17,L,LH,Stonefield,1,1,1,25,F,N,0,6,6,5,7,7,6,7,6,5,4,0,NA,2,6.333333333,1
+A513,6/15/17,L,LH,Stonefield,1,1,1,35,M,N,Restaurant Manager,6,5,6,6,6,6,7,6,7,7,0,NA,2,6,1
+A514,6/22/17,L,LH,Stonefield,1,1,1,54,F,N,0,6,4,6,7,6,5,5,5,5,5,0,NA,2,5.166666667,1
+A515,6/15/17,L,LH,Stonefield,1,1,1,24,F,N,RN,5,3,3,5,4,4,5,5,5,5,0,NA,2,4.333333333,1
+A516,6/22/17,L,LH,Stonefield,1,1,1,55,F,N,Research assessor UVA,6,5,6,7,6,6,7,5,6,4,0,NA,2,5.833333333,1
+A517,6/22/17,L,LH,Stonefield,1,1,1,55,F,N,Baker,7,5,7,7,7,7,7,7,3,3,0,NA,2,6.666666667,1
+A518,6/22/17,L,LH,Stonefield,1,1,1,48,M,N,Military,6,5,6,5,7,6,7,5,5,6,0,NA,2,6,1
+A519,6/22/17,L,LH,Stonefield,1,1,1,47,F,N,BSBA marketing / Massage therapist,6,6,5,5,6,5,5,5,4,6,0,NA,2,5.5,1
+A520,6/22/17,L,LH,Stonefield,1,2,1,68,M,N,Physician - Retired,6,6,6,4,3,4,6,4,4,6,0,NA,2,4.833333333,1
+A521,6/22/17,H,LH,Stonefield,1,1,1,58,M,N,Retired,6,5,5,7,7,5,5,6,1,3,0,NA,2,5.666666667,1
+A522,6/22/17,H,LH,Stonefield,1,1,1,28,F,N,Event Planning,7,6,6,7,7,7,7,6,6,6,0,NA,2,6.666666667,1
+A523,6/22/17,H,LH,Stonefield,1,1,1,29,F,N,Law Enforcement,6,5,5,6,7,5,7,5,6,6,0,NA,2,5.833333333,1
+A524,6/24/17,H,LH,Charlottes,1,1,1,48,F,N,0,4,4,6,5,4,6,4,3,4,4,0,Pa,2,4.166666667,1
+A525,6/24/17,H,LH,Charlottes,1,2,1,23,M,N,0,4,4,5,4,3,4,4,4,6,4,0,NA,2,3.833333333,1
+A526,6/24/17,H,LH,Charlottes,1,1,1,43,F,N,0,7,7,4,7,7,7,7,4,7,6,0,NA,2,6.5,1
+A527,6/24/17,H,LH,Charlottes,1,2,1,34,F,Y,History,6,7,3,4,1,4,5,6,7,7,1,Ex,2,4.833333333,0
+A528,6/24/17,H,LH,Charlottes,1,1,1,22,F,Y,"Science journalism, Spanish",6,5,5,7,7,5,5,5,7,6,0,NA,2,5.5,1
+A529,6/24/17,H,LH,Charlottes,1,1,1,16,F,Y,High school student,7,5,6,3,7,4,7,5,5,5,1,Ex,2,5.833333333,0
+A530,6/24/17,H,LH,Charlottes,1,1,1,35,M,N,Actor,7, , ,7,7,7,7,7,5,5,0,Pa,2,7,1
+A531,6/22/17,L,LH,Stonefield,1,1,1,56,F,N,0,6,6,6,5,6,6,6,5,6,4,0,NA,2,5.833333333,1
+A532,6/22/17,L,LH,Stonefield,1,1,1,28,M,N,Police officer,3,5,5,6,4,4,2,2,6,6,0,NA,2,3.333333333,1
+A533,6/22/17,L,LH,Stonefield,1,2,1,28,M,N,0,4,4,5,5,5,5,6,4,5,5,0,NA,2,4.666666667,1
+A534,6/24/17,L,LH,Charlottes,1,2,1,54,F,N,Business HR,4,6,4,7,4,6,7,5,7,5,0,NA,2,5.333333333,1
+A535,6/24/17,L,LH,Charlottes,1,2,1,58,F,N,Barn manager,5,6,6,6,6,6,5,5,6,4,0,NA,2,5.5,1
+A536,6/24/17,L,LH,Charlottes,1,2,1,69,F,N,Retired,6,5, , ,6,6,7,5,6,6,1,Ex,2,5.833333333,0
+A537,6/24/17,L,LH,Charlottes,1,2,1,49,M,N,Professor,6,6,4,4,6,6,6,5,6,5,1,Ex,2,5.833333333,0
+A538,6/24/17,L,LH,Charlottes,1,1,1,72,M,N,"Attourney, adjunct professor", , ,7, ,7,7, , ,7,7,1,Ex,2,7,0
+A539,6/24/17,L,LH,Charlottes,1,1,1,25,M,N,Internet marketing,6,6,6,4,6,6,7,4,4,4,0,NA,2,5.833333333,1
+A540,6/24/17,L,LH,Charlottes,1,1,1,37,F,N,High school teacher,7,7,7,7,7,7,6,6,7,6,0,NA,2,6.666666667,1
+A541,6/24/17,H,LH,Charlottes,1,1,1,16,M,Y,High school,7,6,3,6,7,7,7,6,1,4,1,Ex,2,6.666666667,0
+A542,6/24/17,H,LH,Charlottes,1,1,1,57,F,N,Artist,7,7,6,5,6,4,7,7,7,4,1,Ex,2,6.333333333,0
+A543,6/24/17,H,LH,Charlottes,1,1,1,54,F,N,Director of communications,5,5,5,6,6,6,6, ,7,6,0,Pa,2,5.6,1
+A544,6/24/17,H,LH,Charlottes,1,1,1,28,F,N,Accountant,6,7,6,7,7,7,6,5,6,5,0,NA,2,6.333333333,1
+A545,6/24/17,H,LH,Charlottes,1,1,1,27,F,N,Teacher,6,6,6,7,7,7,7,7,5,4,0,NA,2,6.666666667,1
+A546,6/24/17,H,LH,Charlottes,1,1,1,20,F,Y,"Psychology, Youth social innovation",6,5,6,7,5,6,6,5,5,5,0,NA,2,5.5,1
+A547,6/24/17,H,LH,Charlottes,1,1,1,30,F,N,Event Planner,7,7, ,7,7,7,7,6,6,5,0,Pa,2,6.833333333,1
+A548,6/24/17,H,LH,Charlottes,1,1,1,19,F,Y,Political and social thought,6,5,4,7,7,6,6,5,5,5,0,NA,2,5.833333333,1
+A549,6/24/17,H,LH,Charlottes,1,1,1,33,F,N,Social work,5,5,4,7,5,5,6,5,5,5,1,Ex,2,5.166666667,0
+A550,6/24/17,H,LH,Charlottes,1,1,1,33,F,N,Social work,5,5,4,4,5,5,5,5,3,5,1,Ex,2,5,0
+A551,6/24/17,L,LH,Charlottes,1,1,1,39,F,N,Softward developer,5,5,5,6,6,6,6,6,3,5,0,NA,2,5.666666667,1
+A552,6/24/17,L,LH,Charlottes,1,1,1,58,F,N,0,6,5,5, ,7,6,6,5,1,3,0,Pa,2,5.833333333,1
+A553,6/24/17,L,LH,Charlottes,1,2,1,58,M,N,CRNA,5,5,4,7,7,6,1,4,2,5,0,NA,2,4.666666667,1
+A554,6/24/17,L,LH,Charlottes,1,1,1,55,F,N,0,7,6,6,7,7,6,6,6,4,5,0,NA,2,6.333333333,1
+A555,6/24/17,L,LH,Charlottes,1,2,1,80,F,N,Retired psychologist,6,5,5,6,6,6,7,5,4,6,0,NA,2,5.833333333,1
+A556,6/24/17,L,LH,Charlottes,1,1,1,18,F,Y,Undecided,6,6,7,7,7,6,7,6,5,5,0,NA,2,6.333333333,1
+A557,6/24/17,L,LH,Charlottes,1,1,1,47,M,N,Attourney,5,6,7,7,5,5,7,6,6,6,0,NA,2,5.666666667,1
+A558,6/24/17,L,LH,Charlottes,1,1,1,25,M,Y,Biomedical engineering Ph.D. student,7,6,4,7,7,7,7,4,7,7,0,NA,2,6.333333333,1
+A559,6/24/17,L,LH,Charlottes,1,1,1,25,F,Y,Grad student - infectious disease,6,7,6,5,7,7,7,5,6,6,0,NA,2,6.5,1
+A560,6/24/17,L,LH,Charlottes,1,1,1,63,F,N,Clergy,7,6,7,7,7,7,7, ,5,5,0,Pa,2,6.8,1
+A561,6/24/17,H,LH,Charlottes,1,1,1,38,F,N,University librarian,7,5, ,6,6,7,7,6,6,5,0,Pa,2,6.333333333,1
+A562,6/24/17,H,LH,Charlottes,1,1,1,27,F,N,Marketing,5,4,4,5,6,5,5,4,7,5,0,NA,2,4.833333333,1
+A563,6/24/17,H,LH,Charlottes,1,1,1,50,F,N,Software developer,7, , ,7,7,7,7, ,7,6,1,Ex,2,7,0
+A564,6/24/17,H,LH,Charlottes,1,1,1,28,F,Y,Biomedical engineering,7,7,6,6,6,6,7,6,5,5,0,NA,2,6.5,1
+A565,6/29/17,H,LH,Stonefield,1,1,1,20,F,Y,Graphic designer/communications,5,6,6,5,6,6,7,6,7,7,0,NA,2,6,1
+A566,6/29/17,H,LH,Stonefield,1,1,1,49,F,N,High school teacher, , , , ,6, ,6, ,6,6,1,Ex,2,6,0
+A567,6/29/17,H,LH,Stonefield,1,1,1,25,M,N,Program director & coach,6,5,4,7,5,5,6,5,5,6,0,NA,2,5.333333333,1
+A568,6/29/17,H,LH,Stonefield,1,1,1,52,F,N,Registered nurse,6,7,4,6,2,4,2,3,4,4,0,NA,2,4,1
+A569,6/29/17,H,LH,Stonefield,1,1,1,18,M,Y,"Pre-law (""but who knows in a year"")",6,4,7,7,6,6,6,6,5,7,0,NA,2,5.666666667,1
+A570,6/22/17,H,LH,Stonefield,1,1,1,30,F,N,Research Associate,6,6,6,6,7,7,7,6,5,5,0,NA,2,6.5,1
+A571,6/24/17,L,LH,Charlottes,1,1,1,71,M,N,Environmental science/retired,7,4,6,7,6,6,7,6,7,7,0,NA,2,6,1
+A572,6/24/17,L,LH,Charlottes,1,1,1,26,F,Y,Biomedical engineering,6,6,7,7,7,6,7,7,7,7,0,NA,2,6.5,1
+A573,6/24/17,L,LH,Charlottes,1,1,1,29,M,N,Software engineering,6,6,5,7,4,6,6,6,7,6,0,Pa,2,5.666666667,1
+A574,6/24/17,L,LH,Charlottes,1,1,1,64,M,N,0,7,6,6,7,6,6,6,6,5,5,0,NA,2,6.166666667,1
+A575,6/29/17,L,LH,Stonefield,1,2,1,27,F,N,Teacher,7,6,6,7,5,6,6,6,4,6,0,NA,2,6,1
+A576,6/29/17,L,LH,Stonefield,1,1,1,32,F,N,Manager (vocational area counseling),5,4,4, ,5,5,6,4,7,6,0,Pa,2,4.833333333,1
+A577,6/29/17,L,LH,Stonefield,1,1,1,55,F,N,Trainer/teacher,7,6,7,6,7,7,7,6,7,6,0,NA,2,6.666666667,1
+A578,6/29/17,L,LH,Stonefield,1,2,1,35,F,N,0,5,7,5,5,7,6,7,5,4,4,0,NA,2,6.166666667,1
+A579,6/29/17,L,LH,Stonefield,1,1,1,73,M,N,0,5,3,5,3,4,5,5,4,5,5,0,NA,2,4.333333333,1
+A580,6/29/17,L,LH,Stonefield,1,1,1,47,F,N,Editor,6,6,6,4,4,7,7,4,4,5,0,Pa,2,5.666666667,1
+A581,6/29/17,H,LH,Stonefield,1,1,1,25,F,N,Occupational therapist,5,5,4,4,5,5,5,5,5,5,0,NA,2,5,1
+A582,6/29/17,H,LH,Stonefield,1,1,1,51,F,N,Systems analyist,5,6,6,5,6,6,6,5,6,5,0,NA,2,5.666666667,1
+A583,6/29/17,H,LH,Stonefield,1,1,1,63,F,N,Teacher,6, ,5,6,4,6,7,6,7,7,0,NA,2,5.8,1
+A584,6/29/17,H,LH,Stonefield,1,1,1,43,F,Y,Communications,7,6,6,7,7,7,7,6,7,5,0,NA,2,6.666666667,1
+A585,6/29/17,H,LH,Stonefield,1,1,1,37,F,N,Stay at home mom,7,7,7,7,7,7,7,5,7,7,0,NA,2,6.666666667,1
+A586,6/29/17,H,LH,Stonefield,1,1,1,42,F,N,0,7,7,5,6,7,7,7,5,7,5,0,NA,2,6.666666667,1
+A587,6/29/17,H,LH,Stonefield,1,1,1,47,M,N,"Computer science, principal scientist",4,4,4,6,4,4,3,2,5,5,0,NA,2,3.5,1
+A588,7/6/17,H,LH,Stonefield,1,2,1,70,M,N,Sales,7,7,5,5,4,6,7, ,7,6,0,Pa,2,6.2,1
+A589,6/29/17,H,LH,Stonefield,1,1,1,50,M,N,Finance,6,6,4,7,5,5,6,5,7,6,0,NA,2,5.5,1
+A590,7/6/17,H,LH,Stonefield,1,1,1,20,M,Y,Computer science,7,7,5,7,7,7,7,5,5,6,0,NA,2,6.666666667,1
+A591,6/29/17,L,LH,Stonefield,1,2,1,79,M,N,Teacher,6,6,6,7,5,6,7,5,5,5,0,NA,2,5.833333333,1
+A592,6/29/17,L,LH,Stonefield,1,1,1,29,F,N,Retail management,6,7,6,7,7,6,6,6,7,7,0,NA,2,6.333333333,1
+A593,6/29/17,L,LH,Stonefield,1,1,1,20,F,Y,Finance,5,4,6,6,5,5,5,4,5,5,0,NA,2,4.666666667,1
+A594,6/29/17,L,LH,Stonefield,1,1,1,21,M,Y,GM,5,6,6,7,6,5,6,5,7,7,0,NA,2,5.5,1
+A595,6/29/17,L,LH,Stonefield,1,2,1,34,M,N,CS/President of Small R&D business,2,2,4,2,2,2,1,1,7,5,0,NA,2,1.666666667,1
+A596,6/29/17,L,LH,Stonefield,1,2,1,36,F,N,"Local government, workforce development",3,3,4,3,2,3,3,2,7,5,0,NA,2,2.666666667,1
+A597,6/29/17,L,LH,Stonefield,1,2,1,31,M,N,Software engineer,6,7,6,5,6,6,7,7,5,5,0,NA,2,6.5,1
+A598,7/6/17,L,LH,Stonefield,1,2,1,45,M,N,Systems engineering: chief innovation officer,4,5,6,7,5,5,6,3,6,5,0,NA,2,4.666666667,1
+A599,7/6/17,L,LH,Stonefield,1,2,1,39,F,N,Preschool Teacher,6,6,6,6,7,6,7,6,6,6,0,NA,2,6.333333333,1
+A600,7/6/17,L,LH,Stonefield,1,1,1,27,M,N,0,7,7,7,7,7,7,7,7,7,7,0,NA,2,7,1
+A601,7/6/17,H,LH,Stonefield,1,1,1,54,F,N,"Sociology B.S., Clinical psych M.A.",6,4, ,5,7,6,7,5,2,6,1,Ex,2,5.833333333,0
+A602,7/6/17,H,LH,Stonefield,1,1,1,37,F,N,Constultant,5,5,5,5,5,5,5,5,6,6,1,Ex,2,5,0
+A603,7/6/17,H,LH,Stonefield,1,1,1,59,F,N,Self employed,6,7,7,7,7,7,7,6,7,6,0,NA,2,6.666666667,1
+A604,7/6/17,H,LH,Stonefield,1,2,1,22,M,N,Physics/math/engineering job,5,5,7,6,6,6,7,5,7,4,0,NA,2,5.666666667,1
+A605,7/8/17,H,LH,Charlottes,1,1,1,70,F,N,Retired teacher,7,7, ,7,7,7,7, ,7,5,0,NA,2,7,1
+A606,7/8/17,H,LH,Charlottes,1,1,1,26,F,N,Consultant,5,5,7,6,5,6,6,5,7,5,0,NA,2,5.333333333,1
+A607,7/8/17,H,LH,Charlottes,1,1,1,69,F,N,Retired humanities professor,6,6, ,6,6,6,7,6,4,3,0,Pa,2,6.166666667,1
+A608,7/8/17,H,LH,Charlottes,1,2,1,20,M,Y,Marketing,7,6,7,7,7,7,4,6,7,5,0,NA,2,6.166666667,1
+A609,7/8/17,H,LH,Charlottes,1,1,1,57,M,N,Science teacher,7,7,6,6,7,7,7,6,7,6,0,NA,2,6.833333333,1
+A610,7/8/17,H,LH,Charlottes,1,2,1,71,F,N,Retired,6,5,6, ,6,6,6,6,7,7,0,NA,2,5.833333333,1
+A611,7/6/17,L,LH,Stonefield,1,2,1,24,F,N,Registered nurse,5,5,5,5,5,5,5,5,5,4,0,NA,2,5,1
+A612,7/6/17,L,LH,Stonefield,1,1,1,25,F,N,Farmer,6,6,5,6,7,6,7,6,4,5,0,NA,2,6.333333333,1
+A613,7/6/17,L,LH,Stonefield,1,2,1,44,M,N,Consultant,2,4,4,6,3,4,4,4,5,3,0,NA,2,3.5,1
+A614,7/6/17,L,LH,Stonefield,1,2,1,63,F,N,Self employed,7, , ,6,7,7,7, ,4,3,1,Ex,2,7,0
+A615,7/8/17,L,LH,Charlottes,1,1,1,65,M,N,Custodian,6,4,6,3,7,6,4,4,2,2,0,NA,2,5.166666667,1
+A616,7/8/17,L,LH,Charlottes,1,1,1,60,F,N,Education, ,5,7,4,4,5,6,4,1,6,0,NA,2,4.8,1
+A617,7/8/17,L,LH,Charlottes,1,1,1,26,F,N,Public policy consultant,6,6,6,5,5,6,7,5,4,4,0,NA,2,5.833333333,1
+A618,7/8/17,L,LH,Charlottes,1,1,1,64,F,N,R/T Psychiatrist,6,7,6,7,7,7,7,6,6,6,0,NA,2,6.666666667,1
+A619,7/8/17,L,LH,Charlottes,1,1,1,0,0,0,0,6,5,4,5,7,6,7,6,0,0,0,NA,2,6.166666667,1
+A620,7/8/17,L,LH,Charlottes,1,2,1,21,F,Y,Biomedical engineering,6,6,4,4,6,5,6,5,6,6,0,NA,2,5.666666667,1
+A621,7/8/17,H,LH,Charlottes,1,1,1,63,F,N,Oncology; massage therapist,7,7,7,7,7,7,7,7,4,7,0,NA,2,7,1
+A622,7/8/17,H,LH,Charlottes,1,2,1,63,M,N,Retired business developer,6,5,6,4,6,5,6,4,3,3,0,NA,2,5.333333333,1
+A623,7/8/17,H,LH,Charlottes,1,2,1,53,F,N,Psychologist/head of school,6,5,4,7,7,6,6,6,7,6,0,NA,2,6,1
+A624,7/8/17,H,LH,Charlottes,1,1,1,54,F,N,Marketing consultant,7,5,6,7,7,7,7,5,6,0,0,NA,2,6.333333333,1
+A625,7/8/17,H,LH,Charlottes,1,1,1,51,M,N,0,6,6,5,6,6,6,6,6,6,5,0,NA,2,6,1
+A626,7/8/17,H,LH,Charlottes,1,1,1,62,F,N,0,1,1,2,4,1,1,1,1,7,5,1,Ex,2,1,0
+A627,7/8/17,H,LH,Charlottes,1,1,1,51,F,N,Teacher,4,6,6,5,5,5,5,5,4,4,0,NA,2,5,1
+A628,7/8/17,H,LH,Charlottes,1,1,1,24,F,N,0,6,5,4,6,7,6,7,6,4,5,0,NA,2,6.166666667,1
+A629,7/8/17,H,LH,Charlottes,1,1,1,24,M,Y,Religion,6,6,6,7,6,7,6,5,4,5,0,NA,2,6,1
+A630,7/8/17,H,LH,Charlottes,1,1,1,28,M,N,0,5,4,6,5,5,5,5,5,5,4,0,NA,2,4.833333333,1
+A631,7/8/17,L,LH,Charlottes,1,1,1,19,M,Y,Economics,6,4,5,7,5,6,7,6,7,4,0,NA,2,5.666666667,1
+A632,7/8/17,L,LH,Charlottes,1,1,1,61,F,N,Financial advisor,7,7,6,7,7,7,7,7,6,6,0,NA,2,7,1
+A633,7/8/17,L,LH,Charlottes,1,2,1,63,M,N,Journalist,7,7,7,7,7,7,7,7,7,6,0,NA,2,7,1
+A634,7/8/17,L,LH,Charlottes,1,1,1,63,F,N,Non-profit corp.,6,5,5,6,6,6,6,6,6,5,0,NA,2,5.833333333,1
+A635,7/8/17,H,LH,Charlottes,1,1,1,19,0,Y,International affairs,6,6,6,7,6,6,6,6,4,4,0,NA,2,6,1
+A636,7/8/17,H,LH,Charlottes,1,2,1,33,M,N,Escape artist/self employed, ,4,2,7, ,7,7, ,7,7,0,NA,2,6,1
+A637,7/8/17,H,LH,Charlottes,1,1,1,32,F,N,Drafting,6,7,3,5,7,7,7,5,6,3,0,NA,2,6.5,1
+A638,7/8/17,H,LH,Charlottes,1,1,1,28,F,N,MS degree in hydrology,4,2,3,5,4,3,3,2,4,5,0,NA,2,3,1
+A639,7/8/17,H,LH,Charlottes,1,1,1,39,F,N,Artist,5,5,5,5,5,5,6,5,5,7,0,NA,2,5.166666667,1
+A640,7/8/17,L,LH,Charlottes,1,1,1,69,M,N,Registered nurse,6,5,6,6,5,6,6,6,7,5,0,NA,2,5.666666667,1
+A641,7/8/17,H,LH,Charlottes,1,1,1,21,M,Y,Industrial design,5,6,6,6,7,6,5,5,6,4,0,NA,2,5.666666667,1

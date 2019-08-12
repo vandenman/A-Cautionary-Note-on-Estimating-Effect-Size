@@ -30,3 +30,5 @@ graph2 <- ggplot(data = effectSize, aes(ymin = l.d, ymax = u.d, x = factor(0), y
 
 graph1
 graph2
+
+RColorBrewer::display.brewer.all(colorblindFriendly = TRUE)

@@ -11,6 +11,7 @@ pPosteriorH1 <- function(delta, obsDelta, n, sigmaSlab) {
 }
 
 pss <- function(x, par) {
+  # cdf of spike and sliab
   if (x < 0) {
     p <- (1 - par[1]) * pnorm(x, par[2], par[3])
   } else {

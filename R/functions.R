@@ -11,13 +11,16 @@ pPosteriorH1 <- function(delta, obsDelta, n, sigmaSlab) {
 }
 
 modelAveragedCdf <- function(x, pH0, cdfH1 = pnorm, ...) {
-	(x > 0) * pH0 + (1 - pH0) * cdfH1(x, ...)
+	return((x >= 0) * pH0 + (1 - pH0) * cdfH1(x, ...))
 }
 
 modelAveragedQuantile <- function(q, pH0, cdfH1 = pnorm, ...) {
 	return(
-		uniroot(function(x, p, q, cdfH1, ...) modelAveragedCdf(x, p, cdfH1, ...) - q, interval = c(-5, 5),
-			p = pH0, q = q, cdfH1 = cdfH1, ...)[["root"]]
+	  optimize(function(x, pH0, q, cdfH1, ...) log((modelAveragedCdf(x, pH0, cdfH1, ...) - q)^2),
+	           interval = c(-2, 2), pH0 = pH0, q = q, cdfH1 = cdfH1, ...)[["minimum"]]
+
+		# uniroot(function(x, p, q, cdfH1, ...) modelAveragedCdf(x, p, cdfH1, ...) - q, interval = c(-5, 5),
+		# 	p = pH0, q = q, cdfH1 = cdfH1, ...)[["root"]]
 	)
 }
 
@@ -31,6 +34,7 @@ modelAveragedCRI <- function(pH0, cdfH1 = pnorm, h = 0.95, ...) {
 }
 
 # graphical options
+getColors <- function(n, name = "Dark2") RColorBrewer::brewer.pal(8, name)[seq_len(n)]
 scale_color_viridis_d <- ggplot2::scale_color_viridis_d
 formals(scale_color_viridis_d)$option <- "C"
 
@@ -58,7 +62,6 @@ pss <- function(x, par) {
   return(p)
 }
 
-
 error <- function(x, p, par) log((p - pss(x, par))^2)
 myQ <- function(p, par) optimize(error, c(-2, 2), p = p, par = par)$minimum
 
@@ -76,7 +79,6 @@ bf <- function(d, n, v0) {
   return(a * exp(b / c))
 }
 
-
 updatePar <- function(rho0, v0, N, ybar) {
   prec <- (N + 1 / v0)
   v1 <- 1 / prec
@@ -86,7 +88,6 @@ updatePar <- function(rho0, v0, N, ybar) {
   rho1 <- rho0 / (rho0 + (1 - rho0) * w)
   return(c(rho1, mu1, sqrt(v1)))
 }
-
 
 updateEV <- function(rho0, v0, N, ybar) {
   prec <- (N + 1 / v0)

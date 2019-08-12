@@ -35,9 +35,10 @@ textH0 <- geom_text(data = dfTxtH0, aes(x = x, y = y, label = label), nudge_x = 
 mceiling <- function(x, base) base * ceiling(x / base)
 maxYLeft <- mceiling(1.25 * max(yvals, pH0), 0.2)
 
-graph <- ggplot() +
+graph1 <- ggplot() +
 	lineH1 + lineH0 + CRIBar + textH0 +
-	scale_color_viridis_d() +
+	scale_color_manual(values = getColors(2)) +
+	# scale_color_viridis_d() +
 	ggrepel::geom_text_repel() +
 	labs(x = expression(paste("Population effect, ", delta)), y = "Density", color = NULL) +
 	scale_y_continuous(breaks = seq(0, maxYLeft, .2), limits = c(0, maxYLeft)) +
@@ -46,8 +47,6 @@ graph <- ggplot() +
 		legend.position   = c(.15, .9),
 		legend.background = element_rect(fill = "transparent", color = "transparent")
 	)
-graph
-# saveFigure(graph, filename = "spikeAndSlabPosterior.pdf", width = 10, height = 7)
 
 # same thing with an axis on the right for probability
 dfLineH0$y <- dfLineH0$y * maxYLeft
@@ -63,7 +62,8 @@ textH0 <- geom_text(data = dfTxtH0, aes(x = x, y = y, label = label), nudge_x = 
 
 graph2 <- ggplot() +
 	lineH1 + lineH0 + CRIBar + textH0 +
-	scale_color_viridis_d() +
+	scale_color_manual(values = getColors(2)) +
+	# scale_color_viridis_d() +
 	ggrepel::geom_text_repel() +
 	labs(x = expression(paste("Population effect, ", delta)), y = "Density", color = NULL) +
 	scale_y_continuous(breaks = seq(0, maxYLeft, .2), limits = c(0, maxYLeft), sec.axis = sec_axis(
@@ -75,8 +75,6 @@ graph2 <- ggplot() +
 		legend.position   = c(.15, .9),
 		legend.background = element_rect(fill = "transparent", color = "transparent")
 	)
-graph2
-# saveFigure(graph2, filename = "spikeAndSlabPosteriorRightAxis.pdf", width = 10, height = 7)
 
 # rescale posterior mode to PH1
 dfLineH1_r <- dfLineH1
@@ -95,7 +93,8 @@ textH0 <- geom_text(data = dfTxtH0, aes(x = x, y = y, label = label), nudge_x = 
 
 graph3 <- ggplot() +
 	lineH1 + lineH0 + CRIBar + textH0 +
-	scale_color_viridis_d() +
+	scale_color_manual(values = getColors(2)) +
+	# scale_color_viridis_d() +
 	ggrepel::geom_text_repel() +
 	labs(x = expression(paste("Population effect, ", delta)), y = NULL, color = NULL) +
 	scale_y_continuous(breaks = seq(0, 1, .25), limits = c(0, 1)) +
@@ -104,5 +103,11 @@ graph3 <- ggplot() +
 		legend.position   = c(.15, .9),
 		legend.background = element_rect(fill = "transparent", color = "transparent")
 	)
+
+
+graph1
+graph2
 graph3
+# saveFigure(graph1, filename = "spikeAndSlabPosterior.pdf", width = 10, height = 7)
+# saveFigure(graph2, filename = "spikeAndSlabPosteriorRightAxis.pdf", width = 10, height = 7)
 # saveFigure(graph3, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.pdf", width = 10, height = 7)

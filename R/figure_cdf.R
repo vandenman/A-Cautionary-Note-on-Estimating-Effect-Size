@@ -23,11 +23,13 @@ coords <- tibble(x = rep(unlist(coordsCRI), each = 2),
 
 ggplot(data = tib1, mapping = aes(x = x, y = y, group = g, color = g, linetype = g)) +
 	geom_line(mapping = aes(x = x, y = y, group = group, color = color),#, linetype = color),
-			  data = coords, inherit.aes = FALSE, alpha = 0.55) +
-	geom_line() +
+			  data = coords, inherit.aes = FALSE, alpha = 0.55, size = 1.5) +
+	geom_line(size = 1.5) +
 	labs(x = expression(delta), y = expression(P(delta)), color = expression(P(H[0])), linetype = expression(P(H[0]))) +
-	scale_color_discrete_qualitative() +
+	scale_color_manual(values = getColors(3)) +
 	theme_bw(24) +
-	theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
+	theme(axis.title.y = element_text(angle = 0, vjust = 0.5),
+		  legend.position = c(0.05, 0.9),
+		  legend.background = element_rect(fill = "transparent", color = "transparent"))
 
 

@@ -38,36 +38,48 @@ getColors <- function(n, name = "Dark2") RColorBrewer::brewer.pal(8, name)[seq_l
 scale_color_viridis_d <- ggplot2::scale_color_viridis_d
 formals(scale_color_viridis_d)$option <- "C"
 
-saveFigure <- function(graph, filename, width = 7, height = 7, ..., directory = "figures") {
+saveFigure <- function(graph, filename, width = 7, height = 7, ...,
+                       directory = "figures") {
+
 
   file <- file.path(getwd(), directory, filename)
-  if (isNamespaceLoaded("assertthat")) {
-    assert_that(
-      has_extension(filename, "pdf"),
-      !file.exists(file) || is.writeable(file)
-    )
-  }
-  grDevices::pdf(file, width, height, ...)
+  ext <- tools::file_ext(filename)
+  assertthat::assert_that(
+    ext %in% c("pdf", "tex", "tikz"),
+    !file.exists(file) || assertthat::is.writeable(file)
+  )
+
+  switch(ext,
+    "pdf"  = grDevices::pdf(file, width, height, ...),
+    "tex"  = tikzDevice::tikz(file, width, height, ...),
+    "tikz" = tikzDevice::tikz(file, width, height, ...),
+    stop("file should have extension .pdf or .tex!")
+  )
   print(graph)
   grDevices::dev.off()
 }
 
 # courtesy of Jeff Rouder ----
+# pss <- function(x, par) {
+#   if (x < 0) {
+#     p <- (1 - par[1]) * pnorm(x, par[2], par[3])
+#   } else {
+#     p <- par[1] + (1 - par[1]) * pnorm(x, par[2], par[3])
+#   }
+#   return(p)
+# }
 pss <- function(x, par) {
-  if (x < 0) {
-    p <- (1 - par[1]) * pnorm(x, par[2], par[3])
-  } else {
-    p <- par[1] + (1 - par[1]) * pnorm(x, par[2], par[3])
-  }
-  return(p)
+  return((x >= 0) * par[1] + (1 - par[1]) * pnorm(x, par[2], par[3]))
 }
+
 
 error <- function(x, p, par) log((p - pss(x, par))^2)
 myQ <- function(p, par) optimize(error, c(-2, 2), p = p, par = par)$minimum
 
 postStat <- function(par) {
   lower <- myQ(.025, par)
-  upper <- myQ(.975, par)
+  diff <- 0.025 - pss(lower, par)
+  upper <- myQ(.975 - diff, par)
   me <- par[2] * (1 - par[1])
   return(c(lower, upper, me))
 }

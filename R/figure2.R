@@ -2,18 +2,21 @@ rm(list = ls())
 library(assertthat)
 library(ggplot2)
 library(tibble)
+library(effsize)
 source("R/functions.R")
+source("R/ggplotTheme.R")
 mceiling <- function(x, base) base * ceiling(x / base)
 mround   <- function(x, base) base * round  (x / base)
 
 priorPH0 <- 0.5
 priorPH1 <- 1 - priorPH0
-sigmaSlab <- 10
+sigmaSlab <- 1
 dat <- readRDS("data/simulatedDataset.rds")
 
 n <- nrow(dat)
-cohenD <- cohen.d.default(dat[["x"]], dat[["y"]], paired = TRUE, noncentral = TRUE)
-ybar <- cohenD$estimate
+# cohenD <- cohen.d.default(dat[["x"]], dat[["y"]], paired = TRUE, noncentral = TRUE)
+diffScore = dat[["d"]]
+ybar <- mean(diffScore) / sd(diffScore)
 
 upMA <- updatePar(priorPH0, sigmaSlab, n, ybar)
 ciMA <- postStat(upMA)
@@ -27,7 +30,7 @@ criH1 <- tibble(lower = ciH1[1], upper = ciH1[2]) #modelAveragedCRI(0.0, cdfH1 =
 
 dfLineH1 <- tibble(x = xgrid, y = yvals)
 dfLineH0 <- tibble(x = c(0, 0), y = c(0, priorPH0))
-dfTxtH0  <- add_column(dfLineH0[-1, ], label = paste("p(H[0]~'|'~X) ==", formatC(upMA[1])))
+dfTxtH0  <- add_column(dfLineH0[-1, ], label = paste("p(H[0]~'|'~data) ==", formatC(upMA[1])))
 
 dfBarCriMA <- add_column(criMA, y = 1.15 * max(yvals, priorPH0))
 dfBarCriH1 <- add_column(criH1, y = 1.25 * max(yvals, priorPH0))
@@ -103,18 +106,19 @@ CRIBar <- geom_errorbarh(data = dfBarCri_r, aes(xmin = lower, xmax = upper, y = 
 						 height = height, size = lineSizeH1)
 textH0 <- geom_text(data = dfTxtH0, aes(x = x, y = y, label = label), nudge_x = -.3, size = 8, parse = TRUE)
 
-graph3 <- ggplot() +
+graph3 <- ggplot(dfLineH0) +
 	lineH1 + lineH0 + CRIBar + textH0 +
 	scale_color_manual(values = getColors(2)) +
 	# scale_color_viridis_d() +
-	ggrepel::geom_text_repel() +
+	# ggrepel::geom_text_repel() +
 	labs(x = expression(paste("Population effect, ", delta)), y = NULL, color = NULL) +
 	scale_y_continuous(breaks = seq(0, 1, .25), limits = c(0, 1.0)) +
-	theme_bw(24) +
-	theme(
-		legend.position   = c(.15, .9),
-		legend.background = element_rect(fill = "transparent", color = "transparent")
-	)
+	# theme_bw(24) +
+	# theme(
+	# 	legend.position   = c(.15, .9),
+	# 	legend.background = element_rect(fill = "transparent", color = "transparent")
+	# ) +
+  geom_rangeframe() + myTheme()
 
 graph1
 graph2

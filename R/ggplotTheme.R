@@ -1,8 +1,15 @@
 # from JASPgraphs
 require(ggplot2)
 require(grid)
-myTheme <- function(base_size = 17, base_family = "", legend.position = "none") {
+# require(extrafont)
+# you may need to call the line below once to run
+# font_import()
+# loadfonts(device = "win")
 
+myTheme <- function(base_size = 17, base_family = NULL,#LM Roman 10",
+                    legend.position = "none", legend.justification = "top") {
+
+  force(legend.position)
   return(ggplot2::theme(
     # generics
     rect = ggplot2::element_rect(colour = "transparent", fill = "transparent", size = 1, linetype = 1),
@@ -11,8 +18,6 @@ myTheme <- function(base_size = 17, base_family = "", legend.position = "none") 
     axis.line         = ggplot2::element_blank(),
     axis.text         = ggplot2::element_text(),#family = family, size = base_size),
     axis.ticks.length = ggplot2::unit(0.3, "cm"),
-    axis.title        = ggplot2::element_text(),
-    axis.ticks        = ggplot2::element_line(),
     axis.title.x      = ggplot2::element_text(margin = ggplot2::margin(t = 15, b = 5)),
     axis.title.y      = ggplot2::element_text(margin = ggplot2::margin(r = 10, l = 5)),
     axis.text.x       = ggplot2::element_text(colour = "black", margin = ggplot2::margin(t = 7)),
@@ -21,11 +26,10 @@ myTheme <- function(base_size = 17, base_family = "", legend.position = "none") 
     # legend
     legend.background     = ggplot2::element_rect(color = "transparent", fill = "transparent"),
     legend.box.background = ggplot2::element_rect(color = "transparent", fill = "transparent"),
-    legend.justification  = "top",
+    legend.justification  = legend.justification,
     legend.key            = ggplot2::element_rect(color = "transparent", fill = "transparent"),
     legend.key.size       = ggplot2::unit(1, "cm"),
-    legend.text           = ggplot2::element_text(family = family),
-    legend.title          = ggplot2::element_text(family = family, hjust = 0.5),
+    legend.title          = ggplot2::element_text(hjust = 0.5),
     legend.position       = legend.position,
 
     # panel
@@ -36,8 +40,10 @@ myTheme <- function(base_size = 17, base_family = "", legend.position = "none") 
 
     # plot
     plot.background = ggplot2::element_rect(fill = "transparent", color = "transparent"),
-    plot.margin     = ggplot2::margin(),
-    plot.title      = ggplot2::element_text(hjust = 0.5) # center title
+    plot.title      = ggplot2::element_text(hjust = 0.5), # center title
+
+    # facets
+    strip.background = element_rect(fill = "transparent", color = "transparent")
   ))
 }
 
@@ -84,7 +90,7 @@ geom_rangeframe <- function(mapping = NULL,
                             show.legend = NA,
                             inherit.aes = TRUE) {
 
-  layer(
+  ggplot2::layer(
     data = data,
     mapping = mapping,
     stat = stat,
@@ -166,8 +172,3 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
 
   draw_key = ggplot2::draw_key_path
 )
-
-# ggplot(mtcars, aes(wt, mpg)) +
-#  geom_point() +
-#  geom_rangeframe() +
-#  myTheme()

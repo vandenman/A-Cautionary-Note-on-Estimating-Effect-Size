@@ -20,14 +20,18 @@ if (!file.exists("data/simulatedDataset.rds")) {
   y <- X[, 2]
 
   dd <- cohen.d.default(x, y, paired = TRUE, noncentral = FALSE)[c("estimate", "conf.int")]
-  dd
+  dd # 0.35 == sqrt(2) * mean(x - y) / sd(x - y)
   t.test(x = x, y = y, paired = TRUE)
-  BayesFactor::ttestBF(x = x, y = y, paired = TRUE)
+  BFobj <- BayesFactor::ttestBF(x = x, y = y, paired = TRUE)
+  ee <- BayesFactor::posterior(BFobj, iterations = 1e4)
+  mean(ee[, "delta"])
   bf(mean(x - y) / sd(x - y), n, v0 = 1)
 
-  up0 <- updatePar(0.5, 1, n, mean(x - y) / sd(x - y))
+  ybar <- mean(x - y) / sd(x - y)
+  # ybar <- sqrt(2) * mean(x - y) / sd(x - y)
+  up0 <- updatePar(0.5, 1, n, ybar)
   cr0 <- postStat(up0)
-  up1 <- updatePar(0, 1, n, mean(x - y) / sd(x - y))
+  up1 <- updatePar(0, 1, n, ybar)
   cr1 <- postStat(up1)
   round(cr0, 2)
   round(cr1, 2)

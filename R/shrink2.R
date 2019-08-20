@@ -78,6 +78,11 @@ hiS <- -loS
 lo1 <- max(obs[stat1[, 2] < -.01])
 hi1 <- -lo1
 
+ybar <- 0.35
+up1 <- updatePar(0.5, 1, 100, ybar)
+c(up1[2], updateEV(0.5, 1, 100, ybar),
+  postStat(up1)[3])
+
 
 
 # pdf("fig5.pdf", width = 10, height = 10)

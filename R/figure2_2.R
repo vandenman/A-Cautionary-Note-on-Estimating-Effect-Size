@@ -17,7 +17,7 @@ n <- nrow(dat)
 priorPH1 <- 1 - priorPH0
 ybar <- cohen.d.default(dat[["x"]], dat[["y"]], paired = TRUE, noncentral = FALSE)
 diffScore <- dat[["d"]]
-ybar <- mean(diffScore) / sd(diffScore)
+ybar <- sqrt(2) * mean(diffScore) / sd(diffScore)
 
 upMA <- updatePar(priorPH0, sigmaSlab, n, ybar)
 ciMA <- postStat(upMA)
@@ -82,11 +82,10 @@ graph <- ggplot(dfLineH0) +
 
 graph
 
-tb <- as.data.frame(rbind(ciMA, ciH1))
-colnames(tb) <- c("Lower", "Upper", "mean")
-tb$ph0 <- c(upMA[1], upH1[1])
+tb <- as.data.frame(rbind(c(ciMA, upMA[1]), c(ciH1, upH1[1])))
+colnames(tb) <- c("Lower", "Upper", "mean", "ph0")
 # write.csv(tb, file = "tables/posteriorProbH0.csv", quote = FALSE)
-saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.pdf", width = 14, height = 7)
+# saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.pdf", width = 14, height = 7)
 # optionally, save the plot as tikz so that we can use \mathcal in the labels
 # saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.tikz", width = 10, height = 4)
 

@@ -59,6 +59,38 @@ saveFigure <- function(graph, filename, width = 7, height = 7, ...,
   grDevices::dev.off()
 }
 
+getCohenD <- function(x, y, alpha = 0.05) {
+  # Computes cohen d for a one-sample t-test on the difference scores.
+  # Based on:
+  #   - http://www.real-statistics.com/students-t-distribution/one-sample-t-test/confidence-interval-one-sample-cohens-d/
+  #   - Hedges & Olkin (1985)
+  diff <- x - y
+  n <- length(x)
+  d <- mean(diff) / sd(diff)
+  se <- sqrt(1 / n + d^2 / (2*n))
+  crit <- qnorm(1 - alpha / 2 )
+  ans <- c(d, d - se * crit, d + se * crit)
+  return(ans)
+}
+
+erfcinv <- function(x) qnorm(x / 2, lower.tail = FALSE) / sqrt(2)
+inverseCdf <- function(p, par) {
+
+  thresh0 <- pss(0, par)
+  thresh1 <- pss(0 + 1e-100, par)
+  out <- numeric(length(p))
+
+  idx1 <- p < thresh0 | p > thresh1 # where F(p) != 0
+  idx0 <- p[idx1] >= thresh1 # where F(p) < 0
+
+  out[idx1] <- par[2] - sqrt(2) * par[3] * erfcinv(2 * (par[1]*idx0 - p[idx1]) / (par[1] - 1))
+  return(out)
+}
+
+# rounding function
+mceiling <- function(x, base) base * ceiling(x / base)
+mround   <- function(x, base) base * round(x / base)
+
 # courtesy of Jeff Rouder ----
 # pss <- function(x, par) {
 #   if (x < 0) {
@@ -69,17 +101,29 @@ saveFigure <- function(graph, filename, width = 7, height = 7, ...,
 #   return(p)
 # }
 pss <- function(x, par) {
-  return((x >= 0) * par[1] + (1 - par[1]) * pnorm(x, par[2], par[3]))
+  return((x > 0) * par[1] + (1 - par[1]) * pnorm(x, par[2], par[3]))
 }
 
 
 error <- function(x, p, par) log((p - pss(x, par))^2)
 myQ <- function(p, par) optimize(error, c(-2, 2), p = p, par = par)$minimum
+# myQ <- function(p, par) optim(par = list(0), fn = error, p = p, par0 = par, method = "Brent",
+#                               lower = -2, upper = 2)$par
 
 postStat <- function(par) {
-  lower <- myQ(.025, par)
+  # lower <- myQ(.025, par=par)
+  # error(lower, 0.025, par) > error(0.1, 0.025, par)
+  # diff <- 0.025 - pss(lower, par)
+  # upper <- myQ(.975 - diff, par)
+  # browser()
+  # curve(pss(x, par), from = -2, to = 2, n = 2^12)
+  lower <- inverseCdf(0.025, par)
   diff <- 0.025 - pss(lower, par)
-  upper <- myQ(.975 - diff, par)
+  upper <- inverseCdf(0.975 - diff, par)
+  if (upper == 0) upper <- upper + 1e-100
+  diff <- 0.975 - pss(upper, par)
+  lower <- inverseCdf(0.025 - diff, par)
+  pss(upper, par) - pss(lower, par)
   me <- par[2] * (1 - par[1])
   return(c(lower, upper, me))
 }

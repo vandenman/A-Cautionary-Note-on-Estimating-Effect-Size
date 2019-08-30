@@ -1,11 +1,8 @@
 rm(list = ls())
 library(ggplot2)
 library(tibble)
-library(effsize)
-library(tikzDevice)
 source("R/functions.R")
 source("R/ggplotTheme.R")
-mceiling <- function(x, base) base * ceiling(x / base)
 
 priorPH0 <- 0.5
 sigmaSlab <- 1
@@ -15,9 +12,10 @@ dat <- readRDS("data/simulatedDataset.rds")
 n <- nrow(dat)
 
 priorPH1 <- 1 - priorPH0
-ybar <- cohen.d.default(dat[["x"]], dat[["y"]], paired = TRUE, noncentral = FALSE)
-diffScore <- dat[["d"]]
-ybar <- sqrt(2) * mean(diffScore) / sd(diffScore)
+# ybar <- cohen.d.default(dat[["x"]], dat[["y"]], paired = TRUE, noncentral = FALSE)
+ybar <- getCohenD(dat[["x"]], dat[["y"]])[1]
+# diffScore <- dat[["d"]]
+# ybar <- sqrt(2) * mean(diffScore) / sd(diffScore)
 
 upMA <- updatePar(priorPH0, sigmaSlab, n, ybar)
 ciMA <- postStat(upMA)
@@ -75,7 +73,7 @@ textCRI <- geom_text(data = dfBarCri_r, aes(x = x, y = y, label = group), nudge_
 
 graph <- ggplot(dfLineH0) +
 	lineH1 + lineH0 + CRIBar + textCRI + points +
-  labs(x = expression(Population~effect~ delta), y = NULL, color = NULL) +
+  labs(x = expression(Population~effect~ delta), y = "Scaled Density", color = NULL) +
   # labs(x = "Population effect $\\delta$", y = NULL, color = NULL) +
 	scale_y_continuous(breaks = seq(0, 1, .25), limits = c(0, 1.0)) +
   geom_rangeframe() + myTheme(base_size = 32)

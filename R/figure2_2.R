@@ -28,6 +28,8 @@ yvals <- dnorm(xgrid, upMA[2], upMA[3])#dPosteriorH1(xgrid, ybar, n, upMA[3])
 criMA <- tibble(lower = ciMA[1], upper = ciMA[2]) # modelAveragedCRI(priorPH0, cdfH1 = pPosteriorH1, obsDelta = ybar, n = n, sigmaSlab = sigmaSlab)
 criH1 <- tibble(lower = ciH1[1], upper = ciH1[2]) #modelAveragedCRI(0.0, cdfH1 = pPosteriorH1, obsDelta = obsDelta, n = n, sigmaSlab = sigmaSlab)
 
+modeMA <- xgrid[which.max(yvals)]
+
 dfLineH1 <- tibble(x = xgrid, y = yvals)
 dfLineH0 <- tibble(x = c(0, 0), y = c(0, priorPH0))
 
@@ -80,10 +82,9 @@ graph <- ggplot(dfLineH0) +
 
 graph
 
-tb <- as.data.frame(rbind(c(ciMA, upMA[1]), c(ciH1, upH1[1])))
-colnames(tb) <- c("Lower", "Upper", "mean", "ph0")
-# write.csv(tb, file = "tables/posteriorProbH0.csv", quote = FALSE)
+tb <- as.data.frame(rbind(c(ciMA, upMA[1], 1 - upMA[1], modeMA), c(ciH1, upH1[1], 1 - upH1[1], NA)))
+colnames(tb) <- c("Lower", "Upper", "mean", "ph0", "ph1", "mode")
+write.csv(tb, file = "tables/posteriorProbH0.csv", quote = FALSE)
 # saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.pdf", width = 14, height = 7)
 # optionally, save the plot as tikz so that we can use \mathcal in the labels
 # saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.tikz", width = 10, height = 4)
-

@@ -16,7 +16,7 @@ if (!file.exists("data/simulatedDataset.rds")) {
   sdDiff <- sqrt(2 * sd^2)
   deltaMu <- cohenD * sdDiff#sd / sqrt(2)
 
-  X <- MASS::mvrnorm(n, mu = c(7 + deltaMu, 7), Sigma = diag(sd^2, 2), empirical = TRUE)
+  X <- MASS::mvrnorm(n, mu = c(5 + deltaMu, 5), Sigma = diag(sd^2, 2), empirical = TRUE)
   x <- X[, 1]
   y <- X[, 2]
 
@@ -91,17 +91,19 @@ datSum <- tibble(
 )
 
 base_size <- 34
-pointSize <- 8
+pointSize <- 10
 lineSize  <- 1.25
 gp <- geom_point(size = pointSize)
 ge <- geom_errorbar(width = 0.2, size = lineSize)
-gl <- geom_line(position = position_dodge(0.2), size = lineSize)
+h <- 0.1
+dfLine <- as.data.frame(approx(2:1, datSum$means, c(2 - h, 1 + h)))
+gl <- geom_line(data = dfLine, mapping = aes(x = x, y = y), position = position_dodge(0.5), size = lineSize, inherit.aes = FALSE)
 
 ybreaks <- pretty(unlist(datSum[-1]))
 groupNames <- c("Talking", "Control")
 graphLeft <- ggplot(data = datSum, aes(x = condition, y = means, ymin = lowerci, ymax = upperci, group = 1)) +
   gp + ge + gl +
-  labs(x = NULL, y = "Growth (cm)") +
+  labs(x = NULL, y = "Growth (grams)") +
   scale_y_continuous(breaks = ybreaks, limits = range(ybreaks)) +
   geom_rangeframe() + myTheme(base_size = base_size)
 

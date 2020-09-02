@@ -3,8 +3,8 @@ rm(list = ls())
 library(ggplot2)
 library(tibble)
 library(assertthat)
-source("R/functions.R")
-source("R/ggplotTheme.R")
+source(file.path("R", "functions.R"))
+source(file.path("R", "ggplotTheme.R"))
 
 makeFigure3 <- function(tib, tibRibbon = NULL, base_size = 24, gridVsWrap = "wrap", scales = "free", addHline = TRUE,
                         dfAnnotate = NULL, legend.position = "none", legendTitle = expression(sigma),
@@ -120,7 +120,8 @@ tib1c <- tibble(
   sigma = factor(rep(ph0s, each = length(dTrue))), # reuse sigma as P(H0)
   sides = "bl"
 )
-figure_4 <- makeFigure3(tib1c, legend.position = "right", legendTitle = expression(p(H[0]))) + theme(legend.justification = "center")
+# figure_4 <- makeFigure3(tib1c, legend.position = "right", legendTitle = expression(p(H[0]))) + theme(legend.justification = "center")
+figure_4 <- makeFigure3(tib1c, legend.position = "right", legendTitle = expression(p(spike))) + theme(legend.justification = "center")
 # figure_4 <- makeFigure3(tib1c, legend.position = c(.1, 1), legendTitle = expression(p(H[0])))
 
 tib12d  <- tib12

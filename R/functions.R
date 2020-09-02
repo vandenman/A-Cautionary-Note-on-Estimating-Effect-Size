@@ -59,11 +59,33 @@ saveFigure <- function(graph, filename, width = 7, height = 7, ...,
   grDevices::dev.off()
 }
 
+writeTable <- function(x, file, directory = "tables") {
+  # small wrapper around write.csv to save tables in a way that the latex package pgfplotstable
+  # can easily read them
+
+  p1 <- file.path(directory, file)
+  if (!dir.exists(directory))
+    dir.create(directory)
+
+  write.csv(x, p1, row.names = FALSE, quote = FALSE)
+}
+
+
 getCohenD <- function(x, y, alpha = 0.05) {
   # Computes cohen d for a one-sample t-test on the difference scores.
   # Based on:
   #   - http://www.real-statistics.com/students-t-distribution/one-sample-t-test/confidence-interval-one-sample-cohens-d/
   #   - Hedges & Olkin (1985)
+
+  # compared to
+  # effsize:::cohen.d.default(
+  #   subset(dat, ValenceBlock == "2" & Block == "2")$DV,
+  #   subset(dat, ValenceBlock == "2" & Block == "1")$DV,
+  #   paired = TRUE,
+  #   within = FALSE
+  # )
+  # the point estimate is identical and the confidence interval very similar (effsize uses a t-distribution for this)
+
   diff <- x - y
   n <- length(x)
   d <- mean(diff) / sd(diff)
@@ -125,7 +147,7 @@ postStat <- function(par) {
   lower <- inverseCdf(0.025 - diff, par)
   pss(upper, par) - pss(lower, par)
   me <- par[2] * (1 - par[1])
-  return(c(lower, upper, me))
+  return(c("lower" = lower, "upper" = upper, "model averaged" = me))
 }
 
 bf <- function(d, n, v0) {
@@ -142,7 +164,7 @@ updatePar <- function(rho0, v0, N, ybar) {
   mu1 <- v1 * c
   w <- bf(ybar, N, v0)
   rho1 <- rho0 / (rho0 + (1 - rho0) * w)
-  return(c(rho1, mu1, sqrt(v1)))
+  return(c("ph0" = rho1, "mu" = mu1, "sd" = sqrt(v1)))
 }
 
 updateEV <- function(rho0, v0, N, ybar) {

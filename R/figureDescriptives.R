@@ -4,8 +4,8 @@ library(ggplot2)
 library(effsize)
 library(patchwork)
 library(tibble)
-source("R/functions.R")
-source("R/ggplotTheme.R")
+source(file.path("R", "functions.R"))
+source(file.path("R", "ggplotTheme.R"))
 
 # simulate data ----
 if (!file.exists("data/simulatedDataset.rds")) {

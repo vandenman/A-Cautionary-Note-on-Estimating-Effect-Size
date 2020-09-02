@@ -6,7 +6,7 @@ require(grid)
 # font_import()
 # loadfonts(device = "win")
 
-myTheme <- function(base_size = 17, base_family = NULL,#LM Roman 10",
+myTheme <- function(base_size = 22, base_family = NULL,#LM Roman 10",
                     legend.position = "none", legend.justification = "top") {
 
   force(legend.position)
@@ -136,7 +136,7 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
       } else {
         major <- panel_scales$x.major
       }
-      r <- range(major)
+      r <- range(major, na.rm = TRUE)
       rugs[["x_b"]] <- ggname(
         "range_x_b",
         segmentsGrob(x0 = unit(r[[1L]], "native") - adj,
@@ -152,7 +152,7 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
       } else {
         major <- panel_scales$x.major
       }
-      r <- range(major)
+      r <- range(major, na.rm = TRUE)
       rugs[["x_t"]] <- ggname(
         "range_x_t",
         segmentsGrob(x0 = unit(r[[1L]], "native") - adj,
@@ -168,7 +168,7 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
       } else {
         major <- panel_scales$y.major
       }
-      r <- range(major)
+      r <- range(major, na.rm = TRUE)
       rugs[["y_l"]] <- ggname(
         "range_y_l",
         segmentsGrob(y0 = unit(r[[1L]], "native") - adj,
@@ -184,7 +184,7 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
       } else {
         major <- panel_scales$y.major
       }
-      r <- range(major)
+      r <- range(major, na.rm = TRUE)
       rugs[["y_r"]] <- ggname(
         "range_y_r",
         segmentsGrob(y0 = unit(r[[1L]], "native") - adj,

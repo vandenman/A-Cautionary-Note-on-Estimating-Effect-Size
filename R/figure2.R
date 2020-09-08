@@ -82,9 +82,10 @@ graph <- ggplot(dfLineH0) +
 
 graph
 
-tb <- as.data.frame(rbind(c(ciMA, upMA[1], 1 - upMA[1], modeMA), c(ciH1, upH1[1], 1 - upH1[1], NA)))
-colnames(tb) <- c("Lower", "Upper", "mean", "ph0", "ph1", "mode")
-write.csv(tb, file = "tables/posteriorProbH0.csv", quote = FALSE)
+# tb <- as.data.frame(rbind(c(ciMA, upMA[1], 1 - upMA[1], modeMA), c(ciH1, upH1[1], 1 - upH1[1], NA)))
+# colnames(tb) <- c("Lower", "Upper", "mean", "ph0", "ph1", "mode")
+# write.csv(tb, file = "tables/posteriorProbH0.csv", quote = FALSE)
+
 # saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.pdf", width = 14, height = 7)
 # optionally, save the plot as tikz so that we can use \mathcal in the labels
 # saveFigure(graph, filename = "spikeAndSlabPosteriorRescaledPosteriorMode.tikz", width = 10, height = 4)

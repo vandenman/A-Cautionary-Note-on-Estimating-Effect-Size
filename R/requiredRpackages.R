@@ -4,5 +4,6 @@ install.packages(c(
 	"tibble",
 	"readr",
 	"compute.es",
-	"patchwork"
+	"patchwork",
+	"lemon"
 ))

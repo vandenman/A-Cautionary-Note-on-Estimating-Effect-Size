@@ -6,7 +6,7 @@ require(grid)
 # font_import()
 # loadfonts(device = "win")
 
-myTheme <- function(base_size = 17, base_family = NULL,#LM Roman 10",
+myTheme <- function(base_size = 22, base_family = NULL,#LM Roman 10",
                     legend.position = "none", legend.justification = "top") {
 
   force(legend.position)
@@ -17,7 +17,8 @@ myTheme <- function(base_size = 17, base_family = NULL,#LM Roman 10",
     # axis
     axis.line         = ggplot2::element_blank(),
     axis.text         = ggplot2::element_text(),#family = family, size = base_size),
-    axis.ticks.length = ggplot2::unit(0.3, "cm"),
+    axis.ticks        = ggplot2::element_line(size = 0.3, color = "black"), # tick width
+    axis.ticks.length = unit(0.3, 'cm'),
     axis.title.x      = ggplot2::element_text(margin = ggplot2::margin(t = 15, b = 5)),
     axis.title.y      = ggplot2::element_text(margin = ggplot2::margin(r = 10, l = 5)),
     axis.text.x       = ggplot2::element_text(colour = "black", margin = ggplot2::margin(t = 7)),
@@ -111,6 +112,7 @@ geom_rangeframe <- function(mapping = NULL,
 #' @format NULL
 #' @export
 GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
+  default_aes = aes(sides = "bl"),
   optional_aes = c("x", "y"),
 
   draw_panel = function(data, panel_scales, coord, sides = "bl", lineend = "butt", color = "black",
@@ -123,45 +125,70 @@ GeomRangeFrame <- ggplot2::ggproto("GeomRangeFrame", ggplot2::Geom,
                lwd = size * ggplot2::.pt,
                lineend = lineend)
 
-    adj <- unit(0, "native") # if (extendForAxisTicks) unit(getGraphOption("axisTickWidth") / 2, "mm") else unit(0, "native")
+    adj <- unit(0.375 * ggplot2::.pt * 0.3, "pt")
+
+    if ("sides" %in% names(data))
+      sides <- data[["sides"]][[1L]]
 
     if (grepl("b", sides)) {
+      if (packageVersion("ggplot2") >= "3.3.0") {
+        major <- panel_scales$x$break_positions()
+      } else {
+        major <- panel_scales$x.major
+      }
+      r <- range(major, na.rm = TRUE)
       rugs[["x_b"]] <- ggname(
         "range_x_b",
-        segmentsGrob(# x0 = unit((1/1.0001)*min(panel_scales$x.major), "native"),
-                     # x1 = unit(1.001*max(panel_scales$x.major), "native"),
-                     x0 = unit(min(panel_scales$x.major), "native") - adj,
-                     x1 = unit(max(panel_scales$x.major), "native") + adj,
+        segmentsGrob(x0 = unit(r[[1L]], "native") - adj,
+                     x1 = unit(r[[2L]], "native") + adj,
                      y0 = unit(0, "npc"),
                      y1 = unit(0, "npc"),
                      gp = gp))
     }
 
     if (grepl("t", sides)) {
+      if (packageVersion("ggplot2") >= "3.3.0") {
+        major <- panel_scales$x.sec$break_positions()
+      } else {
+        major <- panel_scales$x.major
+      }
+      r <- range(major, na.rm = TRUE)
       rugs[["x_t"]] <- ggname(
         "range_x_t",
-        segmentsGrob(x0 = unit(min(panel_scales$x.major), "native"),
-                     x1 = unit(max(panel_scales$x.major), "native"),
+        segmentsGrob(x0 = unit(r[[1L]], "native") - adj,
+                     x1 = unit(r[[2L]], "native") + adj,
                      y0 = unit(1, "npc"),
                      y1 = unit(1, "npc"),
                      gp = gp))
     }
 
     if (grepl("l", sides)) {
+      if (packageVersion("ggplot2") >= "3.3.0") {
+        major <- panel_scales$y$break_positions()
+      } else {
+        major <- panel_scales$y.major
+      }
+      r <- range(major, na.rm = TRUE)
       rugs[["y_l"]] <- ggname(
         "range_y_l",
-        segmentsGrob(y0 = unit(min(panel_scales$y.major), "native"),
-                     y1 = unit(max(panel_scales$y.major), "native"),
+        segmentsGrob(y0 = unit(r[[1L]], "native") - adj,
+                     y1 = unit(r[[2L]], "native") + adj,
                      x0 = unit(0, "npc"),
                      x1 = unit(0, "npc"),
                      gp = gp))
     }
 
     if (grepl("r", sides)) {
+      if (packageVersion("ggplot2") >= "3.3.0") {
+        major <- panel_scales$y.sec$break_positions()
+      } else {
+        major <- panel_scales$y.major
+      }
+      r <- range(major, na.rm = TRUE)
       rugs[["y_r"]] <- ggname(
         "range_y_r",
-        segmentsGrob(y0 = unit(min(panel_scales$y.major), "native"),
-                     y1 = unit(max(panel_scales$y.major), "native"),
+        segmentsGrob(y0 = unit(r[[1L]], "native") - adj,
+                     y1 = unit(r[[2L]], "native") + adj,
                      x0 = unit(1, "npc"),
                      x1 = unit(1, "npc"),
                      gp = gp))

@@ -213,7 +213,10 @@ In practice, hypotheses and expectations should be specified up front.
 Nevertheless, the example raises the question: When are effect sizes overestimated?
 \end{revision}%
 Standard point estimates and confidence intervals ignore the possibility that the effect is spurious (i.e., the null hypothesis $\mathcal{H}_0$). This is not problematic when $\mathcal{H}_0$ is deeply implausible, either because $\mathcal{H}_0$ was highly unlikely \emph{a priori} or because the data decisively undercut $\mathcal{H}_0$. But when the data fail to undercut $\mathcal{H}_0$, or when $\mathcal{H}_0$ is highly likely \emph{a priori} (i.e., ``plants do not grow faster when you talk to them''), then $\mathcal{H}_0$ is not ruled out as a plausible account of the data. Effect size estimates that ignore a plausible $\mathcal{H}_0$ are generally \begin{revision}overly optimistic and\end{revision} overconfident: the fact that $\mathcal{H}_0$ provides an acceptable account of the data should shrink effect size estimates towards zero.
-
+\begin{revision}%
+For example, it is well known that the sample mean is not always the best estimator for the population mean but can be outperformed by shrinkage estimators \parencite{davis2018estimation, EfronMorris1977}.
+\end{revision}
+%\DON{It is well known that the sample mean is not always the best estimator (ref James Stein, Clint, Effron & Morris)}
 %\begin{revision}%
 %\DON{We could also briefly mention the spike-and-slab model here as a remedy to the problem introduced above.}
 %\end{revision}%
@@ -415,12 +418,12 @@ In the left panel that shows the explicit evaluation data, the different estimat
 For this analysis, the data dominate the prior.
 In contrast, in the right panel that shows the explicit evaluation data, the prior probability of the spike has a large impact on the results.
 Here, the data are less informative and the prior has more influence.
+The adaptive shrinkage is a key feature of the spike-and-slab, that is, the amount of shrinkage depends on the posterior plausibility of the spike.
 \end{revision}
-\DON{call this adaptive shrinkage}
+
 
 \section*{Discussion}
-Standard estimates of effect size ignore the null hypothesis and are therefore overconfident, that is, \begin{revision}farther from
-\end{revision} from zero \begin{revision}than they should be\end{revision}. The spike-and-slab model remedies this problem by explicitly considering the possibility that an effect is absent \parencite{Robinson2019,RouderEtAl2018PBR}. The core idea dates back to
+Standard estimates of effect size ignore the null hypothesis and are therefore overconfident, that is, \begin{revision}farther\end{revision} from zero \begin{revision}than they should be\end{revision}. The spike-and-slab model remedies this problem by explicitly considering the possibility that an effect is absent \parencite{Robinson2019,RouderEtAl2018PBR}. The core idea dates back to
 \citeauthor{Jeffreys1939} (\citeyear{Jeffreys1939}; see also \citeauthor{ly2020bayesian}, \citeyear{ly2020bayesian}); nonetheless, it is \begin{revision}largely\end{revision} ignored in empirical practice, in statistical education, and in journal guidelines.
 \begin{revision}%
 We believe the spike-and-slab model is a useful addition to existing statistical tools of researchers and that it will make the interpretation of the estimates, even those from a preregistered study, more robust across different models.
@@ -429,7 +432,7 @@ We believe the spike-and-slab model is a useful addition to existing statistical
 \subsubsection*{What if All Null Hypotheses Are False?}
 The spike-and-slab approach clashes with the popular estimation mindset, where it is argued that statistical significance should be abandoned in favor of estimation \parencite{McShane2019abandon, Cumming2016introduction, valentine2015life, Cumming2014}. 
 One argument to forgo hypothesis testing is that all null hypotheses are false \parencite{Cohen1990, Meehl1978} and therefore there is no need to consider a component that states that an effect is exactly zero. 
-The statistical counterargument is that, even if point null hypotheses are false, they are still mathematically convenient approximations to more complex hypotheses that allow mass on an interval close to zero \parencite[i.e., perinull hypotheses;][]{ly2020bayesian2, george1993variable, BergerDelampady1987}. 
+The statistical counterargument is that, even if point null hypotheses are false, they are still mathematically convenient approximations to more complex hypotheses that allow mass on an interval close to zero \parencite[\begin{revision}i.e., perinull hypotheses;\end{revision}][]{ly2020bayesian2, george1993variable, BergerDelampady1987}. 
 Thus, from a pragmatic perspective it is irrelevant whether or not null hypotheses are exactly true: in the spike-and-slab model, a \begin{revision}narrow interval around zero\end{revision} will shrink estimates towards zero almost as much as the point null spike component will. 
 
 \subsubsection*{When to Ignore the Spike}

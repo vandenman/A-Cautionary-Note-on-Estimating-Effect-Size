@@ -1,9 +1,7 @@
-%\documentclass[a4paper,doc]{apa6}
 \documentclass[a4paper]{article}
-% \graphicspath{{/figures/}{./../figures/}}
 
-%\usepackage[utf8x]{inputenc}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8x]{inputenc}
+% \usepackage[utf8]{inputenc}
 \usepackage[american]{babel}
 \usepackage{csquotes}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
@@ -24,6 +22,7 @@
 \usepackage{chngcntr} % appendix references
 \usepackage[colorinlistoftodos,prependcaption]{todonotes}
 \usepackage{pgfplotstable}
+\pgfplotsset{compat=1.16}
 \pgfplotstableset{
 	fixed zerofill,
 	precision=3,
@@ -41,18 +40,7 @@
 	\pgfmathprintnumberto{\pgfplotsretval}{#4}%
 }
 
-
 \newcommand{\getCI}[2]{[\getValue{#1}{Lower}{#2}, \getValue{#1}{Upper}{#2}]}
-
-%\usepackage{titlesec}
-%
-%\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
-%\titlespacing\subsection{0pt}{8pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-%\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-
-\usepackage{changes}
-\usepackage[normalem]{ulem}
-\setdeletedmarkup{\color{red}\emph{\sout{#1}}\color{black}}
 
 \usepackage{tikz}
 \usepackage{tikzscale} % check if used!
@@ -128,7 +116,7 @@
 \newenvironment{revision}{\color{teal}}{\color{black}}
 
 \title{A Cautionary Note on Estimating Effect Size}
-%\shorttitle{Estimating Effect Size} 
+% \shorttitle{Estimating Effect Size}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \author[1]{Don van den Bergh%
 	\thanks{%
@@ -146,21 +134,13 @@ Advanced ERC grant 743086 UNIFY to EJW.
 \affil[2]{Centrum Wiskunde \& Informatica}
 \affil[3]{University of California Irvine}
 \date{}
-%\affiliation{~}
 \renewcommand*{\thefootnote}{\arabic{footnote}}
-%
-%\threeauthors{Don van den Bergh and Julia M. Haaf and Alexander Ly and Eric-Jan Wagenmakers}{Alexander Ly}{Jeffrey N. Rouder}
-%\threeaffiliations{University of Amsterdam}{Centrum Wiskunde \& Informatica}{University of California Irvine}
-%\authornote{Correspondence concerning this article should be addressed to: Don van den Bergh, University of Amsterdam, Department of Psychological Methods, Nieuwe Achtergracht 129B, 1018VZ Amsterdam, The Netherlands. E-Mail should be sent to: donvdbergh@hotmail.com.}
 
 \pgfplotstableread{effectSizeExample.csv}\tbEffectSizeExample
 \pgfplotstableread{posteriorProbH0.csv}\reanalysis
 \pgfplotstableread{reanalysis.csv}\reanalysisHeycke
 
 \begin{document}
-
-%\listoftodos
-%\newpage
 
 \maketitle
 
@@ -170,24 +150,7 @@ Advanced ERC grant 743086 UNIFY to EJW.
 	The overestimation can be avoided by incorporating the plausibility of the null hypothesis into the estimation process through a ``spike-and-slab'' model.
 \end{abstract}
 
-Consider the following hypothetical scenario: a colleague from the biology department has just conducted an experiment and approaches you for statistical advice.%
-%
-%Suggestion Lexy:
-%You are being told that the experiment is set up to test the null hypothesis that "plants grow with the same rate regardless if you talk to them or not". In other words, your colleague knows that his field still has considerable doubts about the working hypothesis "plants grow faster when you talk to them", which is why it has not yet been adopted in his field. 
-%
-%In line with recommendations both old (REFS) and new (REFS), your colleague doesn't only want to show that the effect exists, but also provide an estimate of the size of the effect. 
-%
-%There are two ways to do so: (1) conditionally on the assumption that the alternative is true, or (2) unconditionally by marginalising across both the null and the alternative hypothesis. 
-%
-%The conditional approach is standard. It is typically employed in a stepwise manner by first adopting the alternative that the effect is not zero after observing,  say, p < 0.05. An estimate of the effect size and a confidence interval is then given. Alternatively, the test is abandoned all together, because it is believed to be highly improbable anyways, and only the estimate and confidence interval is reported. 
-%
-%[Illustrate with example]
-%
-%The resulting effect size estimate in the stepwise conditional procedure of the effect size, can be too large if a mistake is made in the testing stage. Note that (tautologically) the best guess of the effect size when the null is true should be zero. However, even if the null hypothesis is true, then it is expected that p < 0.05 occurs in 5% of the experiments. As such, an estimate that should be zero is then replaced by an effect size estimate that was unlikely under the null (thus, far away from zero). 
-%
-%The unconditional or marginal approach elaborated on here attempts to correct for inflation of effect sizes in the stepwise approach, by acknowledging uncertainty in the testing phase.
-%
-The analysis yields $p<0.05$ and your colleague believes that this is grounds to reject the null hypothesis. In line with recommendations both old \parencite[e.g.,][]{Grant1962, Loftus1996} and new \parencite[e.g.,][]{harrington2019new, Cumming2014} you convince your colleague that it is better to replace the $p$-value with a point estimate of effect size and a 95\% confidence interval \parencite[but see][]{MoreyEtAl2016CI}. You also manage to convince your colleague to plot the data (see Figure~\ref{fig:descriptivesPlot}). Mindful of the reporting guidelines of the \emph{Psychonomic Society}\footnote{\protect\url{https://www.springer.com/psychology?SGWID=0-10126-6-1390050-0}} and \emph{Psychological Science}\footnote{\url{https://www.psychologicalscience.org/publications/psychological\_science/ps-submissions\#STAT}}, your colleague reports the result as follows: ``Cohen's $\cohend = \getValue{0}{Estimate}{\tbEffectSizeExample}$, CI $= \getCI{0}{\tbEffectSizeExample}$''.
+Consider the following hypothetical scenario: a colleague from the biology department has just conducted an experiment and approaches you for statistical advice. The analysis yields $p<0.05$ and your colleague believes that this is grounds to reject the null hypothesis. In line with recommendations both old \parencite[e.g.,][]{Grant1962, Loftus1996} and new \parencite[e.g.,][]{harrington2019new, Cumming2014} you convince your colleague that it is better to replace the $p$-value with a point estimate of effect size and a 95\% confidence interval \parencite[but see][]{MoreyEtAl2016CI}. You also manage to convince your colleague to plot the data (see Figure~\ref{fig:descriptivesPlot}). Mindful of the reporting guidelines of the \emph{Psychonomic Society}\footnote{\protect\url{https://www.springer.com/psychology?SGWID=0-10126-6-1390050-0}} and \emph{Psychological Science}\footnote{\url{https://www.psychologicalscience.org/publications/psychological\_science/ps-submissions\#STAT}}, your colleague reports the result as follows: ``Cohen's $\cohend = \getValue{0}{Estimate}{\tbEffectSizeExample}$, CI $= \getCI{0}{\tbEffectSizeExample}$''.
 
 
 \begin{figure}[!ht]
@@ -577,54 +540,6 @@ Computing the mean of left hand side yields:
 	\prob{\shypo{1}\mid \dataZ} \left(\mu_{\delta} \mid\shypo{1}, \dataZ\right).
 \end{align*}
 Here $\left(\mu_{\delta} \mid\shypo{1}, \dataZ\right)$ is the posterior mean of effect size under the slab. In a similar fashion, other statistics may be obtained. However, it is also possible to draw samples from marginal posterior distribution. To obtain a sample $s$, first draw $u$ from a uniform distribution on [0, 1]. If $u<\prob{\shypo{1}\mid \dataZ}$ draw $s$ from $p(\delta\mid\shypo{1}, \dataZ)$, otherwise $s$ is zero. This approach often used when the integrals become too unwieldy to compute analytically. For example, the R package BAS uses this procedure to compute credible intervals \parencite{ClydeEtAl2011}.
-
-%By reparametrizing into effect size we obtain $\delta = \nicefrac{\mu}{\sigma}$. The spike assumes that the effect size is 0, $\delta = 0$, while the slab introduces a prior distribution to represent prior uncertainty about possible effect sizes, $\delta \sim \dnorm{0}{\sigma_0^2}$.
-%Thus, the likelihood $\lik$ under the slab is given by 
-%\begin{align*}
-%	\lik 	&= \prod_{i=1}^{N} \dnormc{Y_i}{\delta}{\sigma^2}\\
-%			&= \prod_{i=1}^{N} \frac{1}{\sigma\sqrt{2\pi}} \exp\left(-\frac{1}{2\sigma^2}\left(Y_i - \delta\right)^2\right)\\
-%%			&= \left(\frac{1}{\sigma\sqrt{2\pi}}\right)^N \exp\left(\frac{1}{2\sigma^2}\sum_{i=1}^{N}\left(Y_i - \delta\right)^2\right)\\
-%			&= \left(\frac{1}{\sigma\sqrt{2\pi}}\right)^N \exp\left(-\frac{1}{2\sigma^2}
-%			\left((n-1)s^2 +n(\mu - \bar{Y})\right)\right)
-%\end{align*}
-%where $\bar{Y}$ and $s$ are the mean and standard deviation of $Y$ respectively.  Following \textcite{RouderEtAl2018PBR}, we assume that $\sigma$ is known and reparametrize $\delta = \nicefrac{\mu}{\sigma}$ and $d = \nicefrac{\bar{Y}}{\sigma}$. This yields:
-%\begin{align*}
-%\lik 	&= \left(\frac{1}{\sigma\sqrt{2\pi}}\right)^N 
-%\exp\left(\frac{1}{2\sigma} \left((n-1)s^2 +n(\delta - d)\right)\right).
-%\end{align*}
-%To obtain the likelihood under the slab, simply set $\delta=0$.
-%
-%The posterior distribution is obtained through Bayes' Theorem:
-%\begin{align}%\label{eq:BayesTheorem2}
-%\overbrace{\probp{\bm{\beta}, \bm{\model} \mid \data}}^{\substack{\text{Joint posterior}\\\text{distribution}}}
-%= 
-%\overbrace{\probp{\bm{\model}}}^{\substack{\text{Prior model}\\ \text{probability}}}
-%\times	\quad
-%\overbrace{\probp{\bm{\beta}\mid \bm{\model}}}^{\substack{\text{Prior param.}\\ \text{probability}}}
-%\times \quad
-%\frac{
-%	\overbrace{\lik(\data \mid \bm{\beta}, \bm{\model})}^{\text{Likelihood}}
-%}{
-%%	\probp{\data}
-%	\underbrace{\probp{\data}}_{\substack{\text{Marginal}\\ \text{Likelihood}}}
-%}.
-%\end{align}
-%In practice, this is first done for each model separately and afterward the results are combined, although we will see that these steps can be combined for in example. To obtain the posterior distribution under the slab we have
-
-%\probp{\bm{\beta}, \bm{\model} \mid \data}= 
-%\frac{
-%\prob{}
-%
-%	\overbrace{\lik(\data \mid \bm{\beta}, \bm{\model})}^{\text{Likelihood}}
-%}{
-%	%	\probp{\data}
-%	\underbrace{\probp{\data}}_{\substack{\text{Marginal}\\ \text{Likelihood}}}
-%}.
-
-
-%\begin{figure}[!ht]
-%	\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta_sigma_n_100.pdf}
-%\end{figure}
 
 \end{revision}
 

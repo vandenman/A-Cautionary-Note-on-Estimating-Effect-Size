@@ -175,18 +175,19 @@ The example above is, of course, rhetorical.
 In practice, hypotheses and expectations should be specified up front.
 Nevertheless, the example raises the question: When are effect sizes overestimated?
 \end{revision}%
+\EJ{...rhetorical. Its purpose is to underscore the potential conflict between standard reporting guidelines and common sense. The example raises the question: When are ...}
 Standard point estimates and confidence intervals ignore the possibility that the effect is spurious (i.e., the null hypothesis $\mathcal{H}_0$). This is not problematic when $\mathcal{H}_0$ is deeply implausible, either because $\mathcal{H}_0$ was highly unlikely \emph{a priori} or because the data decisively undercut $\mathcal{H}_0$. But when the data fail to undercut $\mathcal{H}_0$, or when $\mathcal{H}_0$ is highly likely \emph{a priori} (i.e., ``plants do not grow faster when you talk to them''), then $\mathcal{H}_0$ is not ruled out as a plausible account of the data. Effect size estimates that ignore a plausible $\mathcal{H}_0$ are generally \begin{revision}overly optimistic and\end{revision} overconfident: the fact that $\mathcal{H}_0$ provides an acceptable account of the data should shrink effect size estimates towards zero.
 \begin{revision}%
 For example, it is well known that the sample mean is not always the best estimator for the population mean but can be outperformed by shrinkage estimators \parencite{davis2018estimation, EfronMorris1977}.
 \end{revision}
+\EJ{The statistical benefits of shrinkage are described in Efron and Morris paper (see also Davis-St. paper and ShiffrinEtAl2008, RouderLu2005); the benefits of shrinking estimates towards zero are discussed for instance in REFS (van Erp Psych Methods; early spike-and-slab reference George McCullough).}
 %\DON{It is well known that the sample mean is not always the best estimator (ref James Stein, Clint, Effron & Morris)}
 %\begin{revision}%
 %\DON{We could also briefly mention the spike-and-slab model here as a remedy to the problem introduced above.}
 %\end{revision}%
 
 \begin{revision}%
-In this paper, we discuss the spike-and-slab model and its merits to avoid overestimating effect size.
-First, we formally introduce the spike-and-slab model.
+In this paper we discuss a statistical model to ameliorate the overestimation of effect size: the so-called ``spike-and-slab''. First, we formally introduce the spike-and-slab model.
 Second, we apply the spike-and-slab model to the example in the introduction and illustrate how it circumvents overestimation.
 Third, we visualize how the spike-and-slab model may shrink the estimated effect size toward zero in general.
 Fourth, we demonstrate the spike-and-slab model by reanalyzing the data of \textcite{heycke2018two}.
@@ -196,17 +197,13 @@ Finally, we conclude with practical recommendations and a discussion on when to 
 
 \section*{A Spike-and-Slab Perspective}
 \begin{revision}%
-The spike-and-slab approach has been broadly discussed in the statistical literature \parencite{ohara2009review, ishwaran2005spike, geweke1996variable} and psychological literature \parencite{yu2018bayesian, bainter2020improving}.
-Conceptually, the approach is relatively straight-forward.
+The spike-and-slab approach has been widely discussed in the statistical literature \parencite[e.g.,][]{ohara2009review, ishwaran2005spike, geweke1996variable, clyde1996prediction, mitchell1988bayesian} and in psychological literature \parencite[e.g.,][]{yu2018bayesian, RouderEtAl2018PBR, bainter2020improving}.
+Conceptually, the approach is relatively straightforward.
 	
-This section formalizes the conceptual ideas from the introduction in the spike-and-slab model \parencite{RouderEtAl2018PBR, clyde1996prediction, mitchell1988bayesian}. 
-The population effect size is typically approximated with a sample estimate.
-This sample estimate assumes that \hypo{0} is false and that the population effect size is nonzero.
-To formalize this, let $\popDelta$ denote the population effect size, let $\obsDelta$ denote an estimate, and let $\obsDelta\mid\hypo{1}$ denote an estimate that assumes that \hypo{1} is true.
-Assuming that \hypo{0} is true leads to $\obsDelta\mid\hypo{0}$, which is usually 0.
+As usual, the statistical goal is to infer the population effect size from a set of sample observations. Let $\popDelta$ denote the population effect size, let $\obsDelta$ denote a point estimate, and let $\obsDelta\mid\hypo{1}$ denote a point estimate that assumes that \hypo{1} is true.
+Assuming that \hypo{0} is true leads to $\obsDelta\mid\hypo{0}$, which usually equals 0.
 Key is that both estimates, $\obsDelta\mid\hypo{1}$ and $\obsDelta\mid\hypo{0}$, are \emph{conditional} on the hypotheses. 
-For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect size under the alternative hypothesis''.
-
+For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect size under the alternative hypothesis that the effect exists''. To the best of our knowledge, all existing guidelines for reporting effect size estimates recommend that researchers provide $\obsDelta\mid\hypo{1}$; implicitly, the guidelines assume that \hypo{0} is false and that the population effect size is nonzero. In contrast, in the spike-and-slab model, the estimate of effect size is determined by both \hypo{1} and \hypo{0}. 
 
 %Such an estimate is denoted $\obsDelta\mid\hypo{1}$.
 %Assuming that \hypo{0} is true, leads to an estimate denoted $\obsDelta\mid\hypo{0}$, which is usually 0. 
@@ -215,15 +212,18 @@ For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect si
 %Note that both estimates assume the hypothesis to be true; they ignore any uncertainty regarding the hypotheses themselves.
 %The key property of the spike-and-slab model is that it considers both hypotheses at once in a two-component model. 
 \end{revision}%
+
+\EJ{As the name suggest, the spike-and-slab model consists of two components.}
 The first component\begin{revision}, the spike, \end{revision}corresponds to the position that talking to plants does not affect their growth (i.e., $\delta = 0$), whereas the second component\begin{revision}, the slab, \end{revision}corresponds to the position that speaking to plants does affect their growth (i.e., $\delta \neq 0$).
 \begin{revision}%
 \begin{revision}The spike and slab\end{revision} are analogous to \hypo{0} and \hypo{1} discussed above.
 \end{revision}%
-Both components are deemed \emph{a priori} equally likely, such that the prior probability for each component is \nicefrac{1}{2}.
+Both components are commonly deemed \emph{a priori} equally likely, such that the prior probability for each component is \nicefrac{1}{2}.
 \begin{revision}%
-One can also assign prior probabilities other than \nicefrac{1}{2}, if this can be motivated by prior research or theories \parencite[e.g., ][]{wilson2018prior}.
-After seeing the data, the prior probabilities of each component, $\prob{\shypo{0}}$ and $\prob{\shypo{1}}$, are updated to posterior probabilities, $\prob{\shypo{0}\mid\data}$ and $\prob{\shypo{1}\mid\data}$.
+One can also assign prior probabilities other than \nicefrac{1}{2}, if this can be motivated by prior research, prior data, or existing theories \parencite[e.g., ][]{wilson2018prior}.
+After observing the data, the prior probabilities of both components, $\prob{\shypo{0}}$ and $\prob{\shypo{1}}$, are updated to posterior probabilities, $\prob{\shypo{0}\mid\data}$ and $\prob{\shypo{1}\mid\data}$.
 
+\EJ{HERE}
 Quantifying the uncertainty about the two components using probabilities allows us to account for the uncertainty of each component.
 Furthermore, this allows us to consider the \emph{marginal} estimate of effect size.
 The marginal estimate of the spike-and-slab model weighs the estimates of each component by its plausibility after seeing the data.
@@ -425,7 +425,7 @@ We believe that approach allows researchers a more nuanced interpretation of the
 \appendix
 \begin{revision}%
 
-\section*{A: Derivation of the Posterior Distribution}
+\section*{Derivation of the Posterior Distribution}
 
 %\DON{mention in the cover letter that this can also be an online appendix}
 

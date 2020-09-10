@@ -135,13 +135,13 @@ tib1d$method <- tib1d$ss
 
 tapply(tib1d$sides, list(tib1d$method, tib1d$N), unique)
 
-figure_5 <- makeFigure3(tib1d, legend.position = "right") + lemon::facet_rep_grid(N ~ method) + theme(legend.justification = "center")
+figure_5 <- makeFigure3(tib1d, legend.position = "right", base_size = 30) + lemon::facet_rep_grid(N ~ method) + theme(legend.justification = "center")
 
 
 saveFigure(figure_3a, filename = "posteriorMeanVsSampleDelta_sigma_n_40.pdf", width = 14, height = 7)
 saveFigure(figure_3b, filename = "posteriorMeanVsSampleDelta_sigma_n_100.pdf", width = 14, height = 7)
 saveFigure(figure_4,  filename = "posteriorMeanVsSampleDelta_ph0_n_40.pdf", width = 7, height = 7)
-saveFigure(figure_5,  filename = "posteriorMeanVsSampleDelta_4_panel.pdf", width = 14, height = 14)
+saveFigure(figure_5,  filename = "posteriorMeanVsSampleDelta_4_panel_big_font.pdf", width = 14, height = 14)
 # makeFigure3(tib12, gridVsWrap = "wrap", scales = "fixed")
 
 # saveFigure(g12, filename = "posteriorMeanVsSampleDelta.pdf", width = 10, height = 7)

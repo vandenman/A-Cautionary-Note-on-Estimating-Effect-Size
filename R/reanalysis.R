@@ -235,9 +235,9 @@ graph <- ggplot(data = robustnessData, aes(x = ph0, y = ma, ymin = lower, ymax =
   labs(y = "Model averaged estimate") +
   lemon::facet_rep_wrap(~analysis, scales = "free") +
   geom_rangeframe(sides = "bl") +
-  myTheme(legend.position = "right")
+  myTheme(legend.position = "right", base_size = 28)
 graph
-saveFigure(graph, "robustnessReanalysis.pdf", width = 14)
+saveFigure(graph, "robustnessReanalysis_big_font.pdf", width = 14)
 
 # df_hline <- tibble(x = range(priorPH0_vals), y = rep(upMA[2], 2))
 #

@@ -177,7 +177,7 @@ The example raises the question: When are effect sizes overestimated?
 \end{revision}%
 Standard point estimates and confidence intervals ignore the possibility that the effect is spurious (i.e., the null hypothesis $\mathcal{H}_0$). This is not problematic when $\mathcal{H}_0$ is deeply implausible, either because $\mathcal{H}_0$ was highly unlikely \emph{a priori} or because the data decisively undercut $\mathcal{H}_0$. But when the data fail to undercut $\mathcal{H}_0$, or when $\mathcal{H}_0$ is highly likely \emph{a priori} (i.e., ``plants do not grow faster when you talk to them''), then $\mathcal{H}_0$ is not ruled out as a plausible account of the data. Effect size estimates that ignore a plausible $\mathcal{H}_0$ are generally \begin{revision}overly optimistic and\end{revision} overconfident: the fact that $\mathcal{H}_0$ provides an acceptable account of the data should shrink effect size estimates towards zero.
 \begin{revision}%
-The statistical benefits of shrinkage are described in \citeauthor{EfronMorris1977} (\citeyear{EfronMorris1977}, see also \cite{davis2018estimation, RouderLu2005, ShiffrinEtAl2008}); the benefits of shrinking estimates towards zero are discussed for instance in \textcite{vanErp2019shrinkage, george1993variable}.
+The statistical benefits of shrinkage are described in \citeauthor{EfronMorris1977} (\citeyear{EfronMorris1977}, see also \cite{davis2018estimation, RouderLu2005, ShiffrinEtAl2008}); the benefits of shrinking estimates towards zero are discussed for instance in \textcite{IversonEtAl2010, vanErp2019shrinkage, george1993variable}.
 %For example, it is well known that the sample mean is not always the best estimator for the population mean but can be outperformed by shrinkage estimators \parencite{davis2018estimation, EfronMorris1977}.
 \end{revision}
 %\EJ{The statistical benefits of shrinkage are described in Efron and Morris paper (see also Davis-St. paper and ShiffrinEtAl2008, RouderLu2005); the benefits of shrinking estimates towards zero are discussed for instance in REFS (van Erp Psych Methods; early spike-and-slab reference George McCullough).}
@@ -197,7 +197,7 @@ Finally, we conclude with practical recommendations and a discussion on when to 
 
 \section*{A Spike-and-Slab Perspective}
 \begin{revision}%
-The spike-and-slab approach has been widely discussed in the statistical literature \parencite[e.g.,][]{ohara2009review, ishwaran2005spike, geweke1996variable, clyde1996prediction, mitchell1988bayesian} and in psychological literature \parencite[e.g.,][]{yu2018bayesian, RouderEtAl2018PBR, bainter2020improving}.
+The spike-and-slab approach has been widely discussed in the statistical literature \parencite[e.g.,][]{ohara2009review, ishwaran2005spike, geweke1996variable, clyde1996prediction, mitchell1988bayesian} and in psychological literature \parencite[e.g.,][]{IversonEtAl2010, yu2018bayesian, RouderEtAl2018PBR, bainter2020improving}.
 Conceptually, the approach is relatively straightforward.
 	
 As usual, the statistical goal is to infer the population effect size from a set of sample observations. Let $\popDelta$ denote the population effect size, let $\obsDelta$ denote a point estimate, and let $\obsDelta\mid\hypo{1}$ denote a point estimate that assumes that \hypo{1} is true.
@@ -213,45 +213,30 @@ For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect si
 %The key property of the spike-and-slab model is that it considers both hypotheses at once in a two-component model. 
 \end{revision}%
 
-\EJ{As the name suggest, the spike-and-slab model consists of two components.}
-The first component\begin{revision}, the spike, \end{revision}corresponds to the position that talking to plants does not affect their growth (i.e., $\delta = 0$), whereas the second component\begin{revision}, the slab, \end{revision}corresponds to the position that speaking to plants does affect their growth (i.e., $\delta \neq 0$).
+\begin{revision}As the name suggest, the spike-and-slab model consists of two components. The first component, the spike, \end{revision}corresponds to the position that talking to plants does not affect their growth (i.e., $\delta = 0$), whereas the second component\begin{revision}, the slab, \end{revision}corresponds to the position that speaking to plants does affect their growth (i.e., $\delta \neq 0$).
 \begin{revision}%
 \begin{revision}The spike and slab\end{revision} are analogous to \hypo{0} and \hypo{1} discussed above.
 \end{revision}%
 Both components are commonly deemed \emph{a priori} equally likely, such that the prior probability for each component is \nicefrac{1}{2}.
 \begin{revision}%
-One can also assign prior probabilities other than \nicefrac{1}{2}, if this can be motivated by prior research, prior data, or existing theories \parencite[e.g., ][]{wilson2018prior}.
+One can assign prior probabilities other than \nicefrac{1}{2}, if this can be motivated by prior research, prior data, or existing theories \parencite[e.g., ][]{wilson2018prior}.
 After observing the data, the prior probabilities of both components, $\prob{\shypo{0}}$ and $\prob{\shypo{1}}$, are updated to posterior probabilities, $\prob{\shypo{0}\mid\data}$ and $\prob{\shypo{1}\mid\data}$.
 
-\EJ{HERE}
-Quantifying the uncertainty about the two components using probabilities allows us to account for the uncertainty of each component.
-Furthermore, this allows us to consider the \emph{marginal} estimate of effect size.
-The marginal estimate of the spike-and-slab model weighs the estimates of each component by its plausibility after seeing the data.
-That is, we sum the estimates conditional on each component weighed by the posterior probabilities of the components:
+By applying the spike-and-slab model we learn about the relative plausibility of the two components; in addition, the spike-and-slab model produces a \emph{marginal} estimate of effect size -- a weighted combination of effect sizes from the spike and from the slab. In other words, the spike-and-slab model yields an overall effect size averaged across the spike and the slab, with averaging weights determined by the respective posterior probabilities: 
 \begin{align*}
 	\obsDelta = \left(\obsDelta\mid\shypo{0}\right)\prob{\shypo{0}\mid\data} + \left(\obsDelta\mid\shypo{1}\right)\prob{\shypo{1}\mid\data}.
 \end{align*}
 
-%To obtain the posterior probabilities, we need to choose an inferential paradigm.
-The result is a \emph{marginal} estimate where the estimate of the slab is shrunken toward that of the spike (or vice versa).
-To obtain a marginal estimate of effect size, we need to choose an inferential paradigm.
-In a frequentist approach, one can use penalized maximum likelihood.
-This foregoes marginalizing over the spike and slab and instead directly adds a penalty term to the likelihood to shrink estimates towards zero.
-Well-known examples are LASSO and ridge regression \parencite{tibshirani2005sparsity}.
-One frequentist approach that does marginalize uses information criteria to derive posterior probabilities for the spike and slab.
-For example, take the Akaike Information Criterion \parencite[AIC;][]{Akaike1973} and define $\prob{\shypo{0}\mid\data} = \nicefrac{\AIC\mid\shypo{0}}{\left(\AIC\mid\shypo{0} + \AIC\mid\shypo{1}\right)}$.
-This approach is taken by, for instance, \textcite{BurnhamAnderson2002}.
+Marginalizing across model components according to their posterior plausibility is a uniquely Bayesian operation, and this is the statistical framework we adopt in this paper (for an accessible introduction to Bayesian inference see \textcite{VandekerckhoveEtAl2018SI}). Researchers who prefer a frequentist approach can accomplish shrinkage by using penalized maximum likelihood methods such as LASSO and ridge regression \parencite{tibshirani2005sparsity}. Another option open to frequentists is to marginalize across the spike and the slab for instance by using the Akaike Information Criterion \parencite[AIC;][]{Akaike1973} and defining the averaging weights as $\prob{\shypo{0}\mid\data} = \nicefrac{\AIC\mid\shypo{0}}{\left(\AIC\mid\shypo{0} + \AIC\mid\shypo{1}\right)}$ (\textcite{BurnhamAnderson2002}). \EJ{Citeer ook maar WagenmakersFarrell2004. Daar kun je direct even kijken voor de correcte definitie van de Akaike weight, want die je hier geeft is fout (!).}
 
-An alternative is a Bayesian approach.
-Here we assign probability distributions to unknown parameters, such as effect size.
-Even though choosing Bayesian analyses requires the specification of additional prior distributions, the advantage is that the posterior model probabilities follow directly from Bayes theorem.
-Whereas frequentist approaches need to specify a penalty term or choose an information criterion, Bayesian approaches need to specify prior distributions on the model parameters (e.g., $\delta$) and the models themselves ($\prob{\shypo{0}}$ and $\prob{\shypo{1}}$).
+%Whereas frequentist approaches need to specify a penalty term or choose an information criterion, Bayesian approaches need to specify prior distributions on the model parameters (e.g., $\delta$) and the models themselves ($\prob{\shypo{0}}$ and $\prob{\shypo{1}}$).
 
 %This requires us to specify additional prior distributions, however, the posterior model probabilities follow directly from Bayes theorem.% and do not depend on the choice of information criteria.
-However, a Bayesian approach provides a posterior distribution for effect size which fully captures the uncertainty over possible effect sizes and allows for easy computation of uncertainty intervals.
-In the remainder of this paper, we adopt the Bayesian approach for the spike-and-slab model.
-For a full derivation of the posterior distribution, see Appendix A.%
+%However, a Bayesian approach provides a posterior distribution for effect size which fully captures the uncertainty over possible effect sizes and allows for easy computation of uncertainty intervals.
+%In the remainder of this paper, we adopt the Bayesian approach for the spike-and-slab model.
+For a full derivation of the posterior distribution \EJ{Welke?}, see Appendix A.%
 \end{revision}
+\EJ{HERE}
 
 \begin{revision}To\end{revision} illustrate both the overestimation and \begin{revision}the spike-and-slab model we reanalyze\end{revision} the fictitious data from Figure~\ref{fig:descriptivesPlot}.
 \begin{revision}%

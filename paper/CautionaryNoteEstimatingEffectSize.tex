@@ -146,9 +146,10 @@ Advanced ERC grant 743086 UNIFY to EJW.
 \maketitle
 
 \begin{abstract}
-	An increasingly popular approach to statistical inference is to focus on the estimation of effect size while ignoring the null hypothesis that the effect is absent.
+	An increasingly popular approach to statistical inference is to focus on the estimation of effect size. \begin{revision} Yet, this approach is implicitly based on the assumption that there is an effect\end{revision} while ignoring the null hypothesis that the effect is absent.
 	We demonstrate how this common ``null hypothesis neglect'' may result in effect size estimates that are overly optimistic.
 	The overestimation can be avoided by incorporating the plausibility of the null hypothesis into the estimation process through a ``spike-and-slab'' model.
+	\begin{revision} We illustrate the implications of this approach and provide an empirical example. \end{revision}
 \end{abstract}
 
 Consider the following hypothetical scenario: a colleague from the biology department has just conducted an experiment and approaches you for statistical advice. The analysis yields $p<0.05$ and your colleague believes that this is grounds to reject the null hypothesis. In line with recommendations both old \parencite[e.g.,][]{Grant1962, Loftus1996} and new \parencite[e.g.,][]{harrington2019new, Cumming2014} you convince your colleague that it is better to replace the $p$-value with a point estimate of effect size and a 95\% confidence interval \parencite[but see][]{MoreyEtAl2016CI}. You also manage to convince your colleague to plot the data (see Figure~\ref{fig:descriptivesPlot}). Mindful of the reporting guidelines of the \emph{Psychonomic Society}\footnote{\protect\url{https://www.springer.com/psychology?SGWID=0-10126-6-1390050-0}} and \emph{Psychological Science}\footnote{\url{https://www.psychologicalscience.org/publications/psychological\_science/ps-submissions\#STAT}}, your colleague reports the result as follows: ``Cohen's $\cohend = \getValue{0}{Estimate}{\tbEffectSizeExample}$, CI $= \getCI{0}{\tbEffectSizeExample}$''.
@@ -174,7 +175,7 @@ This example is inspired by \protect\textcite{BergerDelampady1987}.
 \begin{revision}%
 The example above is rhetorical but serves to underscore the potential conflict between standard reporting guidelines and common sense. The example raises the question: When are effect sizes overestimated?
 \end{revision}%
-Standard point estimates and confidence intervals ignore the possibility that the effect is spurious (i.e., the null hypothesis $\mathcal{H}_0$). This is not problematic when $\mathcal{H}_0$ is deeply implausible, either because $\mathcal{H}_0$ was highly unlikely \emph{a priori} or because the data decisively undercut $\mathcal{H}_0$. But when the data fail to undercut $\mathcal{H}_0$, or when $\mathcal{H}_0$ is highly likely \emph{a priori} (i.e., ``plants do not grow faster when you talk to them''), then $\mathcal{H}_0$ is not ruled out as a plausible account of the data. Effect size estimates that ignore a plausible $\mathcal{H}_0$ are generally \begin{revision}overly optimistic and\end{revision} overconfident: the fact that $\mathcal{H}_0$ provides an acceptable account of the data should shrink effect size estimates towards zero.
+Standard point estimates and confidence intervals ignore the possibility that the effect is spurious (i.e., the null hypothesis $\mathcal{H}_0$). This is not problematic when $\mathcal{H}_0$ is deeply implausible, either because $\mathcal{H}_0$ was highly unlikely \emph{a priori} or because the data decisively undercut $\mathcal{H}_0$. But when the data fail to undercut $\mathcal{H}_0$, or when $\mathcal{H}_0$ is highly likely \emph{a priori} (i.e., ``plants do not grow faster when you talk to them''), then $\mathcal{H}_0$ is not ruled out as a plausible account of the data. Effect size estimates that ignore a plausible $\mathcal{H}_0$ are generally \begin{revision}overly optimistic and overly confident:\end{revision} the fact that $\mathcal{H}_0$ provides an acceptable account of the data should shrink effect size estimates towards zero.
 \begin{revision}%
 The statistical benefits of shrinkage are described in \citeauthor{EfronMorris1977} (\citeyear{EfronMorris1977}; see also \cite{davis2018estimation, RouderLu2005, ShiffrinEtAl2008}); the benefits of shrinking estimates towards zero are discussed for instance in \textcite{IversonEtAl2010, george1993variable}, and \textcite{vanErp2019shrinkage}.
 %For example, it is well known that the sample mean is not always the best estimator for the population mean but can be outperformed by shrinkage estimators \parencite{davis2018estimation, EfronMorris1977}.
@@ -187,7 +188,7 @@ The statistical benefits of shrinkage are described in \citeauthor{EfronMorris19
 
 \begin{revision}%
 In this paper we discuss a statistical approach to ameliorate the overestimation of effect size: the so-called ``spike-and-slab'' model. First, we formally introduce the spike-and-slab model.
-Second, we apply the spike-and-slab model to the example in the introduction and illustrate how it tempers overestimation.
+Second, we apply the spike-and-slab model to the example in the introduction and illustrate how it tempers the estimated effect size.
 Third, we visualize how the spike-and-slab model may shrink the estimated effect size toward zero in general.
 Fourth, we demonstrate the spike-and-slab model by reanalyzing the data of \textcite{heycke2018two}.
 Finally, we conclude with practical recommendations and a discussion on when to use the spike-and-slab model.
@@ -199,10 +200,10 @@ Finally, we conclude with practical recommendations and a discussion on when to 
 The spike-and-slab approach has been widely discussed in the statistical literature \parencite[e.g.,][]{ohara2009review, ishwaran2005spike, geweke1996variable, clyde1996prediction, mitchell1988bayesian} and in the psychological literature \parencite[e.g.,][]{IversonEtAl2010, yu2018bayesian, RouderEtAl2018PBR, bainter2020improving}.
 Conceptually, the approach is relatively straightforward.
 	
-As usual, the statistical goal is to infer the population effect size from a set of sample observations. Let $\popDelta$ denote the population effect size, let $\obsDelta$ denote a point estimate, and let $\obsDelta\mid\hypo{1}$ denote a point estimate that assumes that \hypo{1} is true.
-Assuming that \hypo{0} is true leads to $\obsDelta\mid\hypo{0}$, which usually equals 0.
+As usual, the statistical goal is to infer the population effect size from a set of sample observations. Let $\popDelta$ denote the population effect size, let $\obsDelta$ denote a point estimate, and let $\obsDelta\mid\hypo{1}$ denote a point estimate assuming the alternative hypothesis, \hypo{1}.
+Assuming the null hypothesis \hypo{0} leads to $\obsDelta\mid\hypo{0}$, which usually equals 0.
 Key is that both estimates, $\obsDelta\mid\hypo{1}$ and $\obsDelta\mid\hypo{0}$, are \emph{conditional} on the hypotheses. 
-For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect size under the alternative hypothesis that the effect exists''. To the best of our knowledge, all existing guidelines for reporting effect size estimates recommend that researchers provide $\obsDelta\mid\hypo{1}$; implicitly, the guidelines assume that \hypo{0} is false and that the population effect size is nonzero. In contrast, in the spike-and-slab model, the estimate of effect size is determined by both \hypo{1} and \hypo{0}. 
+For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect size under the alternative hypothesis that the effect exists''. To the best of our knowledge, all existing guidelines for reporting effect size estimates recommend that researchers provide $\obsDelta\mid\hypo{1}$; implicitly, the guidelines suggest to ignore \hypo{0}, resulting in the notion that the population effect size is nonzero. In contrast, in the spike-and-slab model, the estimate of effect size is determined by both \hypo{1} and \hypo{0}. 
 
 %Such an estimate is denoted $\obsDelta\mid\hypo{1}$.
 %Assuming that \hypo{0} is true, leads to an estimate denoted $\obsDelta\mid\hypo{0}$, which is usually 0. 
@@ -212,13 +213,13 @@ For example, $\obsDelta\mid\hypo{1}$ should be read as ``the estimated effect si
 %The key property of the spike-and-slab model is that it considers both hypotheses at once in a two-component model. 
 \end{revision}%
 
-\begin{revision}As the name suggest, the spike-and-slab model consists of two components. The first component, the spike, \end{revision}corresponds to the position that talking to plants does not affect their growth (i.e., $\delta = 0$), whereas the second component\begin{revision}, the slab, \end{revision}corresponds to the position that speaking to plants does affect their growth (i.e., $\delta \neq 0$).
+\begin{revision}As the name suggests, the spike-and-slab model consists of two components. The first component, the spike, \end{revision}corresponds to the position that talking to plants does not affect their growth (i.e., $\delta = 0$), whereas the second component\begin{revision}, the slab, \end{revision}corresponds to the position that speaking to plants does affect their growth (i.e., $\delta \neq 0$).
 \begin{revision}%
-\begin{revision}The spike and slab\end{revision} are analogous to \hypo{0} and \hypo{1} discussed above.
+The spike and slab are analogous to \hypo{0} and \hypo{1} discussed above.
 \end{revision}%
 Both components are commonly deemed \emph{a priori} equally likely, such that the prior probability for each component is \nicefrac{1}{2}.
 \begin{revision}%
-One can assign prior probabilities other than \nicefrac{1}{2}, if this can be motivated by prior research, prior data, or existing theories \parencite[e.g., ][]{wilson2018prior}.
+One can assign prior probabilities other than \nicefrac{1}{2}, if this is motivated by prior research, prior data, or existing theories \parencite[e.g., ][]{wilson2018prior}.
 After observing the data, the prior probabilities of both components, $\prob{\shypo{0}}$ and $\prob{\shypo{1}}$, are updated to posterior probabilities, $\prob{\shypo{0}\mid\data}$ and $\prob{\shypo{1}\mid\data}$.
 
 By applying the spike-and-slab model we learn about the relative plausibility of the two components; in addition, the spike-and-slab model produces a \emph{marginal} estimate of effect size -- a weighted combination of effect sizes from the spike and from the slab (for mathematical detail see the online Appendix). In other words, the spike-and-slab model yields an overall effect size averaged across the spike and the slab, with averaging weights determined by the respective posterior probabilities: 
@@ -231,28 +232,26 @@ Marginalizing across model components according to their posterior plausibility 
 % $\prob{\shypo{0}\mid\data} \approx w_{\shypo{0}} = \nicefrac{\exp\left(-\nicefrac{1}{2}\DeltaAIC\right)}{1 + \exp\left(-\nicefrac{1}{2}\DeltaAIC\right)}$
 % or without the outer nicefrac but with an additional set of parentheses
 $w_{\shypo{0}} = \exp\left(-\nicefrac{1}{2}\,\DeltaAIC\right) / (1 + \exp\left(-\nicefrac{1}{2}\,\DeltaAIC\right))$ 
-\parencite{WagenmakersFarrell2004, BurnhamAnderson2002}. 
+\parencite{WagenmakersFarrell2004, BurnhamAnderson2002}. The substitute for the posterior probability of the slab is simply: $w_{\shypo{1}} = 1 - w_{\shypo{0}}$.
 %Whereas frequentist approaches need to specify a penalty term or choose an information criterion, Bayesian approaches need to specify prior distributions on the model parameters (e.g., $\delta$) and the models themselves ($\prob{\shypo{0}}$ and $\prob{\shypo{1}}$).
 
 %This requires us to specify additional prior distributions, however, the posterior model probabilities follow directly from Bayes theorem.% and do not depend on the choice of information criteria.
 %However, a Bayesian approach provides a posterior distribution for effect size which fully captures the uncertainty over possible effect sizes and allows for easy computation of uncertainty intervals.
 %In the remainder of this paper, we adopt the Bayesian approach for the spike-and-slab model.
 
-Note that when the spike is located at $\delta=0$, as is usually the case, we have that $\left(\obsDelta\mid\shypo{0}\right)\prob{\shypo{0}\mid\data} = 0$, and consequently Equation~\ref{eq:modelaverageddelta} simplifies to
+Note that when the spike is located at $\delta=0$, as is usually the case, then $\left(\obsDelta\mid\shypo{0}\right)\prob{\shypo{0}\mid\data} = 0$, and consequently Equation~\ref{eq:modelaverageddelta} simplifies to
 \begin{align}
 \label{eq:shrunkendelta}
 	\obsDelta = \left(\obsDelta\mid\shypo{1}\right)\prob{\shypo{1}\mid\data}.
 \end{align}
-This equation shows that the spike-and-slab estimate $\obsDelta$ equals the estimate that is generally recommended in reporting guidelines, $\left(\obsDelta\mid\shypo{1}\right)$, but reduced by the posterior probability for $\mathcal{H}_1$. This shrinkage towards zero becomes negligible only when the posterior probability for $\mathcal{H}_1$ approaches 1.
+This equation shows that the spike-and-slab estimate $\obsDelta$ equals the estimate that is generally recommended in reporting guidelines, $\left(\obsDelta\mid\shypo{1}\right)$, but reduced by the posterior probability for $\mathcal{H}_1$. This shrinkage towards zero becomes negligible when the posterior probability for $\mathcal{H}_1$ approaches 1.
 \end{revision}
 
 \begin{revision}To\end{revision} illustrate both the overestimation and \begin{revision}the spike-and-slab model we reanalyze\end{revision} the fictitious data from Figure~\ref{fig:descriptivesPlot}.
 \begin{revision}%
 	R code for the analysis is available at \osflink{}.
-\end{revision}
-In almost all current empirical work, an estimate of effect size is based solely on the \begin{revision}slab\end{revision}, which yields a point estimate and an uncertainty interval (for frequentists, $\obsDelta = \getValue{0}{Estimate}{\tbEffectSizeExample}$, 95\%  CI: \getCI{0}{\tbEffectSizeExample}; for Bayesians $\obsDelta = \getValue{1}{mean}{\reanalysis}$, 95\% CRI: \getCI{1}{\reanalysis}).
-The spike-and-slab model, however, also considers the possibility that an effect can be absent; consequently, the overall estimate from the spike-and-slab model is a weighted average of the two components, shrinking the estimate towards zero.
-Figure~\ref{fig:modelAveragedPosterior} contrasts the slab-only estimation against the spike-and-slab estimation.
+Remember that the frequentist point estimate for the effect size conditional on \hypo{1}, or the \begin{revision}slab\end{revision}, was $\obsDelta = \getValue{0}{Estimate}{\tbEffectSizeExample}$, with a confidence interval of 95\%  CI: \getCI{0}{\tbEffectSizeExample}. The Bayesian equivalent is $\obsDelta = \getValue{1}{mean}{\reanalysis}$, with a credible interval of 95\% CRI: \getCI{1}{\reanalysis}).
+Figure~\ref{fig:modelAveragedPosterior} contrasts this Bayesian slab-only estimate against the spike-and-slab estimate.\end{revision}
 
 \setValue{0}{ph1}{\reanalysis}{\phAlt}%
 \setValue{0}{mode}{\reanalysis}{\modeAlt}%
@@ -268,29 +267,27 @@ Figure~\ref{fig:modelAveragedPosterior} contrasts the slab-only estimation again
 		The spike-and-slab model. The black line represents the posterior distribution of effect size given the slab (i.e., the effect is non-zero). The posterior is scaled so that its mode ($\obsDelta = \modeAlt$) equals the posterior probability of the alternative model (i.e., $p(\shypo{1}\mid\data) = \phAlt$). The grey line represents the posterior probability of the spike (i.e., $\obsDelta = 0$: the effect is absent). The error bars and dots above the density show 95\% credible intervals and the posterior mean for the slab-only model and for the spike-and-slab model.}
 	\label{fig:modelAveragedPosterior}
 \end{figure}
-Compared to the traditional results based only on the slab, the posterior mean and central 95\% credible interval of the spike-and-slab model are shrunken towards 0 (i.e., \getValue{0}{mean}{\reanalysis} (95\% CRI: \getCI{0}{\reanalysis}) vs. \getValue{1}{mean}{\reanalysis} (95\% CRI: \getCI{1}{\reanalysis})). 
-This shrinkage is due to the non-negligible probability that the effect is absent. 
-The spike-and-slab posterior represents the plausibility that the effect is absent by the height of the spike, and the uncertainty about the effect's magnitude, given that it is present, by the width of the slab. 
-Note that as the posterior probability of \begin{revision}the spike\end{revision} decreases, the spike-and-slab results approach those of the slab-only model.
-
+Compared to the traditional results based only on the slab, the posterior mean and central 95\% credible interval of the spike-and-slab model are shrunken towards 0 (i.e., \getValue{0}{mean}{\reanalysis}, 95\% CRI: \getCI{0}{\reanalysis} vs. \getValue{1}{mean}{\reanalysis}, 95\% CRI: \getCI{1}{\reanalysis}). 
+This shrinkage is due to the non-negligible probability that the effect is absent. \begin{revision}Here, the posterior probability of the spike after seeing the data, 0.52, is almost identical to its prior probability.
+In the figure, the plausibility that the effect is absent is represented by the height of the spike, and the uncertainty about the effect's magnitude, given that it is present, by the width of the slab. \end{revision}
+Note that \begin{revision}if the posterior probability of the spike was reduced, the spike-and-slab results would\end{revision} approach those of the slab-only model.
 
 \begin{revision}%
 \section*{The Influence of the Spike}
 
-In the fictitious example, the spike-and-slab model avoids overestimation by shrinking estimates of effect size towards zero.
-That result may not be surprising, as the effect was small.
+In the fictitious example, the spike-and-slab model reduces the estimated effect size by shrinking estimates of effect size towards zero.
+The result may not be surprising, as the effect was small.
 However, it makes one wonder to what extent the spike-and-slab model helps with estimation.
-What differs between a slab-only model and the spike-and-slab?
-In this section, we illustrate how the estimated effect size shrinks towards zero in general. 
+What are the differences between a slab-only model and the spike-and-slab?
+In this section, we illustrate how the estimated effect size shrinks towards zero under various circumstances. 
 We visualize the shrinkage as a function of the observed effect size, the prior on the standard deviation of effect size under the slab, the sample size, and the prior probability of the spike.
 We chose these parameters because the posterior distribution is fully determined by these quantities (see the online Appendix).
 
 Figure~\ref{fig:S_vs_SS_4_panel} shows the relation between the observed effect size and the estimated effect size for the slab and for the spike-and-slab for 40 observations and 100 observations.
-All plots show that a smaller prior standard deviation of the slab induces more shrinkage towards zero.
-This makes sense, as a small prior standard deviation implies there is more prior mass near the mean of the prior, which is zero.
-The influence of the prior standard deviation is intrinsic to a Bayesian approach, but not to the spike-and-slab model.
+All plots show that a smaller prior standard deviation of the slab induces some shrinkage towards zero. This effect is most obvious in the top left panel, and it makes sense, as a small prior standard deviation implies there is more prior mass near the mean of the prior, which is zero.
+This influence of the prior standard deviation is typically referred to as \emph{prior shrinkage}, and it intrinsic to a Bayesian approach, but not to the spike-and-slab model.
 Comparing the plots between the two columns illustrates the influence of the spike; whenever the observed effect size is near zero, the estimate is shrunken towards zero in the right column but not in the left column.
-However, when the observed effect size is far from zero, there is little shrinkage.
+However, when the observed effect size is far from zero, there is little additional shrinkage to the prior shrinkage.
 \begin{figure}[!ht]
 	\includegraphics[width=\textwidth]{posteriorMeanVsSampleDelta_4_panel_big_font.pdf}
 	\caption{%
@@ -303,22 +300,22 @@ However, when the observed effect size is far from zero, there is little shrinka
 	}
 	\label{fig:S_vs_SS_4_panel}
 \end{figure}
-The shrinkage can be explained in the following way.
+
+The shrinkage in the spike-and-slab model can be explained in the following way.
 Whenever the observed effect size is small, the data are well described by an effect size of zero and thus the posterior probability of the spike is substantial.
 As a result the marginal estimate is shrunken towards the spike's estimate, 0.
 In contrast, when the observed effect size is large the data are poorly described by an effect size of zero and the posterior probability of the spike is negligible.
 As a consequence, the estimate of the spike-and-slab is practically equivalent to the estimate of the slab.
-The plots in the right column of Figure~\ref{fig:S_vs_SS_4_panel} shows the effect of sample size on the shrinkage.
+The plots in the right column of Figure~\ref{fig:S_vs_SS_4_panel} show the effect of sample size on the shrinkage.
 For the bottom right plot, $N = 100$, if the observed effect size is small then the estimate is still shrunken towards 0, but as the observed effect size grows the shrinkage decreases much more quickly than in the top right plot where $N = 40$.
 This makes sense from a signal-detection perspective. 
 If the observed effect size is, for example, 0.3 after 40 observations, the posterior probability of the spike is substantial.
 However, after collecting 60 additional observations while the observed effect size remains 0.3, the posterior probability of the spike decreases as it becomes increasingly less probable that the data generating model had an effect size of zero.
 
-
 Next, we explore the relationship between shrinkage and the prior probability of the spike.
 Figure~\ref{fig:S_vs_SS_PH0_40} shows the shrinkage for various prior probabilities.
 The smaller the prior probability of the spike, the less the effect size is shrunken towards 0.
-If the prior probability is small then the spike was a-priori implausible and less evidence is needed to make its influence negligible.
+If the prior probability is small then the spike was \emph{a priori} implausible and less evidence is needed to make its influence negligible.
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=.5\textwidth]{posteriorMeanVsSampleDelta_ph0_n_40_big_font.pdf}
@@ -330,15 +327,18 @@ If the prior probability is small then the spike was a-priori implausible and le
 
 \section*{Empirical Example: Reanalysis of Two Minds}
 We now highlight how the spike-and-slab approach can be used in psychological practice by reanalyzing the results of \textcite{heycke2018two}, who conducted two registered replications of \textcite{rydell2006two}.
-We first briefly explain the design of the study before reanalyzing the results. For a detailed description see the ``Procedure'' section in \textcite{heycke2018two}. Next we reanalyze the Explicit Evaluation and Implicit Evaluation analyses with a spike-and-slab model. Finally, we provide a robustness analysis.
+We first briefly explain the design of the study before reanalyzing the Explicit Evaluation and Implicit Evaluation analyses with a spike-and-slab model. For a detailed description see the ``Procedure'' section in \textcite{heycke2018two}. Finally, we provide a robustness analysis.
 
-In the \textcite{heycke2018two} experiments, participants were shown a positive or negative prime on a computer screen followed by an image of a person.
-Next, several behavioral descriptions that were either negative or positive appeared underneath the image of the person.
-Participants were asked to indicate whether the behavioral description was characteristic or uncharacteristic for the person shown.
-After the first block of trials, participants explicitly evaluated the target person and performed an implicit association task (IAT). 
+The goal of \textcite{heycke2018two} was to replicate key evidence for implicit attitude formation. 
+In the original study, \textcite{rydell2006two} reported that attitudes induced by subliminal primes manifest when they are assessed by an implicit attitude measure, and attitudes induced by supraliminal cues manifest when they are assessed by an explicit attitude measure. 
+This finding corresponds to a perhaps surprising dissociation of implicit and explicit attitude measures. 
+In the \textcite{heycke2018two} experiments participants were briefly flashed a positive or negative prime followed by an image of a person.
+Next, several behavioral descriptions that were either negative or positive appeared with the image of the person (e.g., ``Bob cheated during a poker game'').
+Afterwards, participants explicitly evaluated the target person, and performed an implicit association task (IAT). 
 In total, data of 51 participants were analyzed.
-\textcite{heycke2018two} reported that positive primes resulted in a more favorable explicit evaluation than negative primes, whereas positive primes \EJ{What happened here?} 
-an explicit description had an effect while the IAT showed an indication of an effect.
+\textcite{heycke2018two} could not find the dissociation between explicit and implicit attitude measures. 
+They found that while positive descriptions resulted in a more favorable explicit evaluation than negative descriptions, positive subliminal primes did not result in more favorable IAT scores than negative subliminal primes. 
+In contrast, both explicit and implicit attitude measures were in line with the explicit descriptions they learned during the experiment.
 
 \paragraph{Explicit Evaluation}
 In the analysis of the explicit evaluations, \textcite[p.~10;][]{heycke2018two} conducted a paired t-test and concluded that the rating of the target character is more positive if positive information is shown before negative information: $t(27) = 11.52$, $p < .001$; $\mathrm{BF}_{10} = 1.37\times10^9$, $d = 2.09$, 95\% HDI $[1.41, 2.79]$.%
@@ -380,9 +380,9 @@ The adaptive shrinkage is a key feature of the spike-and-slab, that is, the amou
 
 \section*{Discussion}
 Standard estimates of effect size ignore the null hypothesis and are therefore overconfident, that is, \begin{revision}farther away\end{revision} from zero \begin{revision}than they should be\end{revision}. The spike-and-slab model \begin{revision} tempers the enthusiasm that the standard estimates instill\end{revision} by explicitly considering the possibility that an effect is absent \parencite{Robinson2019,RouderEtAl2018PBR}. The core idea dates back to
-\citeauthor{Jeffreys1939} \EJ{Hier moet een paginanr bij. Ik zou wel naar 1939 verwijzen maar ook naar de 1961 editie, want die kun je nog vinden dus daarvoor is het paginanr relevant. In de 1961 editie doel je hier volgens mij op p. 365} (\citeyear{Jeffreys1939}; see also \citeauthor{ly2020bayesian}, \citeyear{ly2020bayesian}); nonetheless, it \begin{revision}has been largely\end{revision} ignored in empirical practice, in statistical education, and in journal guidelines.
+\citeauthor{Jeffreys1939} (\citeyear{Jeffreys1939}; see also \citeauthor{Jeffreys1961}, p. 365, \citeyear{Jeffreys1961}; \citeauthor{ly2020bayesian}, \citeyear{ly2020bayesian}); nonetheless, it \begin{revision}has been largely\end{revision} ignored in empirical practice, in statistical education, and in journal guidelines.
 \begin{revision}%
-We believe the spike-and-slab model is a useful statistical tool to make the interpretation of effect size estimates more robust. The spike-and-slab model shrinks middling effect sizes with ambiguous statistical support in the direction of zero, in line with the common-sense opinion of a statistical skeptic. This data-driven statistical skepticism is appropriate regardless of whether or not the study of interested was preregistered.
+We believe the spike-and-slab model is a useful statistical tool to make the interpretation of effect size estimates more robust. The spike-and-slab model optimally shrinks effect sizes with ambiguous statistical support towards zero. This data-driven statistical skepticism is appropriate regardless of whether or not researchers follow good research practices, for example, preregistering study design and analysis.
 \end{revision}
 
 \subsubsection*{What if All Null Hypotheses Are False?}
@@ -392,16 +392,14 @@ The statistical counterargument is that, even if point null hypotheses are false
 Thus, from a pragmatic perspective it is irrelevant whether or not null hypotheses are exactly true: in the spike-and-slab model, a \begin{revision}narrow interval around zero\end{revision} will shrink estimates towards zero almost as much as the point null spike component will. 
 
 \begin{revision}
-\subsubsection*{When the Spike Can be Ignored}
+\subsubsection*{When Can the Spike be Ignored?}
 \end{revision}
 There are two scenarios in which the presence of the spike can safely be ignored.
 First, the spike may be deeply implausible.
 This happens most often in problems of pure estimation, such as when determining the relative popularity of two politicians or the proportion of Japanese cars on the streets of New York.
 In such cases, no value or interval needs to be singled out for special attention.
-Second, the data\begin{revision}, or data from prior studies,\end{revision} may provide overwhelming evidence that an effect is present\begin{revision}, as in the reanalysis of the Explicit Evaluation data.\end{revision}
+Second, the data\begin{revision}, or even data from prior studies,\end{revision} may provide overwhelming evidence that an effect is present\begin{revision}, as in the reanalysis of the Explicit Evaluation data.\end{revision}
 When this happens, the results from a spike-and-slab model become virtually identical to those of a slab-only model: \begin{revision} the inclusion of the spike offers no benefit but neither does it come with a statistical cost.\end{revision} %A practical recommendation by Harold Jeffreys is to ignore the spike whenever sample sizes fall between 50 and 2000 and the maximum likelihood estimate deviates from the spike by more than three standard errors (\cite[pp. 193--194]{Jeffreys1939}; \cite[p. 75]{Jeffreys1980}).
-
-
 
 \subsubsection*{Conclusion}
 Standard methods for estimating effect size produce results that are overly optimistic.
@@ -409,9 +407,10 @@ This \begin{revision}tendency\end{revision} toward high estimates can be correct
 that explicitly takes into account \end{revision} the possibility that the effect is absent. 
 \begin{revision}%
 %%The spike-and-slab approach is not meant as a *gotcha* method to reanalyze other researchers' data that one does not believe in.
-The spike-and-slab approach is not meant as a tool to downplay other researchers' findings that one does not believe in. \EJ{But it does do exactly that, right? It downplays effects that are implausible. Maybe it is more effective to remind the reader that the shrinkage only kicks in for middling effect sizes with ambiguous support.}
-Instead, it provides a more robust estimate of the size of an effect of high-quality studies if null and alternative hypothesis are plausible.
-We believe that approach allows researchers a more nuanced interpretation of their own results taking into account the plausibility that there is any effect.
+The spike-and-slab approach is not meant as a tool to downplay other researchers' findings that one disagrees with. 
+%\EJ{But it does do exactly that, right? It downplays effects that are implausible. Maybe it is more effective to remind the reader that the shrinkage only kicks in for middling effect sizes with ambiguous support.}
+Instead, it provides a more robust estimate of the size of an effect of high-quality studies whenever null and alternative hypothesis are plausible.
+We believe that the approach allows researchers a more nuanced interpretation of their own results taking into account the plausibility that there is no effect.
 \end{revision}
 
 %\newpage

@@ -114,7 +114,8 @@
 
 \newcommand{\dx}[1]{\enspace\mathrm{d}{#1}}
 
-\newenvironment{revision}{\color{teal}}{\color{black}}
+\newenvironment{revision}{\color{black}}{\color{black}}
+\newenvironment{revision2}{\color{teal}}{\color{black}}
 
 \title{A Cautionary Note on Estimating Effect Size}
 % \shorttitle{Estimating Effect Size}
@@ -372,7 +373,7 @@ In the reanalyses above the prior probability of the spike was set to 0.5. One m
 Figure~\ref{fig:robustnessReanalysis} visualizes the influence of the prior on the spike. 
 In the left panel that shows the explicit evaluation data, the different estimates for different prior probabilities are practically identical. 
 For this analysis, the data dominate the prior.
-In contrast, in the right panel that shows the explicit evaluation data, the prior probability of the spike has a large impact on the results.
+In contrast, in the right panel that shows the \begin{revision2}implicit\end{revision2} evaluation data, the prior probability of the spike has a large impact on the results.
 Here, the data are less informative and the prior has more influence.
 The adaptive shrinkage is a key feature of the spike-and-slab, that is, the amount of shrinkage depends on the posterior plausibility of the spike.
 \end{revision}

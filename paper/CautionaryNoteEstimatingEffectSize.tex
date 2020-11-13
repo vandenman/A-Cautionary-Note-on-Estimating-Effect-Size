@@ -149,7 +149,10 @@ Advanced ERC grant 743086 UNIFY to EJW.
 \begin{abstract}
 	An increasingly popular approach to statistical inference is to focus on the estimation of effect size. \begin{revision} Yet, this approach is implicitly based on the assumption that there is an effect\end{revision} while ignoring the null hypothesis that the effect is absent.
 	We demonstrate how this common ``null hypothesis neglect'' may result in effect size estimates that are overly optimistic.
-	The overestimation can be avoided by incorporating the plausibility of the null hypothesis into the estimation process through a ``spike-and-slab'' model.
+	\begin{revision2}
+	As an alternative to the current approach, a ``spike-and-slab'' model explicitly incorporates the plausibility of the null hypothesis into the estimation process.
+	\end{revision2}
+	%The overestimation can be avoided by incorporating the plausibility of the null hypothesis into the estimation process through a ``spike-and-slab'' model.
 	\begin{revision} We illustrate the implications of this approach and provide an empirical example. \end{revision}
 \end{abstract}
 
@@ -187,13 +190,14 @@ The statistical benefits of shrinkage are described in \citeauthor{EfronMorris19
 %\DON{We could also briefly mention the spike-and-slab model here as a remedy to the problem introduced above.}
 %\end{revision}%
 
-\begin{revision}%
-In this paper we discuss a statistical approach to ameliorate the overestimation of effect size: the so-called ``spike-and-slab'' model. First, we formally introduce the spike-and-slab model.
+
+\begin{revision2}
+The above point estimate, ``0.30", may seem purely data-driven, but it is based on a model that assumes an effect size different from zero. In this paper we propose an alternative model to estimate effect size:\end{revision2} the so-called ``spike-and-slab'' model. First, we formally introduce the spike-and-slab model.
 Second, we apply the spike-and-slab model to the example in the introduction and illustrate how it tempers the estimated effect size.
 Third, we visualize how the spike-and-slab model may shrink the estimated effect size toward zero in general.
 Fourth, we demonstrate the spike-and-slab model by reanalyzing the data of \textcite{heycke2018two}.
 Finally, we conclude with practical recommendations and a discussion on when to use the spike-and-slab model.
-\end{revision}
+
 
 
 \section*{A Spike-and-Slab Perspective}
@@ -376,6 +380,9 @@ For this analysis, the data dominate the prior.
 In contrast, in the right panel that shows the \begin{revision2}implicit\end{revision2} evaluation data, the prior probability of the spike has a large impact on the results.
 Here, the data are less informative and the prior has more influence.
 The adaptive shrinkage is a key feature of the spike-and-slab, that is, the amount of shrinkage depends on the posterior plausibility of the spike.
+\begin{revision2}
+Note that in the right panel the 95\% credible interval becomes asymmetric as the prior and therefore also the posterior probability of the spike increases. It may appear that the credible interval is bounded by zero, however, this is a property of this particular data set. Had the observations been closer to zero then the credible interval would have also contained negative values (e.g., the posterior mass in Figure~\ref{fig:modelAveragedPosterior} is not zero for negative values of effect size).
+\end{revision2}
 \end{revision}
 
 
